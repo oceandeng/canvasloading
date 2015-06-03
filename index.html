@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>圆形进度条</title>
+<link rel="icon" href="images/50.gif" type="image/gif" />
+<script src="js/jquery.min.js"></script>
+<script src="js/excanvas.js"></script>
+<script src="js/jquery.circliful.js"></script>
+<script>
+$(document).ready(function(){
+        var cupCount = 10,
+            ncCount = 80;
+        var myStat2Color = cupCount > 50 ? '#f75656' : '#14b997';
+        $('#myStat2').circliful({
+            dimension: 100,
+            endPercent: ncCount,
+            showValue: "cpuText",
+            foregroundColor: myStat2Color,//556b2f
+            backgroundColor: "#fff",
+            sarcr : 10
+        });
+    });
+</script>
+<style>
+    body{ margin:0; padding:0; font-size:14px; line-height:24px; color:#8b8b8b; font-family:Microsoft YaHei, Arial, Helvetica, sans-serif;
+	 background-color:#000;
+	}
+    .rrlh{ height:180px; margin-top:20px}
+    .txz{ position: absolute; left: 50%; top: 50%; margin-left: -30px; margin-top: -30px; line-height: 30px;}
+    .cpu{ width:50%; height:170px; float:left; text-align:center; position:relative}
+</style>
+</head>      
+        <div class="rrlh">
+            <!-- <div class="cpu">
+                <div class="txz"><span style="font-size:24px;">还差<br />123元</span></div>-->
+                <div id="myStat2" style="display: inline-block" data-width="10" data-fontsize="28" ></div>       
+                <div id="cpuText"></div>                         
+           <!--  </div>  -->
+        </div>       <canvas></canvas> 
+</html>
