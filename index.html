@@ -11,19 +11,27 @@
     <script src="js/excanvas.js"></script>
     <script src="js/jquery.circliful.js"></script>
     <script>
-    $(document).ready(function(){
-            var cupCount = 10,
-                ncCount = 80;
-            var myStat2Color = cupCount > 50 ? '#f75656' : '#14b997';
-            $('#myStat2').circliful({
-                dimension: 100,
-                endPercent: ncCount,
-                showValue: "cpuText",
-                foregroundColor: myStat2Color,//556b2f
-                backgroundColor: "#fff",
-                sarcr : 10
-            });
-        });
+      var screenH = $(window).height(),
+          bodyH = $('body').height();
+    
+      if(bodyH < screenH){
+        $('body').css('height', screenH);
+      }
+    </script>
+    <script>
+      $(document).ready(function(){
+          var cupCount = 10,
+              ncCount = 80;
+          var myStat2Color = cupCount > 50 ? '#f75656' : '#14b997';
+          $('#myStat2').circliful({
+              dimension: 100,
+              endPercent: ncCount,
+              showValue: "cpuText",
+              foregroundColor: myStat2Color,//556b2f
+              backgroundColor: "#fff",
+              sarcr : 10
+          });
+      });
     </script>
     <style>
         body{ margin:0; padding:0; font-size:14px; line-height:24px; color:#8b8b8b; font-family:Microsoft YaHei, Arial, Helvetica, sans-serif;
