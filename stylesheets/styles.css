@@ -20,8 +20,8 @@ body {
 
 .wrapper {
   width: 640px;
-  margin: 20px auto 0 auto;
-  background: #DEDEDE;
+  margin: 0 auto;
+  padding:20px 0 0 0;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
