@@ -1,0 +1,85 @@
+@import "variable";
+
+.footer{
+    .footer-topbar{
+        .footer-topbar-content{
+            .footer-topbar-item{
+                width: 25%;
+                float: left;
+
+                p{
+                    color: $white;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+    .footer-body{
+        background: $footer-color;
+        padding: 60px 0;
+    }
+    .footer-content{
+        position: relative;
+    }
+    .footer-map-menu{
+        .footer-map-menu-item{
+            width: 180px;
+            float: left;
+            
+            h5{
+                color: $white;
+                margin: 0 0 10px 0;
+            }
+            ul{
+                padding-top: 1px;
+            }
+            li{
+                font-size: 12px;
+                margin: 10px 0;
+
+                a{
+                    color: $footer-a-color;
+                    &:hover{
+                        color: $href-h-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-menu{
+        span{
+            color: $footer-a-color;
+        }
+    }
+    .footer-menu a{padding:0 12px; color: $footer-a-color; font-size: 14px}
+    .footer-menu a:hover{color: $href-h-color}
+    .footer-menu a.first{padding-left: 0;}
+
+    .copyright{
+        color: $copyright-color;
+        font-size: 12px;
+    }
+
+    .gzwm{position: absolute; right: 0; top: 0; font-size: 12px; line-height: 12px; padding-right: 155px;}
+    .gzwm span{position: absolute; top: 10px;right: 150px;}
+    .gzwm a{color:#999;
+    	transition: color 0.2s;
+    	-moz-transition: color 0.2s;
+    	-webkit-transition: color 0.2s;
+    	-o-transition: color 0.2s;
+    }
+    .gzwm a:hover{color:$href-h-color;}
+    .gzwm a.locat{position: absolute;top: 9px; right: 160px; display:block;height:15px;width: 100px; line-height:15px; background: url(../images/icon-locat.png) no-repeat 0 -20px; padding-left: 15px;
+        color:$href-h-color;}
+    .hotLine a{font-size: 16px; color:$href-color; font-weight: bold;cursor: default;}
+    .gzwm .attention{width:168px; height: 32px; line-height: 32px;}
+    .gzwm .attention a.gz-wb{width:32px; height: 32px;}
+    .gzwm .attention a.gz-wx{width:32px; height: 32px; padding-left:10px;}
+    .gzwm .attention .ewm{width: 130px; height: 110px; position: absolute; top: -18px; right: 0;}
+    .gzwm a.kxwz{width:89px; height: 32px; display: block; background:url(../images/icon-kxwz.png);}
+    .gzwm div.kxwz span{top: 0px; right: 0px;}
+    .gzwm div.kxwz img{width:89px; height: 32px;}
+
+}

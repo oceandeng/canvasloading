@@ -1,0 +1,7 @@
+{
+  "name": "new300",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.9"
+  }
+}

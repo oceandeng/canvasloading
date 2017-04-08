@@ -1,0 +1,79 @@
+@import "variable";
+/*
+    public topbar start
+ */
+.top-menu{
+    background: $topbar-color;
+    border-bottom: 1px solid $topbar-b-color;
+
+    &:hover{
+        background: $topbar-h-color;
+        border-color: $topbar-bh-color;
+    }
+
+    .topbar-box{
+        width: 1280px;
+        height: 60px;
+        margin: 0 auto;
+    }
+
+    .menu-body{
+        ul{
+            list-style-type: none;
+            margin: 0;
+            li{
+                height: 20px;
+                line-height: 20px;
+                padding: 20px;
+                float: left;
+                color: $white;
+                &:hover{
+
+                }
+                a{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .tool-body{
+        a{
+            color: $white;
+        }
+        .login-btn, .reg-btn{
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: $tool-btn-color;
+            margin: 15px 0 0 0;
+            &:hover{
+                background: $tool-btn-h-color;
+            }
+        }
+        .login-btn{
+            border-radius: 15px 0 0 15px;
+            padding:0 10px 0 20px;
+        }
+        .reg-btn{
+            border-radius: 0 15px 15px 0;
+            padding: 0 20px 0 10px;
+        }
+    }
+}
+/*
+    public topbar end
+ */
+
+/**
+ * footer topbar start
+ */
+.footer{
+    .footer-topbar{
+        height: 90px;
+        background: $g333;
+    }
+}
+/**
+ * footer topbar end
+ */

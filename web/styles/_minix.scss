@@ -1,0 +1,5 @@
+@mixin line-height($height: 50px){
+  height: $height;
+  line-height: $height;
+  text-align: center;
+}

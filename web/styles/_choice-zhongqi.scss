@@ -1,0 +1,21 @@
+@import "variable";
+
+.choice-zhongqi-content{
+    .choice-zhongqi-item{
+        width: 33.33333333%;
+        float: left;
+
+        .item-detail{
+            h3, p{
+                color: $white;
+            }
+            a{
+                color: $href-color;
+
+                &:hover{
+                    color: $href-h-color;
+                }
+            }
+        }
+    }
+}
