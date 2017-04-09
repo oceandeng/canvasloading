@@ -18,22 +18,42 @@
     }
 
     .menu-body{
-        ul{
+        position: relative;
+
+        .top-border{
+            height: 3px;
+            position: absolute;
+            bottom: 0;
+            background:#3db1ea
+        }
+        .menu-content{
             list-style-type: none;
             margin: 0;
-            li{
-                height: 20px;
-                line-height: 20px;
-                padding: 20px;
+            height: 60px;
+
+            .menu-item{
                 float: left;
-                color: $white;
+                height: 60px;
+                position: relative;
+
                 &:hover{
 
                 }
                 a{
+                    display: block;
+                    height: 20px;
+                    line-height: 20px;
+                    padding: 20px;
                     color: $white;
                 }
             }
+        }
+        .menu-detail{
+            margin: 2px 0 0 0;
+            display: none;
+            padding: 20px;
+            color: $white;
+            background: $topbar-drop-color;
         }
     }
 
