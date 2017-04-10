@@ -24,7 +24,7 @@ ul,li{list-style-type: none; margin:0; padding: 0}
     padding: 1px 0;
 }
 .main-wrap{
-    width: 1280px;
+    width: $main-width;
     margin: 0 auto;
 }
 .f16{font-size: 16px}
@@ -36,3 +36,33 @@ ul,li{list-style-type: none; margin:0; padding: 0}
 .mt60{margin-top: 60px}
 .ml20{margin-left: 20px}
 .mb60{margin-bottom: 60px}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+.animated.hinge {
+    animation-duration: 2s;
+}
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+    animation-duration: .75s;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}

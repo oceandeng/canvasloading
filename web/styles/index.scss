@@ -9,6 +9,7 @@
 .index-top-banner{
     width: 100%;
     height: 490px;
+    overflow: hidden;
     background: $banner-color;
     padding-top: 1px;
     position: relative;
@@ -53,9 +54,31 @@
             }
         }
     }
+    .none{
+        display: none
+    }
+    .s-dot-warp{
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+
+        .s-dot{
+            width: 40px;
+            height: 4px;
+            border-radius: 2px;
+            display: block;
+            float: left;
+            background: $dot-color;
+            margin: 0 10px 0 0;
+        }
+        .s-dot:hover, .active{
+            cursor: pointer;
+            background: $white;
+        }
+    }
 }
 
-.gray-col{background: $gf2;}
+.gray-col{background: $gf2}
 .content-group{
     padding-top: 1px;
     .col-main{

@@ -1,13 +1,24 @@
 @import "variable";
 
 .choice-zhongqi-content{
+    .choice-w30{width: 30%}
+    .choice-w40{width: 40%}
     .choice-zhongqi-item{
-        width: 33.33333333%;
         float: left;
 
         .item-detail{
             h3, p{
                 color: $white;
+            }
+            h3{
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            .item-desc{
+                margin: 5px 0;
+            }
+            .item-btn{
+                margin: 5px 0;
             }
             a{
                 color: $href-color;

@@ -12,7 +12,7 @@
     }
 
     .topbar-box{
-        width: 1280px;
+        width: $main-width;
         height: 60px;
         margin: 0 auto;
     }
@@ -49,11 +49,14 @@
             }
         }
         .menu-detail{
-            margin: 2px 0 0 0;
-            display: none;
             padding: 20px;
+            position: absolute;
+            top: 61px;
+            right: 0;
+            display: none;
             color: $white;
             background: $topbar-drop-color;
+            z-index: 9;
         }
     }
 

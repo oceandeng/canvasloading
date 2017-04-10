@@ -1,5 +1,26 @@
 .solution .solution-slide-body{
     position: relative;
+    height: 350px;
+    overflow: hidden;
+
+    .solution-btn{
+        width: 40px;
+        height: 350px;
+        background: rgba(0, 0, 0, .1);
+        position: absolute;
+        top: 0;
+
+        &:hover{
+            background: rgba(0, 0, 0, .3);
+            cursor: pointer;
+        }
+    }
+    .next{
+        right: 0;
+    }
+    .prev{
+        left: 0;
+    }
 }
 .solution .solution-slide-body .slide-content {
     position: absolute;
@@ -48,7 +69,6 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: #161A1D;
     opacity: 0.6;
     filter: alpha(opacity=60);
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(60));
@@ -89,8 +109,8 @@
 }
 
 .solution .solution-slide-body .slide-content .slide-item .mask .content .line-panel .item-line {
-    width: 20px;
-    height: 2px;
+    width: 50px;
+    height: 1px;
     background: #fff;
     display: inline-block;
     opacity: 1;
@@ -153,26 +173,28 @@
     font-size: 14px;
     color: #fff;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
     padding: 0px 23px;
     line-height: 24px;
-    height: 72px;
+    height: 52px;
 }
 
 .solution .solution-slide-body .slide-content .slide-item .mask .content .item-link {
     display: inline-block;
     border: 1px solid #fff;
-    width: 120px;
+    width: 140px;
     height: 36px;
     line-height: 36px;
+    border-radius: 18px;
     font-size: 14px;
     color: #fff;
     text-decoration: none;
-    margin-top: 62px;
+    margin-top: 32px;
 }
 
 .solution .solution-slide-body .slide-content .slide-item .mask .content .item-link:hover {
-    color: #00C1DE;
+    color: #1d99d6;
     background: #fff;
 }
 
@@ -187,7 +209,7 @@
 }
 
 .solution .solution-slide-body .slide-content .slide-item:hover .bg {
-    background: #00c2de;
+    background: #1d99d6;
     opacity: 0.9;
     filter: alpha(opacity=90);
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(90));

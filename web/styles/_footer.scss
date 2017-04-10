@@ -11,6 +11,22 @@
                     color: $white;
                     margin: 10px 0;
                 }
+
+                .f-top-img{
+                    margin: 20px 15px 0 0;
+                }
+                .f-top-content{
+                    h4{
+                        font-size: 18px;
+                        color: $copyright-color;
+                        margin: 20px 0 0 0;
+                    }
+                    p{
+                        font-size: 12px;
+                        color: #858d97;
+                        margin: 5px 0 0 0;
+                    }
+                }
             }
         }
     }
@@ -26,7 +42,7 @@
         .footer-map-menu-item{
             width: 180px;
             float: left;
-            
+
             h5{
                 color: $white;
                 margin: 0 0 10px 0;
@@ -62,8 +78,14 @@
         font-size: 12px;
     }
 
-    .gzwm{position: absolute; right: 0; top: 0; font-size: 12px; line-height: 12px; padding-right: 155px;}
-    .gzwm span{position: absolute; top: 10px;right: 150px;}
+    .gzwm{
+        position: absolute;
+        right: 0;
+        top: -25px;
+        font-size: 12px;
+        line-height: 12px;
+        width: 290px;
+    }
     .gzwm a{color:#999;
     	transition: color 0.2s;
     	-moz-transition: color 0.2s;
@@ -71,15 +93,67 @@
     	-o-transition: color 0.2s;
     }
     .gzwm a:hover{color:$href-h-color;}
-    .gzwm a.locat{position: absolute;top: 9px; right: 160px; display:block;height:15px;width: 100px; line-height:15px; background: url(../images/icon-locat.png) no-repeat 0 -20px; padding-left: 15px;
+    .gzwm a.locat{position: absolute; top: 9px; right: 160px; display:block;height:15px;width: 100px; line-height:15px; background: url(../images/icon-locat.png) no-repeat 0 -20px; padding-left: 15px;
         color:$href-h-color;}
     .hotLine a{font-size: 16px; color:$href-color; font-weight: bold;cursor: default;}
-    .gzwm .attention{width:168px; height: 32px; line-height: 32px;}
-    .gzwm .attention a.gz-wb{width:32px; height: 32px;}
-    .gzwm .attention a.gz-wx{width:32px; height: 32px; padding-left:10px;}
-    .gzwm .attention .ewm{width: 130px; height: 110px; position: absolute; top: -18px; right: 0;}
-    .gzwm a.kxwz{width:89px; height: 32px; display: block; background:url(../images/icon-kxwz.png);}
+    .gzwm .attention{
+        float: right;
+        margin: 20px 0 0 0;
+        text-align: right;
+        width: 290px;
+
+        span{
+            display: inline-block;
+            color: $footer-a-color;
+            cursor: pointer;
+        }
+        li{
+            margin: 8px 0;
+        }
+    }
+    .gzwm .attention .active{
+        font-size: 14px;
+
+        .ewm{
+            display: block;
+        }
+    }
+    .gzwm .attention .ewm{
+        text-align: right;
+        display: none;
+        margin: 10px 0 0 0
+    }
+    .gzwm .kxwz{
+        width: 290px;
+        height: 32px;
+        display: block;
+        float: right;
+        text-align: right;
+        margin: 20px 0 0 0;
+    }
     .gzwm div.kxwz span{top: 0px; right: 0px;}
     .gzwm div.kxwz img{width:89px; height: 32px;}
+    .hotLine{
+        width: 290px;
+        float: right;
+
+        .hot-img{margin: 0  20px 0 0}
+        .hot-content{
+            text-align: right;
+
+            h5{
+                font-size: 12px;
+                font-weight: normal;
+                color: $copyright-color;
+                margin: 0 0 5px 0;
+            }
+            p{
+                font-size: 30px;
+                color: $white;
+                margin: 15px 0 0 0;
+                font-weight: bold;
+            }
+        }
+    }
 
 }

@@ -8,5 +8,10 @@ $(function(){
     // card-area 调用
     $('#cardArea').cardArea()
 
+    // 解决方案切换调用
+    $('#solutionSlide').solutionSlide()
+
+    // footer二维码导航调用
+    $('#attentionMenu').footerMenu()
 
 })

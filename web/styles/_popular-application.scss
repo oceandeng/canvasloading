@@ -4,8 +4,33 @@
         float: left;
 
         .item-detail{
-            padding: 0 20px;
+            padding: 0 15px;
             text-align: center;
+
+            h3{
+                font-size: 20px;
+                color: #373d41;
+            }
+            .item-info{
+                color: #3db1ea;
+                margin: 20px 0;
+            }
+            .item-desc{
+                color: #a7a7a7;
+                line-height: 24px;
+            }
+            .p-dot{
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                margin: 0 3px;
+                background: #a7a7a7;
+                border-radius: 3px;
+            }
+        }
+
+        .item-img-panel{
+            display: inline-block;
         }
     }
 
