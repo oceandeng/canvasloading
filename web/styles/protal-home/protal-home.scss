@@ -3,8 +3,10 @@
 .protal-main-content{
     margin-left: 200px;
     min-height: 1000px;
-    border-left: 1px solid $g-border-color;
 
+    .protal-part-body{
+        border-left: 1px solid $g-border-color;
+    }
     .protal-part-top{
         background: url(../../images/protal/protal-top-bg.jpg) repeat-x;
     }
@@ -29,5 +31,66 @@
     .protal-img{
         padding: 120px 0;
         text-align: center;
+    }
+    .protal-group{
+        .protal-group-content{
+            padding-bottom: 50px;
+        }
+        .protal-group-detail{
+            .protal-group-wrap{
+                padding: 0 0 0 50px;
+            }
+
+            .protal-group-tit{
+                margin-top: 100px;
+                font-size: 24px;
+            }
+            .protal-group-desc{
+                line-height: 30px;
+                margin: 30px 0;
+            }
+        }
+        .protal-group-img{
+            text-align: center;
+        }
+    }
+    .get-protal{
+        border-top: 3px solid $light-blue;
+        padding: 50px 0;
+
+        .adviser-photo{
+            text-align: center;
+
+            img{
+                width: 80%
+            }
+        }
+        .adviser-content{
+            h5{
+
+            }
+        }
+        .get-protal-tit-wrap{
+            text-align: center;
+
+            .get-protal-tit{
+                text-align: center;
+                font-size: 26px;
+            }
+        }
+
+        .get-protal-content{
+            margin: 0 50px;
+            padding: 80px 0 50px 0;
+            border-top: 1px solid $gd-border-color;
+
+            .adviser-tit{
+                font-size: 26px;
+                margin: 0 0 20px 0;
+            }
+            .protal-desc{
+                line-height: 30px;
+            }
+        }
     }
 }

@@ -4,6 +4,8 @@
 @import "./index/popular-application";
 @import "./index/choice-zhongqi";
 
+
+
 .index-top-banner{
     width: 100%;
     height: 490px;
@@ -12,6 +14,10 @@
     padding-top: 1px;
     position: relative;
 
+    .slide-wrap{
+        width: $main-width;
+        margin: 0 auto;
+    }
     .slide-group{
         position: absolute;
 

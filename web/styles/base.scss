@@ -20,6 +20,7 @@ ul,li{list-style-type: none; margin:0; padding: 0}
 }
 .f-left{float: left}
 .f-right{float: right}
+.block{display: block !important}
 .layout{
     padding: 1px 0;
 }
@@ -36,13 +37,17 @@ ul,li{list-style-type: none; margin:0; padding: 0}
 .mt15{margin-top: 15px}
 .mt20{margin-top: 20px}
 .mt30{margin-top: 30px}
+.mt50{margin-top: 50px}
 .mt60{margin-top: 60px}
+.mt100{margin-top: 100px}
 .ml20{margin-left: 20px}
+.mb50{margin-bottom: 50px}
 .mb60{margin-bottom: 60px}
 .mb20{margin-bottom: 20px}
 .mb30{margin-bottom: 30px}
 .bold{font-weight: bold}
 .bg-f9{background-color: $bg-f9 !important}
+.bg-f2{background-color: $gf2 !important}
 .bg-f3{background-color: $bg-f3 !important}
 .animated {
     animation-duration: 1s;

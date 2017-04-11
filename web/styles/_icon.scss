@@ -1,5 +1,5 @@
 .zq-icon{
-    display: block;
+    display: inline-block;
     background: url(../images/new300-sprite-icon.png) no-repeat;
 }
 
@@ -70,8 +70,8 @@
 }
 
 .protal-icon{
-    display: block;
-    background: url(../images/protal-icon-img.png) no-repeat;
+    display: inline-block;
+    background: url(../images/protal/protal-icon-img.png) no-repeat;
 }
 .protal-l-icon{background-position: 0 0}
 .protal-phone{background-position: -100px 0}
@@ -79,4 +79,10 @@
     width: 137px;
     height: 16px;
     background-position: -150px 0;
+}
+
+.protal-down-arrow{
+    width: 26px;
+    height: 40px;
+    background-position: 0 -100px;
 }

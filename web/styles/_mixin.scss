@@ -6,8 +6,8 @@
   text-align: center;
 }
 @mixin blue-btn($h: 32px){
-    height: 32px;
-    line-height: 32px;
+    height: $h;
+    line-height: $h;
     text-align: center;
     background: $light-blue;
     border: 1px solid $light-blue;
@@ -23,10 +23,9 @@
     }
 }
 @mixin white-btn($h: 32px){
-    height: 32px;
-    line-height: 32px;
+    height: $h;
+    line-height: $h;
     text-align: center;
-    background: $white;
     border: 1px solid $light-blue;
     display: inline-block;
     padding: 0 30px;

@@ -82,7 +82,7 @@
      */
     var mainSliderDefault = {
         slideWrap: '.index-top-banner',
-        mainWrap: '.main-wrap',
+        mainWrap: '.slide-wrap',
         itemClass: '.slide-group',
         lClass: '.y-row',
         bClass: '.banner-row'
@@ -211,8 +211,9 @@
             })
         }
         SolutionSlide.prototype.refresh = function(){
+            var _this = this
             $(window).on('resize', function(){
-                this.initClass()
+                _this.initClass()
             })
         }
 

@@ -151,15 +151,30 @@
 
                 &:hover{
                     color: $white;
-                    background: url(../images/protal-icon-img.png) no-repeat -100px -50px;
+                    background: url(../images/protal/protal-icon-img.png) no-repeat -100px -50px;
                 }
             }
             .active{
                 color: $white;
-                background: url(../images/protal-icon-img.png) no-repeat -100px -50px;
+                background: url(../images/protal/protal-icon-img.png) no-repeat -100px -50px;
             }
             .l-sec-content{
+                padding: 10px 20px;
                 display: none;
+
+                .l-sec-item{
+                    line-height: 20px;
+                    font-size: 12px;
+                    margin: 5px 0;
+
+                    a{
+                        color: $black;
+                        &:hover{
+                            color: $light-blue;
+                        }
+                    }
+
+                }
             }
 
 
