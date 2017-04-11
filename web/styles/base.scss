@@ -26,6 +26,7 @@ ul,li{list-style-type: none; margin:0; padding: 0}
 .main-wrap{
     width: $main-width;
     margin: 0 auto;
+    position: relative;
 }
 .f16{font-size: 16px}
 .f18{font-size: 18px}
@@ -36,6 +37,7 @@ ul,li{list-style-type: none; margin:0; padding: 0}
 .mt60{margin-top: 60px}
 .ml20{margin-left: 20px}
 .mb60{margin-bottom: 60px}
+.bold{font-weight: bold}
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;

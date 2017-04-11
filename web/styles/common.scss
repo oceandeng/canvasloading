@@ -1,4 +1,7 @@
 @import "variable";
+@import "icon";
+@import "footer";
+
 /*
     public topbar start
  */
@@ -99,4 +102,48 @@
 }
 /**
  * footer topbar end
+ */
+
+/**
+ * protal left-tool-bar start
+ */
+.left-tool-bar{
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 0;
+    border-left: 1px solid $g-border-color;
+    border-bottom: 1px solid $g-border-color;
+
+    .l-tool-tit{
+        width: 200px;
+        height: 160px;
+        background: $bg-blue;
+        padding-top: 1px;
+        position: relative;
+
+        h1{
+            font-size: 26px;
+            color: $white;
+            margin: 60px 0 0 20px;
+        }
+        .protal-l-icon{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+    .l-desc-body{
+        padding: 30px 20px 20px;
+
+        p{
+            margin: 5px 0;
+        }
+    }
+}
+
+
+
+/**
+ * protal left-tool-bar end
  */
