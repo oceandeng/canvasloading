@@ -1,10 +1,10 @@
 @import "minix", "variable";
-@import "card-area";
-@import "solution-slide";
-@import "popular-application";
-@import "choice-zhongqi";
 @import "footer";
 @import "icon";
+@import "./index/card-area";
+@import "./index/solution-slide";
+@import "./index/popular-application";
+@import "./index/choice-zhongqi";
 
 .index-top-banner{
     width: 100%;

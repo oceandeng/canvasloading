@@ -228,12 +228,12 @@
      $.fn.footerMenu = function(){
          return this.each(function(){
             var $this = $(this),
-                $nav = $this.find('li'),
+                $nav = $this.find('li').find('span'),
                 $con = $this.find('.ewm');
 
             $nav.on('mouseenter', function(){
                 var $_this = $(this)
-                $_this.addClass('active').siblings().removeClass('active')
+                $_this.parent('li').addClass('active').siblings().removeClass('active')
             })
          })
      }
