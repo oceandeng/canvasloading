@@ -1,0 +1,42 @@
+@import "variable";
+
+@mixin line-height($height: 50px){
+  height: $height;
+  line-height: $height;
+  text-align: center;
+}
+@mixin blue-btn($h: 32px){
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: $light-blue;
+    border: 1px solid $light-blue;
+    display: inline-block;
+    padding: 0 30px;
+    border-radius: $h / 2;
+    color: $white;
+    cursor: pointer;
+
+    &:hover{
+        background: $drak-blue;
+        border: 1px solid $drak-blue;
+    }
+}
+@mixin white-btn($h: 32px){
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: $white;
+    border: 1px solid $light-blue;
+    display: inline-block;
+    padding: 0 30px;
+    border-radius: $h / 2;
+    color: $light-blue;
+    cursor: pointer;
+
+    &:hover{
+        background: $light-blue;
+        border: 1px solid $light-blue;
+        color: $white;
+    }
+}

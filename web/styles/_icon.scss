@@ -5,6 +5,7 @@
 
 .icon40x40{width: 40px; height: 40px}
 .icon17x17{width: 17px; height: 17px}
+.icon18x18{width: 18px; height: 18px}
 .icon60x55{width: 60px; height: 55px}
 .icon64x64{width: 64px; height: 64px}
 .icon47x47{width: 47px; height: 47px}
@@ -73,3 +74,9 @@
     background: url(../images/protal-icon-img.png) no-repeat;
 }
 .protal-l-icon{background-position: 0 0}
+.protal-phone{background-position: -100px 0}
+.protal-phone-num{
+    width: 137px;
+    height: 16px;
+    background-position: -150px 0;
+}
