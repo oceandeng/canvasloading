@@ -1,0 +1,58 @@
+@import "../_variable.scss";
+@import "../_response.scss";
+
+.content-service{
+	padding : 58px 0;
+	background-color: $gf5;
+
+	.content{
+		li{
+			float: left;
+			width: 25%;
+			height: 460px;
+			background-color: $white;
+
+			dl{
+				height: 78px;
+				padding:18px 0 8px;
+				background-color: $tool-btn-color;
+				margin: 0px;
+				text-align:center;
+				i{
+					width: 40px;
+					height: 40px;
+					display: block;
+					margin: 0 auto;
+					background:url(../../images/bigpush/all.png) no-repeat;
+				}
+				dd{
+					font-size: 18px;
+					line-height:38px;
+					text-align: center;
+					margin: 0;
+					color: $white;
+				}
+				.alliance{
+					background-position: 0 0;
+				}
+			}
+
+			.product{
+				padding: 7px 20px 0 30px;
+
+				.product-one{
+					margin-top:30px;
+					h4{
+						margin: 0;
+						font-size: 12px;
+					}
+					span{
+						margin-top: 3px;
+						font-size: 12px;
+						line-height:26px;
+					}
+				}
+			}
+		}
+	}
+}
