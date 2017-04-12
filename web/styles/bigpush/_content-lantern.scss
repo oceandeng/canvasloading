@@ -1,11 +1,12 @@
 @import "../_variable.scss";
 @import "../_response.scss";
+@import "../_mixin.scss";
 
 .bigpush{
 	.content-lantern{
 		background-color: $white;
 		.left-header{
-			padding :0 96px 0 100px;
+			padding :0 96px 0 96px;
 		}
 		.right{
 			margin-top: 32px;
@@ -25,6 +26,10 @@
 			margin: 0;
 			font-weight: normal;
 		}
+		.contact{
+			@include blue-btn(32px);
+			margin: 40px 0;
+		}
 		.company{
 			font-size: 18px;
 			line-height:36px;
@@ -34,7 +39,7 @@
 			color: #63bded;
 		}
 		.layer-btn{
-			margin: 40px 0 12px;
+			margin-bottom: 12px;
 			display: block;
 		}
 		.find{
