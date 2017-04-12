@@ -1,69 +1,88 @@
 @import "../_variable.scss";
 @import "../_response.scss";
 @import "../base.scss";
+.bigpush{
+	.content-superiority{
+		.top{
+			padding: 46px 0 80px;
 
-.content-superiority{
-	.top{
-		padding: 46px 0 80px;
-
-		p{
-			text-align:center;
-			font-size: 12px;
-			line-height:12px;
-			color: #5f6367;
-		}
-		h3{
-			text-align: center;
-			font-size: 30px;
-			line-height:70px;
-			color: #373d41;
-		}
-	}
-	.comparison{
-		padding-bottom:86px;
-		width: 80.52%;
-		margin: 0 auto;
-		li{
-			width: 25%;
-			float: left;
-			position: relative;
-			.backdrop{
-				width: 100%;
-				height:93px;
-			}
-			i{
-				display:block;
-				background: url(../../images/bigpush/all.png) no-repeat;
-			}
-			.magnify{
-				width: 55px;
-				height:55px;
-				padding-top: 12px;
-				background-position: 0 -38px;
-				margin: 0 auto;
-			}
 			p{
-				text-align: center;
-				font-size: 16px;
-				line-height:50px;
-				color: #333;
-				font-weight: bold;
-			}
-			span{
-				width: 61%;
-				display: block;
-				text-align: center;
-				margin: 0 auto;
+				text-align:center;
 				font-size: 12px;
-				line-height:24px;
-				color: #666;
+				line-height:12px;
+				color: #5f6367;
 			}
-			em{
-				position: absolute;
-				top:0;
-				right:-1px;
-				height:197px;
-				border-left:1px solid $gf2;
+			h3{
+				text-align: center;
+				font-size: 30px;
+				line-height:70px;
+				color: #373d41;
+			}
+		}
+		.comparison{
+			padding-bottom:86px;
+			width: 80.52%;
+			margin: 0 auto;
+			li{
+				width: 25%;
+				float: left;
+				position: relative;
+				.backdrop{
+					width: 100%;
+					height:93px;
+				}
+				i{
+					display:block;
+					margin: 0 auto;
+					background: url(../../images/bigpush/all.png) no-repeat;
+				}
+				.magnify{
+					width: 55px;
+					height:55px;
+					padding-top: 12px;
+					background-position: 0 -38px;
+				}
+				.treasurebox{
+					width: 60px;
+					height:60px;
+					padding-top: 7px;
+					background-position: -55px -43px;
+				}
+				.network{
+					width: 54px;
+					height:64px;
+					padding-top: 3px;
+					background-position: -115px -47px;
+				}
+				.optimize{
+					width: 56px;
+					height:56px;
+					padding-top: 11px;
+					background-position: -170px -39px;
+				}
+				p{
+					text-align: center;
+					font-size: 16px;
+					line-height:50px;
+					color: #333;
+					font-weight: bold;
+				}
+				span{
+					width: 61%;
+					display: block;
+					text-align: center;
+					margin: 0 auto;
+					font-size: 12px;
+					line-height:24px;
+					color: #666;
+				}
+				em{
+					position: absolute;
+					top:0;
+					right:-1px;
+					height:197px;
+					border-left:1px solid $gf2;
+				}
 			}
 		}
 	}

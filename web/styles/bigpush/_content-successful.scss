@@ -1,67 +1,95 @@
 @import "../mixin.scss";
 @import "../_variable.scss";
-
-.content-successful{
-	background-color: $gf5;
-	padding:60px 0 20px;
-	.company{
-		padding-bottom: 46px;
-	}
-	h3{
-		font-size: 30px;
-		line-height:42px;
-		text-align: center;
-		color: $main-head-h1-color;
-	}
-	.message{
-		width: 66%;
-		height: 480px;
-		text-align:center;
-		float: left;
-		li{
-			width: 44%;
-			margin: 46px 6% 0 0;
-			float: left;
-			background-color: $white;
-			height: 154px;
-			padding-top: 40px;
-			p{
-				font-size: 18px;
-				line-height:24px;
-				color: #5c5c5c;
-				text-align: center;
-				font-weight: bold;
-			}
-			.basis{
-				@include blue-btn(30px);
-				margin: 22px 0;
-			}
-			.look{
-				background-color: $tool-btn-color;
-				font-size: 16px;
-				line-height:54px;
-				color: $white;
-				cursor: pointer;
-			}
+.bigpush{
+	.content-successful{
+		background-color: $gf5;
+		padding:60px 0 20px;
+		.company{
+			padding-bottom: 46px;
 		}
-	}
-	.code{
-		width: 434px;
-		height: 434px;
-		float: left;
-		margin-top: 46px;
-		background: $white url(../../images/bigpush/rim.png) no-repeat 86px 64px;
-		.codeImg{
-			width: 216px;
-			height: 216px;
-			display: block;
-			margin: 85px 0 0 110px;
+		h3{
+			font-size: 30px;
+			line-height:42px;
+			text-align: center;
+			color: $main-head-h1-color;
 		}
-		p{
-			margin-top: 64px;
+		.message{
+			width: 66%;
+			height: 480px;
 			text-align:center;
-			font-size: 16px;
-			color:#a0a0a0;
+			float: left;
+			li{
+				width: 44%;
+				margin: 46px 6% 0 0;
+				float: left;
+				background-color: $white;
+				height: 154px;
+				padding-top: 40px;
+				p{
+					font-size: 18px;
+					line-height:24px;
+					color: #5c5c5c;
+					text-align: center;
+					font-weight: bold;
+				}
+				.basis{
+					height: 30px;
+				    line-height: 30px;
+				    text-align: center;
+				    background: none;
+				    border: 1px solid $light-blue;
+				    display: inline-block;
+				    padding: 0 30px;
+				    border-radius: 15px;
+				    color: $light-blue;
+					margin: 22px 0;
+				}
+				.look{
+					background-color: $tool-btn-color;
+					font-size: 16px;
+					line-height:54px;
+					color: $white;
+					cursor: pointer;
+				}
+				.otherbasis{
+					height: 30px;
+				    line-height: 30px;
+				    text-align: center;
+				    background: none;
+				    border: 1px solid $light-green;
+				    display: inline-block;
+				    padding: 0 30px;
+				    border-radius: 15px;
+				    color: $light-green;
+					margin: 22px 0;
+				}
+				.otherlook{
+					background-color: $light-green;
+					font-size: 16px;
+					line-height:54px;
+					color: $white;
+					cursor: pointer;
+				}
+			}
+		}
+		.code{
+			width: 434px;
+			height: 434px;
+			float: left;
+			margin-top: 46px;
+			background: $white url(../../images/bigpush/rim.png) no-repeat 86px 64px;
+			.codeImg{
+				width: 216px;
+				height: 216px;
+				display: block;
+				margin: 85px 0 0 110px;
+			}
+			p{
+				margin-top: 64px;
+				text-align:center;
+				font-size: 16px;
+				color:#a0a0a0;
+			}
 		}
 	}
 }

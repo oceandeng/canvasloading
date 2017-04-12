@@ -3,3 +3,7 @@
 @import "./_content-service.scss";
 @import "./_content-successful.scss";
 @import "./_content-superiority.scss";
+
+.bigpush{
+	ul,li,dt,dd,dl,h1, h2, h3, h4, h5, h6,p{list-style-type: none; margin:0; padding: 0}
+}

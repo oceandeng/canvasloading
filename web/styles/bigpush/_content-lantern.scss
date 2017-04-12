@@ -1,44 +1,47 @@
 @import "../_variable.scss";
 @import "../_response.scss";
 
-.content-lantern{
-	background-color: $white;
-	.left-header{
-		padding :0 96px 0 100px;
-	}
-	.right{
-		margin-top: 32px;
-		img{
-			width: 100%;
-			height:100%;
+.bigpush{
+	.content-lantern{
+		background-color: $white;
+		.left-header{
+			padding :0 96px 0 100px;
 		}
-	}
-	h1{
-		font-size: 58px;
-		line-height: 58px;
-		margin: 52px 0 0 0;
-	}
-	h2{
-		font-size: 36px;
-		line-height : 90px;
-		margin: 0;
-		font-weight: normal;
-	}
-	.company{
-		font-size: 20px;
-		line-height:36px;
-		margin: 0;
-		border-top: 3px solid #d5eefa;
-		border-bottom: 3px solid #d5eefa;
-		color: #63bded;
-	}
-	.layer-btn{
-		margin: 40px 0 12px;
-	}
-	.find{
-		font-size: 14px;
-		line-height : 30px;
-		margin: 0 0 70px 0;
-		padding-right:48px;
+		.right{
+			margin-top: 32px;
+			img{
+				width: 100%;
+				height:100%;
+			}
+		}
+		h1{
+			font-size: 58px;
+			line-height: 58px;
+			margin: 52px 0 0 0;
+		}
+		h2{
+			font-size: 36px;
+			line-height : 90px;
+			margin: 0;
+			font-weight: normal;
+		}
+		.company{
+			font-size: 18px;
+			line-height:36px;
+			margin: 0;
+			border-top: 3px solid #d5eefa;
+			border-bottom: 3px solid #d5eefa;
+			color: #63bded;
+		}
+		.layer-btn{
+			margin: 40px 0 12px;
+			display: block;
+		}
+		.find{
+			font-size: 14px;
+			line-height : 30px;
+			margin: 0 0 70px 0;
+			padding-right:48px;
+		}
 	}
 }
