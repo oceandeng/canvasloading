@@ -6,7 +6,7 @@ body{
     background: #fff;
 }
 a{text-decoration: none}
-ul,li{list-style-type: none; margin:0; padding: 0}
+ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
 .clearfix{
     *zoom: 1;
 }
