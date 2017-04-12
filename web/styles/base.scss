@@ -6,8 +6,12 @@ body{
     background: #fff;
 }
 a{text-decoration: none}
+<<<<<<< HEAD
 ul,li{list-style-type: none; margin:0; padding: 0}
 h1, h2, h3, h4, h5, h6 {font-weight: normal}
+=======
+ul,li,p,h1,h2,h3,h4,h5,h6,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
+>>>>>>> add7e235bdf5b06fff2e093ddbd465129e312ee8
 .clearfix{
     *zoom: 1;
 }

@@ -1,22 +1,27 @@
 @import "../_variable.scss";
 @import "../_response.scss";
+@import "../base.scss";
+@import "../variable", "../mixin";
 
 .content-service{
 	padding : 58px 0;
 	background-color: $gf5;
 
 	.content{
+		.mr60{
+			margin-right :4.69%;
+		}
 		li{
 			float: left;
-			width: 25%;
+			width: 21.3%;
 			height: 460px;
 			background-color: $white;
+			position: relative;
 
 			dl{
 				height: 78px;
 				padding:18px 0 8px;
 				background-color: $tool-btn-color;
-				margin: 0px;
 				text-align:center;
 				i{
 					width: 40px;
@@ -29,7 +34,6 @@
 					font-size: 18px;
 					line-height:38px;
 					text-align: center;
-					margin: 0;
 					color: $white;
 				}
 				.alliance{
@@ -38,19 +42,30 @@
 			}
 
 			.product{
-				padding: 7px 20px 0 30px;
+				padding: 14px 20px 0 30px;
 
 				.product-one{
-					margin-top:30px;
+					margin-top:23px;
 					h4{
-						margin: 0;
 						font-size: 12px;
+						padding-bottom: 3px;
 					}
 					span{
-						margin-top: 3px;
 						font-size: 12px;
 						line-height:26px;
+						display: inline-block;
 					}
+				}
+			}
+			.bott{
+				text-align: center;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				bottom: 0;
+				margin-bottom: 28px;
+				.more{
+					@include blue-btn(32px);
 				}
 			}
 		}
