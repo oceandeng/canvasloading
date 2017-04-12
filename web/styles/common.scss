@@ -18,6 +18,10 @@
         width: $main-width;
         height: 60px;
         margin: 0 auto;
+
+        @media screen and (min-width: 1500px){
+            width: $main-big-width;
+        }
     }
 
     .menu-body{
@@ -112,9 +116,12 @@
     width: 200px;
     top: 0;
     left: 0;
-    border-left: 1px solid $g-border-color;
-    border-bottom: 1px solid $g-border-color;
 
+    .left-tool-body{
+        padding: 0 0 0 10px;
+        margin: 0 0 0 -10px;
+        background: url(../images/protal/protal-icon-img.png) no-repeat -290px -150px;
+    }
     .l-tool-tit{
         width: 200px;
         height: 160px;
@@ -204,4 +211,16 @@
 
 /**
  * protal left-tool-bar end
+ */
+
+/**
+ * right content public style start
+ */
+.right-content{
+    margin-left: 200px;
+    min-height: 1000px;
+}
+
+/**
+ * right content public style end
  */

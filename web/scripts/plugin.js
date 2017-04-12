@@ -94,25 +94,26 @@
             this.$dom = $(dom)
             this.$item = this.$dom.find(options.itemClass)
             this.len = this.$item.size()
-            this.index = 1
+            this.index = 0
             this.picTimer = null
-            this.speed = 3000
+            this.speed = 5000
             this.$dotWrap = this.$dom.find(options.slideWrap).find(options.mainWrap)
         }
 
         MainSlider.prototype.init = function(){
             this.addDot()
             this.eventFn()
+            this.autoPlay()
         }
         MainSlider.prototype.eventFn = function(){
             var _this = this
 
             this.$dotWrap.find('.s-dot').on('click', function(){
                 var $_this = $(this);
-                this.index = $_this.index();
+                _this.index = $_this.index();
 
                 $_this.addClass('active').siblings().removeClass('active')
-                _this.go(this.index);
+                _this.go(_this.index);
             })
         }
         MainSlider.prototype.addDot = function(){
@@ -141,15 +142,21 @@
         MainSlider.prototype.go = function(index){
             this.$item.hide()
             this.$item.eq(index).fadeIn()
-
+            this.autoPlay()
         }
         MainSlider.prototype.autoPlay = function(){
             var _this = this;
 
+            clearInterval(this.picTimer);
             this.picTimer = setInterval(function(){
-                _this.index < _this.len && _this.index++
+                if(_this.index < _this.len - 1)
+                    _this.index++
+                else
+                    _this.index = 0
 
-                console.log(_this.index);
+                _this.$dotWrap.find('.s-dot').removeClass('active')
+                _this.$dotWrap.find('.s-dot').eq(_this.index).addClass('active')
+
                 _this.go(_this.index)
             }, _this.speed)
         }
@@ -182,15 +189,16 @@
          }
 
          SolutionSlide.prototype.init = function(){
-             this.initClass()
+             this.initStyle()
              this.event()
              this.refresh()
          }
-         SolutionSlide.prototype.initClass = function(){
-             var sonW = this.$item.width(),
-                 sonLen = this.$item.size()
+         SolutionSlide.prototype.initStyle = function(){
+            var itemW = this.$this.width() / 5;
+            this.$item.width(itemW)
 
-            this.$wrap.width(sonW * sonLen)
+            var sonLen = this.$item.size()
+            this.$wrap.width(itemW * sonLen)
         }
         SolutionSlide.prototype.event = function(){
             var _this = this
@@ -213,7 +221,8 @@
         SolutionSlide.prototype.refresh = function(){
             var _this = this
             $(window).on('resize', function(){
-                _this.initClass()
+                _this.initStyle()
+                _this.moveTo(0)
             })
         }
 

@@ -7,6 +7,7 @@ body{
 }
 a{text-decoration: none}
 ul,li{list-style-type: none; margin:0; padding: 0}
+h1, h2, h3, h4, h5, h6 {font-weight: normal}
 .clearfix{
     *zoom: 1;
 }
@@ -28,6 +29,10 @@ ul,li{list-style-type: none; margin:0; padding: 0}
     width: $main-width;
     margin: 0 auto;
     position: relative;
+
+    @media screen and (min-width: 1500px){
+        width: $main-big-width;
+    }
 }
 .f16{font-size: 16px}
 .f20{font-size: 20px}
@@ -45,6 +50,7 @@ ul,li{list-style-type: none; margin:0; padding: 0}
 .mb60{margin-bottom: 60px}
 .mb20{margin-bottom: 20px}
 .mb30{margin-bottom: 30px}
+.pb80{padding-bottom: 80px !important}
 .bold{font-weight: bold}
 .bg-f9{background-color: $bg-f9 !important}
 .bg-f2{background-color: $gf2 !important}

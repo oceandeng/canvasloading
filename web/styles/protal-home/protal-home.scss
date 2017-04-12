@@ -1,9 +1,6 @@
 @import "../variable", "../mixin";
 
 .protal-main-content{
-    margin-left: 200px;
-    min-height: 1000px;
-
     .protal-part-body{
         border-left: 1px solid $g-border-color;
     }

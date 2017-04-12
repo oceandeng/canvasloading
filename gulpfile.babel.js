@@ -62,11 +62,11 @@ gulp.task('lint', lint(app + '/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
 gulp.task('html', ['styles', 'scripts'], () => {
-  return gulp.src(app + '/*.html')
+  return gulp.src(app + '/**/*.html')
     .pipe($.useref({searchPath: ['.tmp', app, '.']}))
-    .pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.cssnano()))
-    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+    .pipe($.if('**/*.js', $.uglify()))
+    .pipe($.if('**/*.css', $.cssnano()))
+    .pipe($.if('**/*.html', $.htmlmin({collapseWhitespace: false})))
     .pipe(gulp.dest('dist'));
 });
 
@@ -168,7 +168,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest(app));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

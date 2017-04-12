@@ -1,6 +1,5 @@
 .cloud-service .card-area {
     margin: 82px auto 0;
-    width: 1280px;
     height: 560px;
 }
 .cloud-service .card-area .bg-e8e8e8{
@@ -206,13 +205,16 @@
 }
 
 .cloud-service .card-area .card-item .card .card-content .other-info .other-info-list {
-    width: 160px;
+    width: 27%;
     height: 70px;
     background: #f2f2f2;
     margin-right: 25px;
     padding: 0 0 0 10px;
     position: relative;
 
+    @media screen and (min-width: 1500px){
+        width: 28%;
+    }
     .c-a-arrow{
         position: absolute;
         right: 10px;
