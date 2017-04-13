@@ -156,16 +156,23 @@
                 text-align: left;
                 cursor: pointer;
 
-                &:hover{
-                    color: $drak-blue;
+                .l-first-link{
+                    color: $black;
+                    &:hover{
+                        color: $drak-blue;
+                    }
                 }
+
             }
             .active{
-                color: $white;
                 background: url(../images/protal/protal-icon-img.png) no-repeat -100px -50px;
-
-                &:hover{
+                
+                .l-first-link{
                     color: $white;
+
+                    &:hover{
+                        color: $white;
+                    }
                 }
             }
             .l-sec-content{
