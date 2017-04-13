@@ -1,0 +1,190 @@
+@import "../_variable";
+@import "../_mixin";
+
+.google{
+	ul,li,dt,dd,dl,h1, h2, h3, h4, h5, h6,p{list-style-type: none; margin:0; padding: 0}
+	.google-top{
+		background:url(../../images/google/curve.jpg) no-repeat 240px 0;
+		.banner-left{
+			.adwords{
+				display:block;
+				margin-top:106px;
+			}
+			h1{
+				font-size:66px;
+				line-height:108px;
+			}
+			h2{
+				font-size:30px;
+				line-height:40px;
+			}
+			.declare{
+				width: 400px;
+				font-size:20px;
+				line-height:40px;
+				color:$tool-btn-color;
+				margin-top: 25px;
+				span{
+					width:28px;
+					height: 28px;
+					line-height:28px;
+					text-align: center;
+					background-color: $tool-btn-color;
+					color : $white;
+					border-radius: 5px;
+					display: inline-block;
+					margin-right: 6px;
+				}
+			}
+			.gain{
+				width: 160px;
+				margin-top: 20px;
+				@include blue-btn(40px);
+			}
+		}
+		.banner-right{
+			img{
+				display: block;
+				margin-top: 64px;
+			}
+		}
+	}
+	.google-adwords{
+		display:block;
+		margin:52px auto 0;
+	}
+	.advantage{
+		h3{
+			font-size:36px;
+			line-height:164px;
+			margin: 7px 0 0;
+			text-align: center;
+			color:$main-head-h1-color;
+			span{
+				color: #333;
+				margin : 0 5px;
+			}
+			em{
+				font-style: normal;
+				color: #919191;
+			}
+		}
+		.step{
+			li{
+				float: left;
+				width: 33.33%;
+				text-align:center;
+				img{
+					display:block;
+					margin: 0 auto;
+				}
+				.more{
+					font-size: 18px;
+					line-height:64px;
+					color: #232933;
+					margin-top: 7px;
+				}
+				dd{
+					font-size: 12px;
+					line-height:26px;
+					color: #999;
+				}
+			}
+		}
+		.map{
+			display: block;
+			margin: 63px auto 80px;
+		}
+	}
+	.capture{
+		background-color: $gf5;
+		text-align:center;
+		h3{
+			font-size: 30px;
+			line-height:30px;
+			padding: 78px 0 10px;
+			color: #373d41;
+		}
+		.rarity{
+			margin-bottom: 59px;
+			display: inline-block;
+			font-size: 12px;
+			color: #5f6367;
+		}
+		h4{
+			font-size: 20px;
+			line-height:42px;
+			color: $main-head-h1-color;
+		}
+		p{
+			color: #999;
+			font-size: 14px;
+			line-height:26px;
+			em{
+				font-style: normal;
+				color: #d51940;
+			}
+		}
+		.small-shadow{
+			display: block;
+			margin: 28px auto;
+		}
+		.procedure{
+			li{
+				float: left;
+				width: 25%;
+				text-align: center;
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+				.title{
+					font-size: 16px;
+					line-height:88px;
+					color: #101010;
+				}
+			}
+		}
+		h2{
+			font-size: 30px;
+			line-height:166px;
+			color: #df5043;
+			padding-bottom:12px;
+		}
+	}
+	.demonstrate{
+		padding: 80px 0;
+		h3{
+			font-size: 30px;
+			margin-bottom: 74px;
+			text-align: center;
+			color: $main-head-h1-color;
+		}
+		.show-trophy{
+			li{
+				float: left;
+				width: 33.33%;
+				text-align: center;
+				img{
+					display: block;
+					margin:0 auto;
+				}
+				.other{
+					margin: 20px auto 8px;
+				}
+				span{
+					font-size: 14px;
+					line-height:46px;
+					margin-top: 23px;
+					color: #a0a0a0;
+					display: inline-block;
+				}
+				p{
+					color: #414141;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
