@@ -51,11 +51,14 @@ ul,li,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
 .mb60{margin-bottom: 60px}
 .mb20{margin-bottom: 20px}
 .mb30{margin-bottom: 30px}
+.pt80{padding-top: 80px}
 .pb80{padding-bottom: 80px !important}
 .bold{font-weight: bold}
 .bg-f9{background-color: $bg-f9 !important}
 .bg-f2{background-color: $gf2 !important}
 .bg-f3{background-color: $bg-f3 !important}
+.g333{color: $g333}
+.g666{color: $g666}
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -89,3 +92,8 @@ ul,li,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
 .blue-btn{
     @include blue-btn();
 }
+.top-blue-btn{
+    @include blue-btn(40px);
+}
+.gray-col{background: $gf2}
+.sub-gray-col{background: $gf2}

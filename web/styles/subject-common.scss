@@ -1,0 +1,59 @@
+@import "variable", "response", "mixin";
+
+.grid-0-public-footer{
+	.content-prepare{
+		background-color: $gf5;
+		.title{
+			padding: 25px 0 48px;
+			border-top: 5px solid $tool-btn-color;
+			border-bottom: 1px solid $gd-border-color;
+			h4{
+				text-align: center;
+				font-size: 26px;
+				line-height :110px;
+				color: #616161;
+			}
+			i{
+				width: 26px;
+				height: 40px;
+				display:block;
+				margin: 0 auto;
+				background: url(../../images/bigpush/all.png) no-repeat 0 -125px;
+			}
+		}
+		.referral{
+			height: 184px;
+			padding: 81px 0 111px;
+			.counselor{
+				width: 950px;
+				margin: 0 auto;
+				img{
+					float: left;
+				}
+				.right{
+					margin-left:73px;
+					width: 590px;
+					float: left;
+					h4{
+						font-size: 26px;
+						line-height:26px;
+						color: #3a3a3a;
+					}
+					p{
+						font-size: 12px;
+						line-height:30px;
+						margin: 30px 0 28px;
+						color: #212121;
+					}
+					.gain{
+						@include blue-btn(40px);
+					}
+				}
+			}
+		}
+	}
+}
+
+.top-shadow-bg{
+    background: url(../images/b-shadow-border.png) no-repeat center bottom;
+}
