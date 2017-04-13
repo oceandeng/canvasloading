@@ -157,13 +157,16 @@
                 cursor: pointer;
 
                 &:hover{
-                    color: $white;
-                    background: url(../images/protal/protal-icon-img.png) no-repeat -100px -50px;
+                    color: $drak-blue;
                 }
             }
             .active{
                 color: $white;
                 background: url(../images/protal/protal-icon-img.png) no-repeat -100px -50px;
+
+                &:hover{
+                    color: $white;
+                }
             }
             .l-sec-content{
                 padding: 10px 20px;

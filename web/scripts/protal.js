@@ -64,7 +64,7 @@
             this.$tit.on('mouseenter', function(){
                 var $_this = $(this)
 
-                $_this.addClass('active').parent().siblings().find(options.tit).removeClass('active')
+                // $_this.addClass('active').parent().siblings().find(options.tit).removeClass('active')
                 $_this.next().show()
                 $_this.parent().siblings().find(options.con).hide()
             })
