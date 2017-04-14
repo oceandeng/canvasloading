@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>中企动力</title>
-    <link rel="stylesheet" href="/styles/base.css">
-    <link rel="stylesheet" href="/styles/common.css">
-    <link rel="stylesheet" href="/styles/bigpush/bigpush.css">
+    <!-- build:css styles/common.css -->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <!-- endbuild -->
+    <!-- build:css styles/bigpush/bigpush.css -->
+    <link rel="stylesheet" href="./styles/bigpush/bigpush.css">
+    <!-- endbuild -->
 </head>
 <body>
 <!-- body start -->
-<div class="page-layout page-main-content bigpush">
+<div class="page-layout page-main-content">
+    <div class="bigpush">
     <!-- topbar start -->
     <div class="top-menu">
         <div class="topbar-body">
@@ -442,14 +447,16 @@
         </div>
     </div>
     <!-- footer end -->
-
-
+    </div>
 </div>
 <!-- script quote start -->
 <script src="../bower_components/jquery/jquery.min.js" charset="utf-8"></script>
 
+<!-- build:js scripts/common.min.js -->
+<script src="./scripts/public.js" charset="utf-8"></script>
 <script src="./scripts/plugin.js" charset="utf-8"></script>
 <script src="./scripts/main.js" charset="utf-8"></script>
+<!-- endbuild -->
 <!-- script quote end -->
 </body>
 </html>

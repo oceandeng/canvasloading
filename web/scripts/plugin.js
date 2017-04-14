@@ -232,6 +232,32 @@
          })
      }
 
+     /**
+      * tab 选项卡
+      */
+    var pTabDefault = {
+        titWrap: '.youyi-tab-tit',
+        conWrap: '.youyi-tab-content',
+        titItem: '.tit-item',
+        conItem: '.con-item-row'
+    };
+    $.fn.publicTab = function(options){
+        var options = $.extend({}, pTabDefault, options),
+            _this = this,
+            $titItem = _this.find(options.titWrap).find(options.titItem),
+            $conItem = _this.find(options.conWrap).find(options.conItem);
+
+        return this.each(function(){
+            $titItem.on('mouseenter', function(){
+                var $_this = $(this),
+                    index = $_this.index();
+
+                $_this.addClass('active').siblings().removeClass('active')
+                $conItem.eq(index).show().siblings().hide()
+            })
+        })
+    }
+
     /**
      * footer 二维码切换导航
      */
