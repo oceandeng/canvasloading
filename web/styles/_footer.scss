@@ -157,3 +157,28 @@
     }
 
 }
+.drak-footer{
+    .footer-body{
+        background-color: #f5f5f6;
+    }
+    .footer-map-menu{
+        .footer-map-menu-item{
+            h5{
+                color:#373d41;
+            }
+            li{
+                a{
+                    color : #73777a;
+                }
+            }
+        }
+    }
+    .footer-menu a{padding:0 12px; color: $footer-a-color;}
+    .hotLine{
+        .hot-content{
+            p{
+                color : #0f1e2b;
+            }
+        }
+    }
+}
