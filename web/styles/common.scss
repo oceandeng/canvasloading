@@ -148,6 +148,17 @@
         padding: 0 0 0 10px;
         margin: 0 0 0 -10px;
         background: url(../images/protal/protal-icon-img.png) no-repeat -290px -150px;
+
+        .l-desc-body{
+            border-bottom: 1px solid $g-border-color;
+            border-left: 5px solid $white;
+        }
+        .active{
+            border-left: 5px solid $light-blue;
+            a{
+                color: $light-blue;
+            }
+        }
     }
     .l-tool-tit{
         width: 200px;
@@ -169,50 +180,76 @@
     }
     .l-tool-menu{
 
+        .p-active{
+            .l-first-tit{
+                color: $light-blue;
+                border-left: 5px solid $light-blue !important;
+            }
+            .l-sec-content{
+                display: block !important;
+
+                .l-sec-item{
+
+                    a{
+                        color: $light-blue !important;
+
+                        &:hover{
+                            color: $drak-blue;
+                        }
+                    }
+                }
+                .s-active{
+                    background: url(../images/protal/protal-icon-img.png) no-repeat -100px -50px;
+                    a{
+                        color: $white !important;
+                    }
+                }
+            }
+        }
 
         .l-first-item{
             border-bottom: 1px solid $g-border-color;
 
             .l-first-tit{
                 display: block;
-                margin-left: -8px;
-                padding: 0 0 0 28px;
                 font-size: 16px;
                 height: 56px;
                 line-height: 60px;
+                padding-left: 20px;
                 text-align: left;
                 cursor: pointer;
+                border-left: 5px solid $white;
+                border-bottom: 1px solid $g-border-color !important;
 
                 .l-first-link{
                     color: $black;
+
                     &:hover{
                         color: $drak-blue;
                     }
                 }
-                a{
-                    color: $white;
-                }
 
             }
             .active{
-                background: url(../images/protal/protal-icon-img.png) no-repeat -100px -50px;
+                border-left: 5px solid $light-blue;
 
                 .l-first-link{
-                    color: $white;
+                    color: $light-blue;
 
                     &:hover{
-                        color: $white;
+                        color: $drak-blue;
                     }
                 }
             }
             .l-sec-content{
-                padding: 10px 20px;
+                padding: 10px 0 10px 0;
                 display: none;
 
                 .l-sec-item{
-                    line-height: 20px;
+                    height: 32px;
+                    line-height: 32px;
                     font-size: 12px;
-                    margin: 5px 0;
+                    padding: 0 20px 0 25px;
 
                     a{
                         color: $black;
