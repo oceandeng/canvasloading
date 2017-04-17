@@ -1,0 +1,100 @@
+@import "normalize", "mixin", "variable";
+
+body{
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+    background: #fff;
+}
+a{text-decoration: none}
+h1, h2, h3, h4, h5, h6 {font-weight: normal}
+ul,li,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
+.clearfix{
+    *zoom: 1;
+}
+.clearfix:before, .clearfix:after{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.clearfix:after{
+    clear: both;
+}
+.f-left{float: left}
+.f-right{float: right}
+.block{display: block !important}
+.layout{
+    padding: 1px 0;
+}
+.main-wrap{
+    width: $main-width;
+    margin: 0 auto;
+    position: relative;
+
+    @media screen and (min-width: 1500px){
+        width: $main-big-width;
+    }
+}
+.f16{font-size: 16px}
+.f20{font-size: 20px}
+.f18{font-size: 18px}
+.f24{font-size: 24px}
+.mt10{margin-top: 10px}
+.mt15{margin-top: 15px}
+.mt20{margin-top: 20px}
+.mt30{margin-top: 30px}
+.mt50{margin-top: 50px}
+.mt60{margin-top: 60px}
+.mt100{margin-top: 100px}
+.mt150{margin-top: 150px}
+.ml20{margin-left: 20px}
+.mb50{margin-bottom: 50px}
+.mb60{margin-bottom: 60px}
+.mb20{margin-bottom: 20px}
+.mb30{margin-bottom: 30px}
+.pt80{padding-top: 80px}
+.pb80{padding-bottom: 80px !important}
+.bold{font-weight: bold}
+.bg-f9{background-color: $bg-f9 !important}
+.bg-f2{background-color: $gf2 !important}
+.bg-f3{background-color: $bg-f3 !important}
+.g333{color: $g333}
+.g666{color: $g666}
+.g999{color: $g999}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+.animated.hinge {
+    animation-duration: 2s;
+}
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+    animation-duration: .75s;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+.blue-btn{
+    @include blue-btn();
+}
+.top-blue-btn{
+    @include blue-btn(40px);
+}
+.gray-col{background: $gf2}
+.sub-gray-col{background: $gf2}

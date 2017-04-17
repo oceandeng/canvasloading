@@ -27,13 +27,16 @@
      */
     var topMenuDefault ={
         itemClass: '.menu-item',
-        contentClass: '.menu-detail'
+        contentClass: '.menu-detail',
+        subconClass: '.menu-subcontent',
+        subitemClass: '.menu-subitem'
     }
     $.fn.topMenu = function(options){
         var options = $.extend({}, topMenuDefault, options),
             $this = this,
             mB = '<div class="top-border"></div>',
-            $item = $this.find(options.itemClass);
+            $item = $this.find(options.itemClass),
+            pw = $this.outerWidth();
 
         return this.each(function(){
 
@@ -59,12 +62,37 @@
                 }
 
                 $tB.stop().animate({'width': _w,'left': _l})
-                $_this.find(options.contentClass).stop().slideDown()
+
+                var $subCon = $_this.find(options.contentClass),
+                    _iw = $subCon.attr('data-width');
+
+                if($subCon.size() != 0){
+                    
+                    var $subitem = $subCon.find(options.subitemClass),
+                        _is = $subitem.size();
+
+                    $subitem.css('width', _iw)
+
+                    var _cw = $subitem.outerWidth() * _is
+
+                    $subitem.last().css('border', 'none')
+                    $subCon.css({'width': _cw}).slideDown()
+
+                    var _ccw = $subCon.outerWidth()
+
+                    if(_ccw < pw){
+                        $subCon.css('left', _l)
+                    }else{
+                        $subCon.css('right', 0)
+                    }
+                }
 
             }).on('mouseleave', function(e){
-                var $_this = $(this);
-
-                $_this.find(options.contentClass).stop().slideUp()
+                var $_this = $(this)
+                
+                if(e.relatedTarget.className != 'top-border'){
+                    $_this.find(options.contentClass).hide()
+                }
             })
 
             // 下拉框事件

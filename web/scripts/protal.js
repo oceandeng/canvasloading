@@ -4,7 +4,7 @@
      */
      var leftToolBarDefault = {
          topEle: '.protal-body',
-         fEle: '#footer',
+         fEle: '.footer',
          tit: '.l-first-tit',
          con: '.l-sec-content'
      }

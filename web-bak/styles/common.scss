@@ -1,0 +1,265 @@
+@import "variable", "mixin", "response";
+@import "icon";
+@import "footer";
+
+/*
+    public topbar start
+ */
+.top-menu{
+    background: $topbar-color;
+    border-bottom: 1px solid $topbar-b-color;
+
+    &:hover{
+        background: $topbar-h-color;
+        border-color: $topbar-bh-color;
+    }
+
+    .topbar-box{
+        width: $main-width;
+        height: 60px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1500px){
+            width: $main-big-width;
+        }
+    }
+
+    .menu-body{
+        position: relative;
+
+        .top-border{
+            height: 3px;
+            position: absolute;
+            bottom: 0;
+            background:#3db1ea
+        }
+        .menu-content{
+            list-style-type: none;
+            margin: 0;
+            height: 60px;
+
+            .menu-item{
+                float: left;
+                height: 60px;
+                position: relative;
+
+                &:hover{
+
+                }
+                a{
+                    display: block;
+                    height: 20px;
+                    line-height: 20px;
+                    padding: 20px;
+                    color: $white;
+                }
+            }
+        }
+        .menu-detail{
+            padding: 20px;
+            position: absolute;
+            top: 61px;
+            right: 0;
+            display: none;
+            color: $white;
+            background: $topbar-drop-color;
+            z-index: 9;
+        }
+    }
+
+    .tool-body{
+        a{
+            color: $white;
+        }
+        .login-btn, .reg-btn{
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: $tool-btn-color;
+            margin: 15px 0 0 0;
+            &:hover{
+                background: $tool-btn-h-color;
+            }
+        }
+        .login-btn{
+            border-radius: 15px 0 0 15px;
+            padding:0 10px 0 20px;
+        }
+        .reg-btn{
+            border-radius: 0 15px 15px 0;
+            padding: 0 20px 0 10px;
+        }
+    }
+}
+/*
+    public topbar end
+ */
+
+/**
+ * footer topbar start
+ */
+.footer{
+    .footer-topbar{
+        height: 90px;
+        background: $g333;
+    }
+}
+/**
+ * footer topbar end
+ */
+
+/**
+ * protal left-tool-bar start
+ */
+.left-tool-bar{
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 0;
+
+    .left-tool-body{
+        padding: 0 0 0 10px;
+        margin: 0 0 0 -10px;
+        background: url(../images/protal/protal-icon-img.png) no-repeat -290px -150px;
+    }
+    .l-tool-tit{
+        width: 200px;
+        height: 160px;
+        background: $bg-blue;
+        padding-top: 1px;
+        position: relative;
+
+        h1{
+            font-size: 26px;
+            color: $white;
+            margin: 60px 0 0 20px;
+        }
+        .protal-l-icon{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+    .l-tool-menu{
+
+
+        .l-first-item{
+            border-bottom: 1px solid $g-border-color;
+
+            .l-first-tit{
+                display: block;
+                margin-left: -8px;
+                padding: 0 0 0 28px;
+                font-size: 16px;
+                height: 56px;
+                line-height: 60px;
+                text-align: left;
+                cursor: pointer;
+
+                .l-first-link{
+                    color: $black;
+                    &:hover{
+                        color: $drak-blue;
+                    }
+                }
+
+            }
+            .active{
+                background: url(../images/protal/protal-icon-img.png) no-repeat -100px -50px;
+
+                .l-first-link{
+                    color: $white;
+
+                    &:hover{
+                        color: $white;
+                    }
+                }
+            }
+            .l-sec-content{
+                padding: 10px 20px;
+                display: none;
+
+                .l-sec-item{
+                    line-height: 20px;
+                    font-size: 12px;
+                    margin: 5px 0;
+
+                    a{
+                        color: $black;
+                        &:hover{
+                            color: $light-blue;
+                        }
+                    }
+
+                }
+            }
+
+
+        }
+    }
+    .left-bar-phone{
+        margin: 30px 0 20px 0;
+        padding: 0 20px;
+        position: relative;
+
+        .p-tit{
+            position: absolute;
+            top: 0;
+            left: 50px;
+            margin: 0;
+            color: $gbbb;
+        }
+    }
+    .l-desc-body{
+        padding: 30px 20px 20px;
+
+        a{
+            color: $black;
+            &:hover{
+                color: $light-blue;
+            }
+        }
+        p{
+            margin: 5px 0;
+        }
+    }
+}
+
+/**
+ * protal left-tool-bar end
+ */
+
+/**
+ * right content public style start
+ */
+.right-content{
+    margin-left: 200px;
+    min-height: 1000px;
+}
+
+/**
+ * right content public style end
+ */
+
+/**
+ * content start
+ */
+ .content-group{
+     padding-top: 1px;
+     .col-main{
+         padding: 80px 0 0 0;
+     }
+     .zq-main-head{
+         h1{
+             color: $main-head-h1-color;
+             text-align: center;
+         }
+         p{
+             color: $main-head-p-color;
+             text-align: center;
+         }
+     }
+ }
+ /**
+  * content end
+  */

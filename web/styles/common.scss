@@ -37,11 +37,11 @@
             list-style-type: none;
             margin: 0;
             height: 60px;
+            position: relative;
 
             .menu-item{
                 float: left;
                 height: 60px;
-                position: relative;
 
                 &:hover{
 
@@ -56,14 +56,41 @@
             }
         }
         .menu-detail{
-            padding: 20px;
+            padding: 30px;
             position: absolute;
             top: 61px;
-            right: 0;
             display: none;
             color: $white;
-            background: $topbar-drop-color;
             z-index: 9;
+            background: $topbar-drop-color;
+            border-radius: 0 0 5px 5px;
+        }
+        .menu-subcontent{
+            .menu-subitem{
+                border-right: 1px solid #1a4261;
+                padding: 0 15px 0 20px;
+
+                h3{
+                    font-size: 14px;
+                    color: $white;
+                    font-weight: bold;
+                    text-align: left;
+                }
+                ul{
+                    text-align: left;
+                    li{
+                        a{
+                            color: $white;
+                            padding: 5px 0;
+                            font-size: 12px;
+
+                            &:hover{
+                                color: $light-blue;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -161,6 +188,9 @@
                     &:hover{
                         color: $drak-blue;
                     }
+                }
+                a{
+                    color: $white;
                 }
 
             }
