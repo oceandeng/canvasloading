@@ -1,12 +1,39 @@
 @import "variable", "response", "mixin";
-
+@-webkit-keyframes bounce-down {
+  25% {
+    -webkit-transform: translateY(-3px);
+  }
+  50%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(3px);
+  }
+}
+@keyframes bounce-down {
+  25% {
+    transform: translateY(-5px);
+  }
+  50%, 100% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+}
+.animate-bounce-down{
+	-webkit-animation: bounce-down 1.3s linear infinite;
+  			animation: bounce-down 1.3s linear infinite;
+}
 .grid-0-public-footer{
 	.content-prepare{
 		background-color: $gf5;
 		.title{
-			padding: 25px 0 48px;
+			padding: 25px 0 80px;
 			border-top: 5px solid $tool-btn-color;
 			border-bottom: 1px solid $gd-border-color;
+			position: relative;
+
 			h4{
 				text-align: center;
 				font-size: 26px;
@@ -14,10 +41,12 @@
 				color: #616161;
 			}
 			i{
+				position: absolute;
+				left: 50%;
 				width: 26px;
 				height: 40px;
 				display:block;
-				margin: 0 auto;
+				margin: 0 0 0 -13px;
 				background: url(../../images/bigpush/all.png) no-repeat 0 -125px;
 			}
 		}
@@ -55,6 +84,40 @@
 	}
 }
 
-.top-shadow-bg{
-    background: url(../images/b-shadow-border.png) no-repeat center bottom;
+.top-shadow-bg{background: url(../images/b-shadow-border.png) no-repeat center bottom}
+.short-shadow-bg{background: url(../images/shot-shadow-bg.png) no-repeat center bottom}
+.sub-top-banner{
+    overflow: hidden;
+
+    .top-header-body{
+        padding: 0 0 60px 0;
+
+        h1{
+            font-size: 60px;
+            margin: 80px 0 0 0;
+
+            span{
+                font-size: 30px;
+                margin: 0 0 0 40px;
+                color: $g666;
+            }
+        }
+
+        .btn-line{
+            margin: 30px 0;
+        }
+        p{
+            line-height: 24px;
+        }
+    }
+
+    .top-banner{
+
+        img{
+        }
+
+    }
+}
+.grid-0-btn{
+	text-align: center;
 }

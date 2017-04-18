@@ -14,9 +14,13 @@
 			li{
 				float: left;
 				width: 21.3%;
-				height: 460px;
 				background-color: $white;
 				position: relative;
+				height: 540px;
+
+				@media screen and (min-width: 1500px){
+					height: 460px;
+				}
 
 				dl{
 					height: 78px;
