@@ -39,10 +39,12 @@ ul,li,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
 .f18{font-size: 18px}
 .f24{font-size: 24px}
 .f30{font-size: 30px !important}
+.f50{font-size: 50px !important}
 .mt10{margin-top: 10px}
 .mt15{margin-top: 15px}
 .mt20{margin-top: 20px !important}
 .mt30{margin-top: 30px}
+.mt40{margin-top: 40px}
 .mt50{margin-top: 50px}
 .mt60{margin-top: 60px}
 .mt70{margin-top: 70px}
@@ -71,6 +73,7 @@ ul,li,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
 .bg-f9{background-color: $bg-f9 !important}
 .bg-f2{background-color: $gf2 !important}
 .bg-f3{background-color: $bg-f3 !important}
+.align-right{text-align: right !important}
 .g333{color: $g333}
 .g666{color: $g666}
 .g999{color: $g999}
@@ -112,3 +115,4 @@ ul,li,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
 }
 .gray-col{background: $gf2}
 .sub-gray-col{background: $gf2}
+.bg-f5{background: $gf5}
