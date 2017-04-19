@@ -1,5 +1,30 @@
 @import "variable", "response", "mixin";
-
+@-webkit-keyframes bounce-down {
+  25% {
+    -webkit-transform: translateY(-3px);
+  }
+  50%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(3px);
+  }
+}
+@keyframes bounce-down {
+  25% {
+    transform: translateY(-5px);
+  }
+  50%, 100% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+}
+.animate-bounce-down{
+	-webkit-animation: bounce-down 1.3s linear infinite;
+  			animation: bounce-down 1.3s linear infinite;
+}
 .grid-0-public-footer{
 	.content-prepare{
 		background-color: $gf5;
