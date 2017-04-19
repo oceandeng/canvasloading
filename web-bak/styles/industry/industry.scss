@@ -1,0 +1,80 @@
+@import "../variable", "../mixin";
+
+.info-body{
+    text-align: center;
+
+    .info-item-desc{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+.info-content{
+    .info-item-desc{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+.solution-manage-item{
+    text-align: center;
+
+    .oc-desc{
+        font-size: 18px;
+    }
+}
+
+.su-s-tit{
+    font-size: 20px;
+    color: $g666;
+    text-align: right;
+}
+
+.industry-icon{
+    display: inline-block;
+    background: url(../../images/industry/industry-icon.png) no-repeat;
+}
+
+.su-s-item{
+    text-align: left;
+}
+.su-s-rbar{
+    text-align: right;
+
+    .su-slide-btn{
+        .prev{background-position: 0 -300px; cursor: pointer;}
+        .next{background-position: -50px -300px; cursor: pointer;}
+    }
+}
+
+.indu-info-1{background-position: 0 0}
+.indu-info-2{background-position: -66px 0}
+.indu-info-3{background-position: -132px 0}
+.indu-info-4{background-position: -198px 0}
+.indu-info-5{background-position: -264px 0}
+.indu-info-6{background-position: -330px 0}
+
+.sm-icon-1{background-position: 0 -100px}
+.sm-icon-2{background-position: -250px -100px}
+.sm-icon-3{background-position: -500px -100px}
+
+.su-s-icon{
+    width: 140px;
+    height: 55px;
+    background-position: -450px 0;
+}
+
+.su-pot{
+    margin: 10px 0 0 0;
+
+    .su-pot-item{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #e9e9e9;
+        margin: 0 0 0 15px;
+        border-radius: 50%;
+    }
+    .active{
+        background: $light-blue;
+    }
+}

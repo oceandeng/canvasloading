@@ -89,5 +89,7 @@ $(function(){
     // 左侧菜单效果调用
     $('#leftToolBar').leftToolBar()
 
+    //industry slide
+    $('#industrySlider').industrySlider()
 
 })

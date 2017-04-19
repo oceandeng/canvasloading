@@ -14,7 +14,7 @@
     position: relative;
     float: left;
     width: 17%;
-    height: 545px;
+    height: 521px;
     background-color: transparent;
 }
 
@@ -62,14 +62,14 @@
 .cloud-service .card-area .card-item .card .card-content, .cloud-service .card-area .card-item .card .card-title {
     position: absolute;
     left: 0;
-    right: -1px;
+    right: 0;
     z-index: 1
 }
 
 .cloud-service .card-area .card-item .card .card-title {
     padding-top: 1px;
     transition: all .3s cubic-bezier(.4, 0, .2, 1), z-index 0s .12s;
-    height: 170px;
+    height: 145px;
     line-height: 26px;
     font-size: 14px;
     top: 0;
@@ -79,7 +79,7 @@
 
 .cloud-service .card-area .card-item .card .card-title .content {
     position: absolute;
-    bottom: 7px;
+    bottom: -2px;
     width: 100%
 }
 
@@ -132,7 +132,7 @@
 .cloud-service .card-area .card-item .card .card-content {
     height: 376px;
     position: absolute;
-    top: 170px
+    top: 145px;
 }
 
 .cloud-service .card-area .card-item .card .card-content.content-first .content-first-list {
@@ -212,9 +212,6 @@
     padding: 0 0 0 10px;
     position: relative;
 
-    @media screen and (min-width: 1500px){
-        width: 28%;
-    }
     .c-a-arrow{
         position: absolute;
         right: 10px;
@@ -254,13 +251,12 @@
     z-index: 100;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
     width: 49%;
-    height: 563px
+    height: 535px;
 }
 
 .cloud-service .card-area .card-item.active .card .card-title {
-    left: -1px;
     background-color: #3db1ea;
-    height: 185px;
+    height: 159px;
     top: -15px;
     border: none;
 }

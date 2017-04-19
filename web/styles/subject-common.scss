@@ -28,8 +28,9 @@
 .grid-0-public-footer{
 	.content-prepare{
 		background-color: $gf5;
+
 		.title{
-			padding: 25px 0 80px;
+			padding: 25px 0 80px !important;
 			border-top: 5px solid $tool-btn-color;
 			border-bottom: 1px solid $gd-border-color;
 			position: relative;
@@ -112,8 +113,10 @@
     }
 
     .top-banner{
+		text-align: center;
 
         img{
+        	display: inline-block;
         }
 
     }

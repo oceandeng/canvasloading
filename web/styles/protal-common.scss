@@ -67,10 +67,16 @@
             .protal-group-desc{
                 line-height: 30px;
                 margin: 30px 0;
+                color: $g999;
             }
         }
         .protal-group-img{
             text-align: center;
+            padding: 0 20px;
+
+            img{
+                width: 100%;
+            }
         }
     }
     .get-protal{
@@ -91,6 +97,8 @@
         }
         .get-protal-tit-wrap{
             text-align: center;
+            position: relative;
+            padding: 0 0 80px 0;
 
             .get-protal-tit{
                 text-align: center;
@@ -112,4 +120,14 @@
             }
         }
     }
+}
+
+.shock-arrow{
+    position: absolute;
+    left: 50%;
+    width: 26px;
+    height: 40px;
+    display: block;
+    margin: 0 0 0 -13px;
+    background: url(../images/bigpush/all.png) no-repeat 0 -125px;
 }
