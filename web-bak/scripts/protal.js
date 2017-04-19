@@ -4,9 +4,10 @@
      */
      var leftToolBarDefault = {
          topEle: '.protal-body',
-         fEle: '#footer',
+         fEle: '.footer',
          tit: '.l-first-tit',
-         con: '.l-sec-content'
+         con: '.l-sec-content',
+         toogle: true
      }
 
      $.fn.leftToolBar = function(options){
@@ -23,7 +24,7 @@
         LeftToolBar.prototype.init = function(){
             this.fixedFn()
             this.initStyle()
-            this.eventsFn()
+            options.toogle && this.eventsFn()
         }
         LeftToolBar.prototype.initStyle = function(){
             this.$tit.each(function(k, v){

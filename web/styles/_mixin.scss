@@ -20,6 +20,7 @@
     &:hover{
         background: $drak-blue;
         border: 1px solid $drak-blue;
+        transition: all .5s linear .1s;
     }
 }
 @mixin white-btn($h: 32px){
@@ -38,6 +39,7 @@
         background: $light-blue;
         border: 1px solid $light-blue;
         color: $white;
+        transition: all 1s linear .1s;
     }
 }
 @mixin green-btn($h: 32px){
