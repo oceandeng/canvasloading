@@ -363,6 +363,7 @@
             $ele: $hotActive,
             sonClass: '.h-a-i',
             toogleClass: '.h-a-i-i',
+            hideNew:true,
             needhide: false
         })
 
@@ -378,6 +379,7 @@
          * 公共伸缩函数
          * @param obj {object}
          * @param obj.$ele {object} 最外层jquey对象
+         * @param obj.hideNew {boolean} 隐藏提示图标
          * @param obj.sonClass {string} 子元素
          * @param obj.toogleClass {string} 显示隐藏元素
          * $param obj.needhide {boolean} 是否用隐藏
@@ -388,6 +390,7 @@
                 left = $toogleClass.outerWidth();
 
             $sonClass.on('mouseenter', function(){
+                obj.hideNew && $sonClass.find('.new-icon').hide()
                 $toogleClass.show()
                 $sonClass.stop().animate({
                     left: -left
@@ -400,6 +403,7 @@
                     if(obj.needhide !== false){
                         $toogleClass.hide()
                     }
+                    obj.hideNew && $sonClass.find('.new-icon').show()
                 })
             })
         }

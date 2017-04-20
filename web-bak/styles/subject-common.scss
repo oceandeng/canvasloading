@@ -28,8 +28,9 @@
 .grid-0-public-footer{
 	.content-prepare{
 		background-color: $gf5;
+
 		.title{
-			padding: 25px 0 80px;
+			padding: 25px 0 80px !important;
 			border-top: 5px solid $tool-btn-color;
 			border-bottom: 1px solid $gd-border-color;
 			position: relative;
@@ -112,12 +113,29 @@
     }
 
     .top-banner{
+		text-align: center;
 
         img{
+        	display: inline-block;
         }
 
     }
 }
 .grid-0-btn{
 	text-align: center;
+}
+.content-group-img{
+    text-align: center;
+}
+.con-group-word{
+    padding: 0 20px;
+
+    .word-tit{
+        font-size: 24px;
+        color: $g333;
+    }
+    .word-desc{
+        line-height: 30px;
+        color: $g666;
+    }
 }

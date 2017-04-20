@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+		.banner-row{
+            margin:20px auto;
+            background:#208adb;
+            cursor:pointer;
+            width:100%;
+            height:560px;
+			background: #333;
+			position: relative;
+        }
+        .banner-con{
+		    z-index: 90;
+		    width: 100%;
+		    height: 100%;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    transform-style: preserve-3d;
+		    -webkit-transition: all .5s ease-out;
+		    transition: all .5s ease-out;
+        }
+        .layer{
+            position:absolute;
+            right:60px;
+            width:800px;
+            transition:all 0.5s;
+            -webkit-transition:all 0.5s;
+            -moz-transition:all 0.5s;
+            -ms-transition:all 0.5s;
+            -o-transition:all 0.5s;
+            filter:alpha(opacity=0);
+        }
+
+        .layer img{
+            width:100%;
+            transition:all 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+
+	<div class="banner-row">
+		<div class="banner-con">
+	        <div class="layer right-image no-transition" data-zindex="50">
+	            <img class="img1" src="/images/slide-one.png" alt="">
+	        </div>
+
+		</div>
+	</div>
+    <div class="banner-row">
+		<div class="banner-con">
+	        <div class="layer right-image no-transition" data-zindex="50">
+	            <img class="img1" src="/images/slide-one.png" alt="">
+	        </div>
+
+		</div>
+	</div>
+
+	<div style="width: 100px; height: 100px; background: #f00"></div>
+
+
+</body>
+
+<script src="../bower_components/jquery/jquery.min.js" charset="utf-8"></script>
+
+
+<script>
+
+    $(".banner-con").on("mousemove",function(e){
+        // var x = e.clientX,
+        //     y = e.clientY,
+        //     offX = $(this).offset().left,
+        //     offY = $(this).offset().top,
+        //     bb = x - offX,
+        //     cc = y - offY,
+        //     w = $(this).width() * 0.5,
+        //     h = $(this).height() * 0.5;
+        var $_this = $(this)
+
+        $_this.find('.layer').eq(0).css("transform","translateZ(50px)");
+        $_this.find('.layer').eq(1).css("transform","translateZ(100px)");
+        $_this.find('.layer').eq(2).css("transform","translateZ(150px)");
+
+        var x              = event.layerX;
+        var y              = event.layerY;
+        var bgCentralityX  = ($_this.width() ) / 2; //  背景图的中心点
+        var bgOffsetX      = (x - bgCentralityX) / 100;
+
+
+        var imgOffsetX     = (x - bgOffsetX) / 100;
+        var imgOffsetY     = (y - bgOffsetX) / 100;
+
+console.log(x, y);
+console.log(imgOffsetX, imgOffsetY);
+
+        $_this.css({
+            'transform': 'rotateX(' + -imgOffsetY + "deg)"+' rotateY('+  -imgOffsetX + "deg)"
+        });
+
+    });
+    // $(".banner-con").on("mouseleave",function(){
+    //     $(this).css("transform","rotateX(0deg) rotateY(0deg)");
+    //     $(".img1").css("transform","translateZ(0)");
+    //     $(".img2").css("transform","translateZ(0)");
+    //     $(".img3").css("transform","translateZ(0)");
+    // });
+    $(function(){
+        $(".img").each(function(){
+            var $this=$(this);
+            $this.animate({"marginTop":0, "opacity":1});
+        })
+    })
+
+	//	视差效果
+	$('#header').on('mousemove', function(event){
+		var x              = event.pageX;
+		var y              = event.pageY;
+		var bgCentralityX  = $(window).width() / 2;	//	背景图的中心点
+		var bgOffsetX      = (x - bgCentralityX) / 30;
+
+		var imgCentralityX = $('.parallax__people').offset().left + ($('.parallax__people').width() / 2);
+		var imgCentralityY = $('.header__container').height() / 2;
+
+		var imgOffsetX     = (x - imgCentralityX) / 10;
+		var imgOffsetY     = (y - imgCentralityY) / 10;
+
+		$('.parallax__bg-img').css('left', -bgOffsetX);
+		$('.parallax__layer').css({
+			left: -imgOffsetX,
+			top: -imgOffsetY
+		});
+	});
+
+</script>
+</html>
