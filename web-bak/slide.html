@@ -12,6 +12,7 @@
             height:560px;
 			background: #333;
 			position: relative;
+            z-index: 0;
         }
         .banner-con{
 		    z-index: 90;
@@ -29,13 +30,12 @@
         .layer{
             position:absolute;
             right:60px;
-            width:800px;
+            width: 800px;
             transition:all 0.5s;
             -webkit-transition:all 0.5s;
             -moz-transition:all 0.5s;
             -ms-transition:all 0.5s;
             -o-transition:all 0.5s;
-            filter:alpha(opacity=0);
         }
 
         .layer img{
@@ -52,9 +52,17 @@
 
 	<div class="banner-row">
 		<div class="banner-con">
-	        <div class="layer right-image no-transition" data-zindex="50">
-	            <img class="img1" src="/images/slide-one.png" alt="">
-	        </div>
+            <div class="layer right-image no-transition" data-zindex="50">
+                <img src="https://img.alicdn.com/tfs/TB1KLqjQFXXXXcxXVXXXXXXXXXX-1600-1120.png" alt="">
+            </div>
+
+            <div class="layer right-image no-transition" data-zindex="100">
+                <img src="https://img.alicdn.com/tfs/TB1QDGwQFXXXXcEXFXXXXXXXXXX-1600-1120.png" alt="">
+            </div>
+
+            <div class="layer right-image no-transition" data-zindex="150">
+                <img src="https://img.alicdn.com/tfs/TB1NeSZQFXXXXXwXXXXXXXXXXXX-1600-1120.png" alt="">
+            </div>
 
 		</div>
 	</div>
@@ -77,7 +85,12 @@
 
 <script>
 
-    $(".banner-con").on("mousemove",function(e){
+
+    $(".banner-con").on('mousemove', function(event){
+        event.stopPropagation()
+    })
+
+    $(".banner-con").on("mousemove",function(event){
         // var x = e.clientX,
         //     y = e.clientY,
         //     offX = $(this).offset().left,
@@ -86,61 +99,36 @@
         //     cc = y - offY,
         //     w = $(this).width() * 0.5,
         //     h = $(this).height() * 0.5;
-        var $_this = $(this)
 
-        $_this.find('.layer').eq(0).css("transform","translateZ(50px)");
-        $_this.find('.layer').eq(1).css("transform","translateZ(100px)");
-        $_this.find('.layer').eq(2).css("transform","translateZ(150px)");
+        var $_this = $(this),
+            _l = $_this.offset().left,
+            _t = $_this.offset().top,
+            offsetNum = 50;
 
-        var x              = event.layerX;
-        var y              = event.layerY;
-        var bgCentralityX  = ($_this.width() ) / 2; //  背景图的中心点
-        var bgOffsetX      = (x - bgCentralityX) / 100;
+        var x              = parseInt(event.clientX - _l);
+        var y              = parseInt(event.clientY - _t);
 
+        var bgCentralityX  = $_this.width() / 2; //  背景图的中心点
+        var bgCentralityY  = $_this.height() / 1.5; //  背景图的中心点
 
-        var imgOffsetX     = (x - bgOffsetX) / 100;
-        var imgOffsetY     = (y - bgOffsetX) / 100;
+        var imgOffsetX      = (x - bgCentralityX) / offsetNum;
+        var imgOffsetY      = (y - bgCentralityY) / offsetNum;
 
-console.log(x, y);
-console.log(imgOffsetX, imgOffsetY);
+console.log(imgOffsetX, imgOffsetY)
+
+        if($_this.find('.layer').eq(0).css('transform') == "none"){
+            $_this.find('.layer').eq(0).css("transform","translateZ(50px)");
+            $_this.find('.layer').eq(1).css("transform","translateZ(100px)");
+            $_this.find('.layer').eq(2).css("transform","translateZ(150px)");
+        }
 
         $_this.css({
             'transform': 'rotateX(' + -imgOffsetY + "deg)"+' rotateY('+  -imgOffsetX + "deg)"
         });
 
+    }).on("mouseleave",function(){
+        $(this).css("transform","rotateX(0deg) rotateY(0deg)");
     });
-    // $(".banner-con").on("mouseleave",function(){
-    //     $(this).css("transform","rotateX(0deg) rotateY(0deg)");
-    //     $(".img1").css("transform","translateZ(0)");
-    //     $(".img2").css("transform","translateZ(0)");
-    //     $(".img3").css("transform","translateZ(0)");
-    // });
-    $(function(){
-        $(".img").each(function(){
-            var $this=$(this);
-            $this.animate({"marginTop":0, "opacity":1});
-        })
-    })
-
-	//	视差效果
-	$('#header').on('mousemove', function(event){
-		var x              = event.pageX;
-		var y              = event.pageY;
-		var bgCentralityX  = $(window).width() / 2;	//	背景图的中心点
-		var bgOffsetX      = (x - bgCentralityX) / 30;
-
-		var imgCentralityX = $('.parallax__people').offset().left + ($('.parallax__people').width() / 2);
-		var imgCentralityY = $('.header__container').height() / 2;
-
-		var imgOffsetX     = (x - imgCentralityX) / 10;
-		var imgOffsetY     = (y - imgCentralityY) / 10;
-
-		$('.parallax__bg-img').css('left', -bgOffsetX);
-		$('.parallax__layer').css({
-			left: -imgOffsetX,
-			top: -imgOffsetY
-		});
-	});
 
 </script>
 </html>

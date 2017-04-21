@@ -230,6 +230,12 @@
         }
         SolutionSlide.prototype.event = function(){
             var _this = this
+            if(this.$item.size() <= this.showNum){
+                this.nextBtn.hide()
+                this.prevBtn.hide()
+                return
+            }
+
             this.nextBtn.on('click', function(){
                 _this.index < (_this.$item.size() - _this.showNum) && _this.index++
                 _this.moveTo(_this.index)
