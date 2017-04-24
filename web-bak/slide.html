@@ -91,15 +91,6 @@
     })
 
     $(".banner-con").on("mousemove",function(event){
-        // var x = e.clientX,
-        //     y = e.clientY,
-        //     offX = $(this).offset().left,
-        //     offY = $(this).offset().top,
-        //     bb = x - offX,
-        //     cc = y - offY,
-        //     w = $(this).width() * 0.5,
-        //     h = $(this).height() * 0.5;
-
         var $_this = $(this),
             _l = $_this.offset().left,
             _t = $_this.offset().top,
@@ -109,10 +100,10 @@
         var y              = parseInt(event.clientY - _t);
 
         var bgCentralityX  = $_this.width() / 2; //  背景图的中心点
-        var bgCentralityY  = $_this.height() / 1.5; //  背景图的中心点
+        var bgCentralityY  = $_this.height() / 2; //  背景图的中心点
 
-        var imgOffsetX      = (x - bgCentralityX) / offsetNum;
-        var imgOffsetY      = (y - bgCentralityY) / offsetNum;
+        var imgOffsetX      = (bgCentralityX - x) / offsetNum;
+        var imgOffsetY      = (bgCentralityY - y) / offsetNum;
 
 console.log(imgOffsetX, imgOffsetY)
 
@@ -123,7 +114,7 @@ console.log(imgOffsetX, imgOffsetY)
         }
 
         $_this.css({
-            'transform': 'rotateX(' + -imgOffsetY + "deg)"+' rotateY('+  -imgOffsetX + "deg)"
+            'transform': 'rotateX(' + imgOffsetY + "deg)"+' rotateY('+  imgOffsetX + "deg)"
         });
 
     }).on("mouseleave",function(){
@@ -131,4 +122,6 @@ console.log(imgOffsetX, imgOffsetY)
     });
 
 </script>
+
+
 </html>

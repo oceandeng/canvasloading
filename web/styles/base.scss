@@ -64,10 +64,13 @@ ul,li,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
 .mb50{margin-bottom: 50px}
 .mb60{margin-bottom: 60px}
 .mb80{margin-bottom: 80px}
+.pt40{padding-top: 40px}
 .pt80{padding-top: 80px}
 .pb20{padding-bottom: 20px}
 .pb80{padding-bottom: 80px !important}
 .pb60{padding-bottom: 60px !important}
+.pb40{padding-bottom: 40px !important}
+.ptb40{padding: 40px 0 100px 0 !important}
 .ptb60{padding: 60px 0 100px 0 !important}
 .pr40{padding-right: 40px}
 .pr150{padding-right: 150px}
@@ -80,6 +83,12 @@ ul,li,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
 .g333{color: $g333}
 .g666{color: $g666}
 .g999{color: $g999}
+.blue-link{
+    color: $light-blue;
+    &:hover{
+        color: $drak-blue;
+    }
+}
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;

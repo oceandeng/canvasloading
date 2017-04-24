@@ -24,6 +24,7 @@
 	box-shadow: 0px 5px 10px #ccc;
 	border-radius: 10px;
 }
+
 .query .query-form .query-tit{
 	width: 100%;
 	position: absolute;
@@ -166,7 +167,7 @@
 
 .domain-manage{padding: 60px 0 80px; position: relative;}
 .d-m-con{margin: 50px 0 0 0}
-.d-m-con .d-m-item{width: 200px; margin: 0 50px; text-align: center; color: #666}
+.d-m-con .d-m-item{width: 220px; margin: 0 50px; text-align: center; color: #666}
 .d-m-con .d-m-item .d-icon{width: 89px; margin: 0 auto 20px}
 .d-m-con .d-m-item p{font-size: 16px;}
 
@@ -212,9 +213,6 @@
 .faq li h2{font-size: 28px; color: #237ebb; line-height: 60px; margin:0;}
 .faq li p{font-size: 18px; line-height: 36px; color: #999; text-align: justify;}
 
-
-
-/*查询结果*/
 .query-result{padding:160px 0 50px 0; overflow: hidden;}
 .result-list{border: 1px solid #eee; float: left; width: 960px;}
 
@@ -225,7 +223,7 @@
 .domain-list tr.even{background: #f5fcff}
 .domain-list .opr{width: 130px; text-align: center;}
 .domain-list .sta{text-align: right;}
-.domain-list .sta span.zczt{padding-left: 20px; color: #12a63f}
+.domain-list .sta span.zczt{padding-left: 20px; color: $light-blue}
 .domain-list .sta span.yhnr{background: #e61c00; color: #fff; padding:2px 3px}
 .domain-list .sta span.yhjg{padding-left: 5px; color: #666}
 .domain-list .sta span.yhjg em{color: #f19149; font-style: normal;}
@@ -233,9 +231,8 @@
 
 .show-more{line-height: 40px; padding-left: 20px;}
 
-/*结果页购物车*/
-.result-cart{width: 210px; float: right; border:1px solid #eee;}
-.result-cart .title{line-height: 36px; background: #707070; color: #fff;padding-left: 15px;}
+.result-cart{width: 210px; float: right; border:1px solid #eee; border-radius: 10px 10px 0 0}
+.result-cart .title{line-height: 36px; background: #707070; color: #fff;padding-left: 15px; border-radius: 10px 10px 0 0}
 .result-cart li{line-height: 20px; padding: 10px 40px 10px 15px; word-break:break-all; position: relative; min-height: 20px; border-bottom:1px solid #eee;}
 .result-cart li a{position: absolute; right: 15px; top: 10px; color: #c5cbd3}
 .result-cart .nowpay{padding: 10px 0; text-align: center}
@@ -245,7 +242,6 @@
 .del-domain .opra .btn{padding:  0 10px; margin:0 10px; line-height: 40px}
 
 
-/*whois信息页*/
 .whois-bar{background: #fafafa; height: 28px;}
 .whois{padding-top: 30px; padding-bottom: 60px;}
 .query-whois{width: 480px; margin-bottom:30px; border:2px solid #237ebb; height: 46px; padding-right: 140px; padding-left: 20px; position: relative;}
@@ -284,9 +280,6 @@
 .codeCon .code a{line-height: 40px;}
 .codeCon .btn{line-height: 40px;}
 
-
-
-/*域名格式提示*/
 .domainRules{}
 .domainRules .blackBg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 999; background: #000; opacity: 0.5; filter: alpha(opacity=50)}
 .domainRules .rulesCon{width: 290px; height: 160px; position: fixed; left: 50%; top: 40%; margin-top: -110px; margin-left: -210px; z-index: 1000; background: #fff; padding: 40px 20px 20px 90px;}
@@ -296,7 +289,6 @@
 .domainRules .rulesCon .opr{text-align: right;}
 .domainRules .rulesCon .close{width: 20px; height: 20px; display: block; background: url(../images/close.png) no-repeat center; position: absolute; right: 15px; top: 10px;}
 
-/* icon */
 .icon47x47{width: 47px; height: 47px}
 .icon83x83{width: 83px; height: 83px}
 .icon83x96{width: 83px; height: 96px}
@@ -317,12 +309,15 @@
 .icon-d-parse{background-position: -83px -200px}
 .icon-d-tran{background-position: -166px -200px}
 
-.query .result-form-con{background:url(../images/search-bg2.jpg) no-repeat top center #fbc400; box-shadow:0px 5px 10px #ccc;}
+.query .result-form-con{
+	padding: 30px 0 0 0;
+	background: url(../../images/domain/search-bg.png) no-repeat top center $light-blue; 
+	box-shadow: 0px 5px 10px #ccc;
+}
 .query .result-form{position: relative; top: 0px; margin:0 auto}
 .query .result-form .query-bg{box-shadow:none; background: none;}
 .result-query-result{padding-top: 40px;}
 
-/*2017-2-23域名查询结果页改版*/
 .query-result{font-size: 12px;}
 .do{color: #333}
 .do span{font-weight: bold; color: #000}
@@ -332,16 +327,13 @@
 .result-cart li a{display: none;}
 .result-cart li:hover{background: #f5fcff}
 
-
-
-/**2017-3-31增加更多查询结果**/
 .query .result-form-More{height:auto; padding: 20px 0; width: 1100px;}
 .query .result-form-More .query-tit{position:relative; left:0; top:0; padding-bottom:20px;}
 .query .result-form-More .query-con{position:relative; padding-left:0; top:0; left:0;  padding-bottom: 15px; width: 840px;}
 
 .query .result-form-More .moreSuf{position: relative; width: 840px; min-height: 20px;}
-.moreSuf .showMore{position: absolute; right: -170px; background: url(../images/searchmore1.png) no-repeat right center; padding-right: 20px;}
-.moreSuf .showMore.on{background: url(../images/searchmore.png) no-repeat right center;}
+.moreSuf .showMore{position: absolute; right: -170px; background: url(../../images/domain/searchmore1.png) no-repeat right center; padding-right: 20px;}
+.moreSuf .showMore.on{background: url(../../images/domain/searchmore.png) no-repeat right center;}
 .moreSuf .showMore:hover{color: #333}
 .moreSuf .domainType{overflow: hidden;}
 .moreSuf .domainType li{float: left; margin-right: 30px;}
@@ -352,8 +344,19 @@
 .query-form .query-input .select-con{height: 216px; overflow-y:auto;}
 .query-form .query-input .select-con a:hover{background: #ddd; color: #666}
 
-.domain-list td.domain-pro{color: #999; padding-left: 40px; background: url(../images/domain-pro.jpg) 20px center no-repeat;}
+.domain-list td.domain-pro{color: #999; padding-left: 40px; background: url(../../images/domain/domain-pro.jpg) 20px center no-repeat;}
 .domain-list tr.re-do:hover td{background: #fffcf4}
 
 .domain-cont{overflow: hidden;}
 .show-more{display: none;}
+
+.btn{
+	display: inline-block;
+	min-width: 90px;
+	line-height: 28px;
+	text-align: center;
+	border-radius: 19px;
+	background: $light-blue;
+	color: #fff;
+	font-size: 12px;
+}

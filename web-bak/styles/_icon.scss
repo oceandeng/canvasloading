@@ -4,6 +4,7 @@
 }
 
 .icon40x40{width: 40px; height: 40px}
+.icon7x13{width: 7px; height: 13px}
 .icon17x17{width: 17px; height: 17px}
 .icon18x18{width: 18px; height: 18px}
 .icon36x36{width: 36px; height: 36px}
@@ -12,6 +13,7 @@
 .icon66x66{width: 66px; height: 66px}
 .icon64x64{width: 64px; height: 64px}
 .icon70x65{width: 70px; height: 65px}
+.icon83x83{width: 83px; height: 83px}
 .icon47x47{width: 47px; height: 47px}
 .icon57x57{width: 57px; height: 57px}
 .icon85x85{width: 85px; height: 85px}
@@ -75,7 +77,7 @@
     background-position: 0 -320px;
 }
 
-.protal-icon{
+.protal-icon, .page-icon{
     display: inline-block;
     background: url(../images/protal/protal-icon-img.png) no-repeat;
 }
@@ -164,3 +166,6 @@
         background-color: $drak-blue;
     }
 }
+
+.icon-prev{background-position: 0 -300px; margin-top: 8px;}
+.icon-next{background-position: -10px -300px; margin-top: 8px;}

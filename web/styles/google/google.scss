@@ -1,5 +1,5 @@
-@import "../_variable";
-@import "../_mixin";
+@import "../variable";
+@import "../mixin";
 
 .google{
 	ul,li,dt,dd,dl,h1, h2, h3, h4, h5, h6,p{list-style-type: none; margin:0; padding: 0}
@@ -8,7 +8,7 @@
 		.banner-left{
 			.adwords{
 				display:block;
-				margin-top:106px;
+				margin-top:80px;
 			}
 			h1{
 				font-size:66px;
@@ -53,6 +53,16 @@
 		display:block;
 		margin:52px auto 0;
 	}
+	.google-txt{
+		display: inline-block;
+		position: relative;
+		width: 112px;
+		height: 42px;
+		background: url(../../images/google/google-txt.jpg) no-repeat;
+		margin: 0 20px;
+		top: 10px;
+
+	}
 	.advantage{
 		h3{
 			font-size:36px;
@@ -60,6 +70,8 @@
 			margin: 7px 0 0;
 			text-align: center;
 			color:$main-head-h1-color;
+			padding-top: 1px;
+
 			span{
 				color: #333;
 				margin : 0 5px;

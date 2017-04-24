@@ -157,7 +157,7 @@
         .active{
             border-left: 5px solid $light-blue;
             a{
-                color: $light-blue;
+                color: $light-blue !important;
             }
         }
     }
@@ -185,6 +185,8 @@
             .l-first-tit{
                 color: $light-blue;
                 border-left: 5px solid $light-blue !important;
+
+
             }
             .l-sec-content{
                 display: block !important;
@@ -318,7 +320,7 @@
      }
      .zq-main-head{
         text-align: center;
-        
+
          h1{
              color: $main-head-h1-color;
              text-align: center;
