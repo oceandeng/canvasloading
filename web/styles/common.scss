@@ -656,3 +656,41 @@
 /**
  * side-tool-bar end
  */
+
+/**
+ * public tab start
+ */
+.public-tab{
+    .tab-tit{
+        text-align: center;
+        ul{
+            display: inline;
+        }
+        li{
+            display: inline-block;
+            margin: 0 10px;
+
+            a{
+                display: block;
+                @include line-height(30px);
+                color: $g333;
+                border-radius: 5px;
+                padding: 0 20px;
+
+                &.active{
+                    background: $light-blue;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .tab-con{
+
+        .tab-con-item{
+            display: none;
+        }
+        .block{
+            display: block;
+        }
+    }
+}
