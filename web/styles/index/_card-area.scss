@@ -1,3 +1,5 @@
+@import "../variable", "../mixin";
+
 .cloud-service .card-area {
     margin: 82px auto 0;
     height: 560px;
@@ -194,6 +196,26 @@
     color: #fff;
     background: #1b77b9
 }
+.cloud-service .card-area .card-item .card .card-content.content-second .main-white-btn {
+    cursor: pointer;
+    width: 160px;
+    height: 36px;
+    border: 1px solid $light-blue;
+    font-size: 16px!important;
+    color: $light-blue;
+    margin-top: 22px;
+    margin-bottom: 33px;
+    border-radius: 19px;
+    background: #fff;
+    -webkit-transition: color .3s ease-in-out, background .3s ease-in-out;
+    transition: color .3s ease-in-out, background .3s ease-in-out
+}
+
+.cloud-service .card-area .card-item .card .card-content.content-second .main-white-btn:hover {
+    color: $white;
+    background: $light-blue;
+}
+
 
 .cloud-service .card-area .card-item .card .card-content .other-info {
     width: 105%;

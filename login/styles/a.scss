@@ -1,0 +1,301 @@
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  button,
+  input {
+    margin: 0px;
+    padding: 0px;
+    border: 0px none;
+    outline: 0px none;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: none repeat scroll 0% 0% transparent;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #ccc !important;
+    /* WebKit browsers */
+    font-size: 14px !important;
+  }
+
+  input:-moz-placeholder {
+    color: #ccc !important;
+    /* Mozilla Firefox 4 to 18 */
+    font-size: 14px !important;
+  }
+
+  input::-moz-placeholder {
+    color: #ccc !important;
+    /* Mozilla Firefox 19+ */
+    font-size: 14px !important;
+  }
+
+  input:-ms-input-placeholder {
+    color: #ccc !important;
+    /* Internet Explorer 10+ */
+    font-size: 14px !important;
+  }
+
+  .container {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: #333;
+  }
+
+  ol,
+  ul,
+  li {
+    list-style: none;
+  }
+
+
+body {
+  font-size: 12px;
+  background: #fff;
+  margin: 0 auto;
+}
+.logo a {
+  display: block;
+  height: 60px;
+  color: #fff;
+  overflow: hidden;
+  opacity: 0;
+  fliter: alpha(opacity=0);
+}
+
+.content{width: 1100px; margin:0 auto; padding-bottom:30px; position: relative;}
+.content h1{font-size:20px; color: #333; line-height: 90px; border-bottom: 1px solid #ececec}
+
+.header .content,.footer .content{width: 1200px;}
+.header{height: 60px; background: #fff; border-bottom: 1px solid #e0e0e0}
+.header .logo{height: 60px; position: absolute; left: 0; top: 0; width: 200px; background: url(logo.png) no-repeat left center; text-indent: -99em; overflow: hidden;}
+.header .nav{height: 20px; padding: 20px 0; line-height: 20px; position: absolute; right: 0; top: 0}
+.header .nav a{}
+.header .nav span{border-right: 1px solid #e0e0e0; padding: 0 20px; }
+.header .nav span.last{border-right:0;}
+
+.footer{height: 180px; padding: 30px 0; border-top: 1px solid #e0e0e0;min-width: 1280px;}
+.footer .left{width: 900px;}
+.footer .foot-menu{line-height: 16px; height: 16px; margin-bottom: 15px; margin-top: 25px;}
+.footer .foot-menu a{font-size: 14px; color: #333;}
+.footer .foot-menu span{padding: 0 10px; border-left: 1px solid #333}
+.footer .foot-menu span.last{margin-right: 0}
+.footer .foot-menu span.first{border-left: none; padding-left: 0;}
+.footer .foot-menu i{border-right: 1px solid #333}
+.footer .copyright{line-height: 22px; color: #858d97; margin-bottom: 15px;}
+.footer .right{width: 240px; position: absolute; right: 0; top:0; text-align: center;}
+.footer .ewm{width: 100px; height: 100px; display: block; margin:0 auto; background: url(zqdl.jpg) no-repeat center;}
+.footer .ewm img{width: 100%; height: 100%}
+.footer .right p{line-height: 24px; font-size: 14px; color: #858d97;}
+.footer .right .kefu{font-size: 14px; color: #858d97}
+.footer .right .kefu span{color: #cc0e2b}
+.footer .beleave {height: 37px;}
+.footer .kxwz img { width: 90px; }
+
+  .login {
+    width: 100%;
+    height: auto;
+    min-width: 1280px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-image: url('bgimg.jpg');
+    background-repeat: no-repeat;
+  }
+
+  .login .container {
+    width: 1280px;
+    max-height: 490px;
+    height: 490px;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .login-box {
+    position: absolute;
+    left: 808px;
+    top: 95px;
+    width: 285px;
+    min-height: 225px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 5px 0px rgba(4, 0, 0, 0.24);
+    padding: 25px 35px 35px 30px;
+  }
+  .login-form {
+    position: relative;
+   }
+  .login-box .title {
+    font-size: 14px;
+    color: #848181;
+    margin-bottom: 55px;
+    margin-top: 0;
+  }
+ .login-box .u-link{
+    font-size: 12px;
+    color: #54a1e9;
+    margin-left: 5px;
+  }
+  .login-box .authen {
+    color: #999;
+    font-size: 12px;
+    position: absolute;
+    width: 340px;
+    padding-left: 10px;
+    left: -30px;
+    top: 30px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #fded9d;
+ }
+ .login-box .authen i {
+    display: inline-block;
+    vertical-align: sub;
+    width: 14px;
+    height: 14px;
+    background: url(warn.png) no-repeat 0px 0px;
+    margin-right: 5px;
+}
+  .regist {
+    width: 100%;
+    height: 40px;
+  }
+
+  .link {
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .link .forget {
+    font-size: 14px;
+    color: #999;
+  }
+
+  .link .register {
+    font-size: 14px;
+    color: #54a1e9;
+  }
+
+  .form-item {
+    margin-bottom: 22px;
+    height: auto;
+  }
+
+  .form-item input {
+    width: 233px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    box-sizing: content-box;
+  }
+
+  .button {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #1e85e4;
+    color: #fafeff;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #54a1e9;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 2px;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #cccccc;
+    border-right: 0px;
+    text-align: center;
+  }
+
+  .user i {
+    display: inline-block;
+    margin-top: 9px;
+    width: 20px;
+    height: 20px;
+    background: url('icon.png') no-repeat 0px 0px;
+  }
+
+  .lock i {
+    display: inline-block;
+    margin-top: 9px;
+    width: 20px;
+    height: 20px;
+    background: url('icon.png') no-repeat -30px 1px;
+  }

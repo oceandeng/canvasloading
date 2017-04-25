@@ -677,7 +677,7 @@
                 border-radius: 5px;
                 padding: 0 20px;
 
-                &.active{
+                &:hover,&.active{
                     background: $light-blue;
                     color: $white;
                 }

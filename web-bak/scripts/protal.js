@@ -100,17 +100,28 @@
          }
          PublicTab.prototype.init = function(){
              this.eventFn()
+             this.initCon()
+         }
+         PublicTab.prototype.initCon = function(){
+            this.$item.eq(0).load(options.path + '0.html')
          }
          PublicTab.prototype.eventFn = function(){
              var _this = this
 
-             this.$tit.on('mouseenter', function(){
+             this.$tit.on('click', function(){
                  var $_this = $(this),
-                     index = $_this.index();
+                     index = $_this.index(),
+                     $_item = _this.$item.eq(index);
 
                  $_this.find('a').addClass('active').parent().siblings().find('a').removeClass('active')
 
-                 _this.$item.eq(index).addClass('block').siblings().removeClass('block')
+                 $_item.addClass('block').siblings().removeClass('block')
+                 if($_item.find('.row').size() == 0){
+                     $_item.load(options.path + index + '.html', function(response, status, xhr){})
+                 }
+             })
+             this.$tit.find('a').on('click', function(e){
+                e.preventDefault()
              })
          }
 
@@ -129,8 +140,5 @@ $(function(){
 
     //industry slide
     $('#industrySlider').industrySlider();
-
-    // tab
-    $('#qyxTab').publicTab()
 
 })
