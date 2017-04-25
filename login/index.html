@@ -118,25 +118,25 @@ if (window != top) {
 <!-- ====================================  Form End ============================================= -->
 <script>
 (function() {
-    var loginBox = $("div[insertfrom]");
-    var logindata = $("#formdata");
-    var logindataHtml = $("#formdata").html();
-    logindata.remove();
-    loginBox.html(logindataHtml);
-    var imgPaths = $("img");
-    var csspaths = $("link");
-    imgPaths.each(function(i) {
-        var current = imgPaths.eq(i);
-        var originalPath = current.attr("src");
-        var newPath = "/CAS/static/" + originalPath;
-        current.attr("src", newPath);
-    })
-    csspaths.each(function(i) {
-        var current = csspaths.eq(i);
-        var originalPath = current.attr("href");
-        var newPath = "/CAS/static/" + originalPath;
-        current.attr("href", newPath);
-    })
+    // var loginBox = $("div[insertfrom]");
+    // var logindata = $("#formdata");
+    // var logindataHtml = $("#formdata").html();
+    // logindata.remove();
+    // loginBox.html(logindataHtml);
+    // var imgPaths = $("img");
+    // var csspaths = $("link");
+    // imgPaths.each(function(i) {
+    //     var current = imgPaths.eq(i);
+    //     var originalPath = current.attr("src");
+    //     var newPath = "/CAS/static/" + originalPath;
+    //     current.attr("src", newPath);
+    // })
+    // csspaths.each(function(i) {
+    //     var current = csspaths.eq(i);
+    //     var originalPath = current.attr("href");
+    //     var newPath = "/CAS/static/" + originalPath;
+    //     current.attr("href", newPath);
+    // })
 
 
 })();
