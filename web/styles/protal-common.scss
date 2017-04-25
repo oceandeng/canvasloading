@@ -306,9 +306,9 @@
     border-radius: 50%;
     color: $g666;
 }
-.flip-page li .num:hover{color: $white; background: $light-blue; }
-.flip-page li .num.active{color: $white; background: $light-blue;}
-.flip-page li .num.default{color: #d7d7d7; cursor:default;}
+.flip-page li a:hover{color: $white; background: $light-blue; }
+.flip-page li a.active{color: $white; background: $light-blue;}
+.flip-page li a.default{color: #d7d7d7; cursor:default;}
 .now-page{float: left;}
 .now-page span{color: $light-blue; padding: 0 5px;}
 

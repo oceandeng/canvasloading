@@ -83,6 +83,44 @@
         })
      }
 
+     /**
+      * public tab
+      */
+     var tabDefault = {
+         tit: '.tab-tit',
+         con: '.tab-con',
+         item: '.tab-con-item'
+     }
+     $.fn.publicTab = function(options){
+         var options = $.extend({}, tabDefault, options)
+
+         var PublicTab = function($ele){
+             this.$tit = $ele.find(options.tit).find('ul').find('li')
+             this.$item = $ele.find(options.con).find(options.item)
+         }
+         PublicTab.prototype.init = function(){
+             this.eventFn()
+         }
+         PublicTab.prototype.eventFn = function(){
+             var _this = this
+
+             this.$tit.on('mouseenter', function(){
+                 var $_this = $(this),
+                     index = $_this.index();
+
+                 $_this.find('a').addClass('active').parent().siblings().find('a').removeClass('active')
+
+                 _this.$item.eq(index).addClass('block').siblings().removeClass('block')
+             })
+         }
+
+         return this.each(function(){
+             var $this = $(this)
+             var instance = new PublicTab($this)
+             instance.init()
+         })
+     }
+
 })(window, jQuery)
 
 $(function(){
@@ -90,6 +128,9 @@ $(function(){
     $('#leftToolBar').leftToolBar()
 
     //industry slide
-    $('#industrySlider').industrySlider()
+    $('#industrySlider').industrySlider();
+
+    // tab
+    $('#qyxTab').publicTab()
 
 })

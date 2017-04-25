@@ -2,7 +2,7 @@
 (function ($) {
 	$.fn.slide = function (options) {
 		$.fn.slide.defaults = {
-			margin: 0
+			margin: '30px'
 		};
 		var opts = $.extend({}, $.fn.slide.defaults, options);
 		return this.each(function () {

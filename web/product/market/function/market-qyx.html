@@ -15,6 +15,10 @@
     <!-- build:css ../../../styles/protal-common.css -->
     <link rel="stylesheet" href="/styles/protal-common.css">
     <!-- endbuild -->
+
+    <!-- build:css ../../../styles/market.css -->
+    <link rel="stylesheet" href="/styles/market/market.css">
+    <!-- endbuild -->
 </head>
 <body>
 <!-- body start -->
@@ -84,23 +88,23 @@
                                 	<div id="qyxTab" class="public-tab">
                                 		<div class="tab-tit">
                                 			<ul>
-                                				<li><a class="active" href="#">产品推广</a></li>
-                                				<li><a href="#">企业宣传</a></li>
-                                				<li><a href="#">活动促销</a></li>
-                                				<li><a href="#">在线邀请</a></li>
-                                				<li><a href="#">企业招聘</a></li>
-                                				<li><a href="#">在线培训</a></li>
-                                				<li><a href="#">名片展示</a></li>
+                                				<li><a class="active" href="javascript:void(0);">产品推广</a></li>
+                                				<li><a href="javascript:void(0);">企业宣传</a></li>
+                                				<li><a href="javascript:void(0);">活动促销</a></li>
+                                				<li><a href="javascript:void(0);">在线邀请</a></li>
+                                				<li><a href="javascript:void(0);">企业招聘</a></li>
+                                				<li><a href="javascript:void(0);">在线培训</a></li>
+                                				<li><a href="javascript:void(0);">名片展示</a></li>
                                 			</ul>
                                 		</div>
                                 		<div class="tab-con pt40 pb40">
-                                			<div class="tab-con-item block">1</div>
-                                			<div class="tab-con-item">2</div>
-                                			<div class="tab-con-item">3</div>
-                                			<div class="tab-con-item">4</div>
-                                			<div class="tab-con-item">5</div>
-                                			<div class="tab-con-item">6</div>
-                                			<div class="tab-con-item">7</div>
+                                			<div class="tab-con-item block"></div>
+                                			<div class="tab-con-item"></div>
+                                			<div class="tab-con-item"></div>
+                                			<div class="tab-con-item"></div>
+                                			<div class="tab-con-item"></div>
+                                			<div class="tab-con-item"></div>
+                                			<div class="tab-con-item"></div>
                                 		</div>
                                 	</div>
                                 </div>
@@ -332,6 +336,15 @@
     <!-- build:js ../../../scripts/protal.js -->
     <script src="/scripts/protal.js" charset="utf-8"></script>
     <!-- endbuild -->
+
+    <script>
+        $(function(){
+            // tab
+            $('#qyxTab').publicTab({
+                'path': location.origin + '/product/market/function/fragment/qyx'
+            })
+        })
+    </script>
 
 <!-- script quote end -->
 </body>
