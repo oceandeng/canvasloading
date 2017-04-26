@@ -1,0 +1,1 @@
+"use strict";!function(i){i("#youyiTab").publicTab(),i("#industrySlider").industrySlider()}(jQuery);

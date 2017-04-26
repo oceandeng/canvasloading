@@ -39,7 +39,7 @@
         }
 
         .layer img{
-            width:100%;
+            width:80%;
             transition:all 0.5s;
         }
 
@@ -96,8 +96,8 @@
             _t = $_this.offset().top,
             offsetNum = 50;
 
-        var x              = parseInt(event.clientX - _l);
-        var y              = parseInt(event.clientY - _t);
+        var x              = parseInt(event.pageX - _l);
+        var y              = parseInt(event.pageY - _t);
 
         var bgCentralityX  = $_this.width() / 2; //  背景图的中心点
         var bgCentralityY  = $_this.height() / 2; //  背景图的中心点

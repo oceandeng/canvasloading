@@ -76,7 +76,7 @@
                     var _cw = $subitem.outerWidth() * _is
 
                     $subitem.last().css('border', 'none')
-                    $subCon.css({'width': _cw}).slideDown()
+                    $subCon.css({'width': _cw}).show()
 
                     var _ccw = $subCon.outerWidth()
 
@@ -90,7 +90,7 @@
             }).on('mouseleave', function(e){
                 var $_this = $(this)
 
-                if(e.relatedTarget.className != 'top-border'){
+                if(e.relatedTarget && e.relatedTarget.className != 'top-border'){
                     $_this.find(options.contentClass).hide()
                 }
             })

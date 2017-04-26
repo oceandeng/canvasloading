@@ -60,10 +60,11 @@
 	background: url(../../images/domain/domain-icon.png) no-repeat -370px -37px;
 }
 .query-form .query-input input{
-	height: 58px;
-	line-height: 58px;
+	height: 51px;
+	line-height: 51px;
 	width: 80%;
 	font-size: 18px;
+	border: none;
 }
 .query-form .query-input .select-con{
 	z-index:9;
@@ -250,7 +251,7 @@
 .result-cart li{line-height: 20px; padding: 10px 40px 10px 15px; word-break:break-all; position: relative; min-height: 20px; border-bottom:1px solid #eee;}
 .result-cart li a{position: absolute; right: 15px; top: 10px; color: #c5cbd3}
 .result-cart .nowpay{padding: 10px 0; text-align: center}
-.del-domain{display: none;}
+.del-domain{display: none}
 .del-domain h1{font-size:20px; line-height: 30px; padding: 20px 10px; text-align: center;}
 .del-domain .opra{text-align: center;}
 .del-domain .opra .btn{padding:  0 10px; margin:0 10px; line-height: 40px}

@@ -5,7 +5,6 @@
     <title></title>
     <style>
 		.banner-row{
-            margin:20px auto;
             background:#208adb;
             cursor:pointer;
             width:100%;
@@ -67,13 +66,20 @@
 		</div>
 	</div>
     <div class="banner-row">
-		<div class="banner-con">
-	        <div class="layer right-image no-transition" data-zindex="50">
-	            <img class="img1" src="/images/slide-one.png" alt="">
-	        </div>
-
-		</div>
+        <div class="banner-con">
+            <div class="layer right-image no-transition" style="transform: translateZ(150px) translateX(-199px) translateY(99px);width: 480px;">
+                <img src="/images/slider/slide-2-1.png" alt="">
+            </div>
+            <div class="layer right-image no-transition" style="transform: translateZ(150px) translateX(-186px) translateY(116px);width: 500px;">
+                <img src="/images/slider/slide-2-2.png" alt="">
+            </div>
+            <div class="layer right-image no-transition" style="transform: translateZ(150px) translateY(326px);width: 800px;">
+                <img src="/images/slider/slide-2-3.png" alt="">
+            </div>
+        </div>
 	</div>
+
+
 
 	<div style="width: 100px; height: 100px; background: #f00"></div>
 
@@ -85,10 +91,6 @@
 
 <script>
 
-
-    $(".banner-con").on('mousemove', function(event){
-        event.stopPropagation()
-    })
 
     $(".banner-con").on("mousemove",function(event){
         var $_this = $(this),
@@ -114,7 +116,7 @@ console.log(imgOffsetX, imgOffsetY)
         }
 
         $_this.css({
-            'transform': 'rotateX(' + imgOffsetY + "deg)"+' rotateY('+  imgOffsetX + "deg)"
+            'transform': 'rotateX(' + -imgOffsetY + "deg)"+' rotateY('+  -imgOffsetX + "deg)"
         });
 
     }).on("mouseleave",function(){

@@ -94,7 +94,6 @@
     padding-bottom: 1px;
 }
 .solution-slide{
-    height: 350px;
     background: $g333;
 }
 .choice-zhongqi-bg{
@@ -106,4 +105,39 @@
             color: $white;
         }
     }
+}
+
+.banner-row{
+    cursor:pointer;
+    width:100%;
+    position: relative;
+    z-index: 0;
+}
+.banner-con{
+    z-index: 90;
+    width: 100%;
+    height: 490px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-style: preserve-3d;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+.layer{
+    position:absolute;
+    right:60px;
+    width: 800px;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -ms-transition:all 0.5s;
+    -o-transition:all 0.5s;
+}
+
+.layer img{
+    width:70%;
+    transition:all 0.5s;
 }

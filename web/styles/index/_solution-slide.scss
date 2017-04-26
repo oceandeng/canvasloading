@@ -3,6 +3,10 @@
     height: 350px;
     overflow: hidden;
 
+    @media screen and(min-width: 1500px){
+        height: 430px;
+    }
+
     .solution-btn{
         width: 40px;
         height: 350px;
@@ -91,6 +95,10 @@
     -moz-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and(min-width: 1500px){
+        top: 130px;
+    }
 }
 
 .solution .solution-slide-body .slide-content .slide-item .mask .content .line-panel {
