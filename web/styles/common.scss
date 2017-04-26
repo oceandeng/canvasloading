@@ -415,6 +415,16 @@
             background: #3db1ea;
             position: relative;
             z-index: 9;
+
+            &:hover{
+                background: #d5f1ff;
+
+                .icon-cart{background-position: 0 -43px}
+                .icon-connect{background-position: -44px -43px}
+                .icon-phone{background-position: -90px -43px}
+                .icon-hot-active{background-position: -136px -43px}
+                .icon-free-call{background-position: -182px -43px}
+            }
         }
 
         .t-con{
@@ -569,9 +579,9 @@
 .apply-con{width:482px; padding:0 127px; height: 560px; position: relative;}
 .apply-con a.close{width:48px; height: 48px; display: block; position: absolute; right: 10px; top: 10px; background: url(../images/dzsw-pop-close.jpg) no-repeat 0 0;
     transition: none;
-    -moz-transition: none; 
-    -webkit-transition: none; 
-    -o-transition: none; 
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
 }
 .zero_pop{height:410px;}
 .zero_pop .apply-con{height:410px;}

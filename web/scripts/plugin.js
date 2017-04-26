@@ -131,7 +131,7 @@
         MainSlider.prototype.init = function(){
             this.addDot()
             this.eventFn()
-            this.autoPlay()
+            // this.autoPlay()
         }
         MainSlider.prototype.eventFn = function(){
             var _this = this
@@ -170,7 +170,7 @@
         MainSlider.prototype.go = function(index){
             this.$item.hide()
             this.$item.eq(index).fadeIn()
-            this.autoPlay()
+            // this.autoPlay()
         }
         MainSlider.prototype.autoPlay = function(){
             var _this = this;
