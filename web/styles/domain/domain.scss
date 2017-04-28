@@ -58,13 +58,16 @@
 	padding-left: 20px;
 	border-left: 1px solid #a7b1b3;
 	background: url(../../images/domain/domain-icon.png) no-repeat -370px -37px;
+	color: #666;
 }
 .query-form .query-input input{
-	height: 51px;
-	line-height: 51px;
+	height: 58px;
+	line-height: 58px;
 	width: 80%;
 	font-size: 18px;
 	border: none;
+	margin: 0 0 0 5px;
+	padding: 0;
 }
 .query-form .query-input .select-con{
 	z-index:9;
@@ -221,7 +224,7 @@
 .sufix-con li:nth-child(3),.sufix-con li:nth-child(2),.sufix-con li:nth-child(1){background: #237ebb; color: #fff; margin-bottom: 60px;}
 .sufix-con li.special{background: #237ebb; color: #fff; margin-bottom: 60px; }
 .sufix-con li.special img{margin-top: -30px}
-.sufix-con li.special span{width: 49px; height: 50px; background: url(../images/hot.png) no-repeat; display: block; z-index: 9}
+.sufix-con li.special span{width: 49px; height: 50px; background: url(../../images/hot.png) no-repeat; display: block; z-index: 9}
 .faq{padding: 30px 0;}
 .faq li{margin:0 0 20px 0; position: relative; padding:0 115px 0 50px;}
 .faq li i{position: absolute; width: 25px; height: 25px; display: block; background: #237ebb; left: 0; top: 18px;}
@@ -233,10 +236,11 @@
 
 .domain-list{width: 100%; border:0;}
 .domain-list tr{}
-.domain-list td{padding-left: 20px; height: 40px; vertical-align: middle; border-bottom: 1px solid #eee}
+.domain-list td{padding-left: 20px; padding-top: 0; padding-bottom: 0; height: 40px; vertical-align: middle; border-bottom: 1px solid #eee}
 .domain-list td img{width: 30px;}
 .domain-list tr.even{background: #f5fcff}
 .domain-list .opr{width: 130px; text-align: center;}
+.domain-list .opr .link-blue{ color: #3db1ea !important}
 .domain-list .sta{text-align: right;}
 .domain-list .sta span.zczt{padding-left: 20px; color: $light-blue}
 .domain-list .sta span.yhnr{background: #e61c00; color: #fff; padding:2px 3px}
@@ -245,6 +249,7 @@
 .domain-list .sta span.ymyj{padding-left: 5px; color: #999; text-decoration: line-through;}
 
 .show-more{line-height: 40px; padding-left: 20px;}
+.show-more .link-blue{ color: #3db1ea !important}
 
 .result-cart{width: 210px; float: right; border:1px solid #eee; border-radius: 10px 10px 0 0}
 .result-cart .title{line-height: 36px; background: #707070; color: #fff;padding-left: 15px; border-radius: 10px 10px 0 0}
@@ -252,7 +257,7 @@
 .result-cart li a{position: absolute; right: 15px; top: 10px; color: #c5cbd3}
 .result-cart .nowpay{padding: 10px 0; text-align: center}
 .del-domain{display: none}
-.del-domain h1{font-size:20px; line-height: 30px; padding: 20px 10px; text-align: center;}
+.del-domain h1{font-size:20px; line-height: 30px; padding: 20px 10px; text-align: center; margin: 0}
 .del-domain .opra{text-align: center;}
 .del-domain .opra .btn{padding:  0 10px; margin:0 10px; line-height: 40px}
 
@@ -298,11 +303,11 @@
 .domainRules{}
 .domainRules .blackBg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 999; background: #000; opacity: 0.5; filter: alpha(opacity=50)}
 .domainRules .rulesCon{width: 290px; height: 160px; position: fixed; left: 50%; top: 40%; margin-top: -110px; margin-left: -210px; z-index: 1000; background: #fff; padding: 40px 20px 20px 90px;}
-.domainRules .rulesCon .notice{width: 40px; height: 40px; display: block; background: url(../images/notice.png) no-repeat center; position: absolute; left: 40px; top: 40px;}
-.domainRules .rulesCon h1{color: #666; margin-bottom: 5px; font-weight: bold}
+.domainRules .rulesCon .notice{width: 40px; height: 40px; display: block; background: url(../../images/notice.png) no-repeat center; position: absolute; left: 40px; top: 40px;}
+.domainRules .rulesCon h1{color: #666; margin-bottom: 5px; font-weight: bold; font-size: 14px;}
 .domainRules .rulesCon p{color: #999; font-size: 12px; text-align: justify; line-height: 18px; margin-bottom: 15px; padding-right: 20px; min-height: 90px;}
 .domainRules .rulesCon .opr{text-align: right;}
-.domainRules .rulesCon .close{width: 20px; height: 20px; display: block; background: url(../images/close.png) no-repeat center; position: absolute; right: 15px; top: 10px;}
+.domainRules .rulesCon .close{width: 20px; height: 20px; display: block; background: url(../../images/close.png) no-repeat center; position: absolute; right: 15px; top: 10px;}
 
 .icon47x47{width: 47px; height: 47px}
 .icon83x83{width: 83px; height: 83px}
@@ -374,4 +379,32 @@
 	background: $light-blue;
 	color: #fff;
 	font-size: 12px;
+}
+
+.public-bottom-body{
+    width: 100%;
+    height: 379px;
+    background: url(../../images/bigpush/bottom-bg.jpg) repeat-x;
+    border-top: 3px solid #1a87bd;
+}
+.white-all-btn{
+    @include white-all-btn();
+}
+.public-bottom-content {
+  padding: 50px 0 0 0;
+}
+.public-bottom-content .b-left-bar {
+  padding: 0 60px 0 30px;
+}
+.public-bottom-content .b-left-bar h3 {
+  font-size: 34px;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+.public-bottom-content .b-left-bar p {
+  margin: 0;
+}
+.public-bottom-content .b-left-bar .b-l-desc {
+  color: #fff;
+  line-height: 30px;
 }

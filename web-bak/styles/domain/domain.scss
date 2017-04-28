@@ -58,12 +58,16 @@
 	padding-left: 20px;
 	border-left: 1px solid #a7b1b3;
 	background: url(../../images/domain/domain-icon.png) no-repeat -370px -37px;
+	color: #666;
 }
 .query-form .query-input input{
 	height: 58px;
 	line-height: 58px;
 	width: 80%;
 	font-size: 18px;
+	border: none;
+	margin: 0 0 0 5px;
+	padding: 0;
 }
 .query-form .query-input .select-con{
 	z-index:9;
@@ -236,6 +240,7 @@
 .domain-list td img{width: 30px;}
 .domain-list tr.even{background: #f5fcff}
 .domain-list .opr{width: 130px; text-align: center;}
+.domain-list .opr .link-blue{ color: #3db1ea !important}
 .domain-list .sta{text-align: right;}
 .domain-list .sta span.zczt{padding-left: 20px; color: $light-blue}
 .domain-list .sta span.yhnr{background: #e61c00; color: #fff; padding:2px 3px}
@@ -250,7 +255,7 @@
 .result-cart li{line-height: 20px; padding: 10px 40px 10px 15px; word-break:break-all; position: relative; min-height: 20px; border-bottom:1px solid #eee;}
 .result-cart li a{position: absolute; right: 15px; top: 10px; color: #c5cbd3}
 .result-cart .nowpay{padding: 10px 0; text-align: center}
-.del-domain{display: none;}
+.del-domain{display: none}
 .del-domain h1{font-size:20px; line-height: 30px; padding: 20px 10px; text-align: center;}
 .del-domain .opra{text-align: center;}
 .del-domain .opra .btn{padding:  0 10px; margin:0 10px; line-height: 40px}
@@ -373,4 +378,32 @@
 	background: $light-blue;
 	color: #fff;
 	font-size: 12px;
+}
+
+.public-bottom-body{
+    width: 100%;
+    height: 379px;
+    background: url(../../images/bigpush/bottom-bg.jpg) repeat-x;
+    border-top: 3px solid #1a87bd;
+}
+.white-all-btn{
+    @include white-all-btn();
+}
+.public-bottom-content {
+  padding: 50px 0 0 0;
+}
+.public-bottom-content .b-left-bar {
+  padding: 0 60px 0 30px;
+}
+.public-bottom-content .b-left-bar h3 {
+  font-size: 34px;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+.public-bottom-content .b-left-bar p {
+  margin: 0;
+}
+.public-bottom-content .b-left-bar .b-l-desc {
+  color: #fff;
+  line-height: 30px;
 }

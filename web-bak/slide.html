@@ -5,18 +5,17 @@
     <title></title>
     <style>
 		.banner-row{
-            margin:20px auto;
             background:#208adb;
             cursor:pointer;
-            width:100%;
-            height:560px;
+            width:1280px;
+            height:490px;
 			background: #333;
 			position: relative;
             z-index: 0;
         }
         .banner-con{
 		    z-index: 90;
-		    width: 100%;
+            width:1280px;
 		    height: 100%;
 		    position: absolute;
 		    top: 0;
@@ -67,13 +66,20 @@
 		</div>
 	</div>
     <div class="banner-row">
-		<div class="banner-con">
-	        <div class="layer right-image no-transition" data-zindex="50">
-	            <img class="img1" src="/images/slide-one.png" alt="">
-	        </div>
-
-		</div>
+        <div class="banner-con">
+            <div class="layer right-image no-transition" style="transform: translateZ(50px) translateX(65px) translateY(99px);width: 410px;">
+            <img src="/images/slider/slide-2-1.png" alt="">
+            </div>
+            <div class="layer right-image no-transition" style="transform: translateZ(100px) translateX(100px)  translateY(65px);width: 500px;">
+            <img src="/images/slider/slide-2-2.png" alt="">
+            </div>
+            <div class="layer right-image no-transition" style="transform: translateZ(150px) translateX(300px) translateY(260px);width: 800px;">
+            <img src="/images/slider/slide-2-3.png" alt="">
+            </div>
+        </div>
 	</div>
+
+
 
 	<div style="width: 100px; height: 100px; background: #f00"></div>
 
@@ -86,18 +92,14 @@
 <script>
 
 
-    $(".banner-con").on('mousemove', function(event){
-        event.stopPropagation()
-    })
-
     $(".banner-con").on("mousemove",function(event){
         var $_this = $(this),
             _l = $_this.offset().left,
             _t = $_this.offset().top,
             offsetNum = 50;
 
-        var x              = parseInt(event.pageX - _l);
-        var y              = parseInt(event.pageY - _t);
+        var x              = parseInt(event.clientX - _l);
+        var y              = parseInt(event.clientY - _t);
 
         var bgCentralityX  = $_this.width() / 2; //  背景图的中心点
         var bgCentralityY  = $_this.height() / 2; //  背景图的中心点
@@ -114,7 +116,7 @@ console.log(imgOffsetX, imgOffsetY)
         }
 
         $_this.css({
-            'transform': 'rotateX(' + imgOffsetY + "deg)"+' rotateY('+  imgOffsetX + "deg)"
+            'transform': 'rotateX(' + -imgOffsetY + "deg)"+' rotateY('+  -imgOffsetX + "deg)"
         });
 
     }).on("mouseleave",function(){

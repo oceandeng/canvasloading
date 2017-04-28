@@ -1,6 +1,6 @@
 .popular-application-content {
     .popular-application-item{
-        width: 20%;
+        width: 25%;
         float: left;
 
         .item-detail{
@@ -14,6 +14,13 @@
             .item-info{
                 color: #3db1ea;
                 margin: 20px 0;
+
+                a{
+                    color: #3db1ea;
+
+                    &:hover{
+                    }
+                }
             }
             .item-desc{
                 color: #a7a7a7;

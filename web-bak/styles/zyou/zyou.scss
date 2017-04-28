@@ -1,0 +1,68 @@
+
+.zyou-icon{
+	display: inline-block;
+	background: url(../../images/zyou/zyou-icon.png) no-repeat;
+}
+
+.z2-icon-1{background-position: 0 0}
+.z2-icon-2{background-position: -62px 0}
+.z2-icon-3{background-position: -124px 0}
+.z2-icon-4{background-position: -186px 0}
+.z2-icon-5{background-position: 0 -70px}
+.z2-icon-6{background-position: -62px -70px}
+.z2-icon-7{background-position: -124px -70px}
+.z2-icon-8{background-position: -186px -70px}
+
+.z5-icon-1{background-position: 0 -150px}
+.z5-icon-2{background-position: -100px -150px}
+.z5-icon-3{background-position: -200px -150px}
+
+.z5-icon-21{background-position: 0 -200px}
+.z5-icon-22{background-position: -35px -200px}
+.z5-icon-23{background-position: -70px -200px}
+
+.zyou-b-icon-1{background-position: 0 -350px; background-color: #c1c1c1; border-radius: 50%;}
+.zyou-b-icon-2{background-position: -40px -350px; background-color: #c1c1c1; border-radius: 50%;}
+.zyou-b-icon-3{background-position: -80px -350px; background-color: #c1c1c1; border-radius: 50%;}
+.zyou-b-icon-4{background-position: -120px -350px; background-color: #c1c1c1; border-radius: 50%;}
+.zyou-b-icon-5{background-position: -160px -350px; background-color: #c1c1c1; border-radius: 50%;}
+
+.rule-icon{background-position: -250px -200px}
+
+.b-item{
+	text-align: center;
+
+	p{
+		font-size: 16px;
+	}
+}
+
+.b-item-ul{
+	margin: 20px 0 0 0;
+
+	li{
+		padding: 5px 0 5px 20px;
+		background: url(../../images/zyou/zyou-icon.png) no-repeat -390px -383px;
+	}
+}
+
+.rule-bar{
+	text-align: center;
+	background: url(../../images/zyou/zyou-5/r-line.jpg) no-repeat right center;
+}
+.rule-con{
+	padding: 0 50px;
+
+	ul{
+		li{
+			margin: 10px 0;
+			padding: 0 0 0 20px;
+			color: #999;
+		}
+	}
+}
+.zyou5-p{
+	p{
+		margin: 5px 0;
+	}
+}

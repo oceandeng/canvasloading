@@ -131,7 +131,7 @@
         MainSlider.prototype.init = function(){
             this.addDot()
             this.eventFn()
-            this.autoPlay()
+            // this.autoPlay()
         }
         MainSlider.prototype.eventFn = function(){
             var _this = this
@@ -170,7 +170,7 @@
         MainSlider.prototype.go = function(index){
             this.$item.hide()
             this.$item.eq(index).fadeIn()
-            this.autoPlay()
+            // this.autoPlay()
         }
         MainSlider.prototype.autoPlay = function(){
             var _this = this;
@@ -337,6 +337,9 @@
      * @params dom元素 id
      */
     var toolBarToogleDefault = {
+        cart: '#cart',
+        item: '.tool-item',
+        con: '.t-con',
         onlineConnect: '#onlineConnect',
         sPhone: '#sPhone',
         hotActive: '#hotActive',
@@ -345,71 +348,33 @@
     $.fn.toolBarToogle = function(opt){
         var opt = $.extend({}, toolBarToogleDefault, opt),
             $ele = this,
+            $cart = $ele.find(opt.cart),
             $onlineConnect = $ele.find(opt.onlineConnect),
             $sPhone = $ele.find(opt.sPhone),
             $hotActive = $ele.find(opt.hotActive),
             $freeCall = $ele.find(opt.freeCall);
 
-        // 线上沟通
         publicToogleFn({
-            $ele: $onlineConnect,
-            sonClass: '.t-i',
-            toogleClass: '.f-s'
-        })
-
-        // 售前电话
-        publicToogleFn({
-            $ele: $sPhone,
-            sonClass: '.p-t-i',
-            toogleClass: '.p-t-i-i'
-        })
-
-        // 热门活动
-        publicToogleFn({
-            $ele: $hotActive,
-            sonClass: '.h-a-i',
-            toogleClass: '.h-a-i-i',
-            hideNew:true,
-            needhide: false
-        })
-
-        // 免费回呼
-        publicToogleFn({
-            $ele: $freeCall,
-            sonClass: '.f-t-i',
-            toogleClass: '.f-t-i-i',
-            needhide: false
+            $ele: $ele,
+            item: opt.item,
+            con: opt.con
         })
 
         /**
          * 公共伸缩函数
          * @param obj {object}
-         * @param obj.$ele {object} 最外层jquey对象
-         * @param obj.hideNew {boolean} 隐藏提示图标
-         * @param obj.sonClass {string} 子元素
-         * @param obj.toogleClass {string} 显示隐藏元素
-         * $param obj.needhide {boolean} 是否用隐藏
          */
         function publicToogleFn(obj){
-            var $sonClass = obj.$ele.find(obj.sonClass),
-                $toogleClass = $sonClass.find(obj.toogleClass),
-                left = $toogleClass.outerWidth();
-
-            $sonClass.on('mouseenter', function(){
-                obj.hideNew && $sonClass.find('.new-icon').hide()
-                $toogleClass.show()
-                $sonClass.stop().animate({
-                    left: -left
-                }).addClass('active')
+            obj.$ele.find(obj.item).on('mouseenter', function(){
+                var $this = $(this),
+                    $con = $this.find(obj.con),
+                    _w = $con.outerWidth();
+                $con.stop().animate({
+                    left: - _w + 3
+                })
             }).on('mouseleave', function(){
-                $sonClass.stop().animate({
+                $(this).find(obj.con).stop().animate({
                     left: 0
-                }, function(){
-                    $sonClass.removeClass('active')
-                    if(obj.needhide !== false){
-                        $toogleClass.hide()
-                    }
-                    obj.hideNew && $sonClass.find('.new-icon').show()
                 })
             })
         }

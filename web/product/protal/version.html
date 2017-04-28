@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>中企动力</title>
 
-    <!-- build:css ../../styles/common.css -->
+    <!-- build:css /styles/common.css -->
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/common.css">
     <!-- endbuild -->
 
-    <!-- build:css ../../styles/protal-common.css -->
+    <!-- build:css /styles/protal-common.css -->
     <link rel="stylesheet" href="/styles/protal-common.css">
     <!-- endbuild -->
 
@@ -128,7 +128,7 @@
                                                 <p>中文+英文，双语言、一体化、<p>
                                                 <p>全定制的覆盖PC/移动，实现全</p>
                                                 <p>球商机获取的企业门户。</p>
-                                                <div class="blue-btn mt30">联系商务顾问</div>
+                                                <div class="blue-btn mt30 pop_zixun"><a>联系商务顾问</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -308,18 +308,106 @@
     </div>
     <!-- footer end -->
 
+
+<div class=" zx_pop active_pop">
+    <div class="apply-con">
+        <a href="javascript:void(0);" class="close"></a>
+        <div class="apply-top">
+            <div class="title">免费咨询</div>
+            <div class="subtitle">欢迎您免费咨询，请填写以下信息，我们收到后会尽快与您联系</div>
+        </div>
+        <div class="form">
+            <form action="" method="post" id="submitform" name="submitform">
+                <input type="hidden" name="is_pop" value="1" /> 
+                <div class="textfile">
+                    <span class="t">公司名称</span>
+                    <input type="text" name="company" id="company">
+                </div>
+                <div class="textfile wherecity wrap">
+                    <span class="t"><eq name="isActiveSubmit" value="1"><i>*</i></eq>所在城市</span>
+                    <div class="nice-select marginr gpp" name="nice-select">
+                        <input type="text" class="gp" value="请选择省份" readonly="" name="province" id="gp">
+                        <ul class="province">
+
+                        </ul>
+                    </div>
+                    <div class="nice-select marginr gtt" name="nice-select">
+                        <input type="text" class="gt" value="请选择城市" readonly=""  name="city" id="gt">
+                        <ul class="city">
+
+                        </ul>
+                    </div>
+                    <div class="nice-select gdd" name="nice-select">
+                        <input type="text" class="gd" value="请选择区/县" readonly=""  name="district" id="gd">
+                        <ul class="district">
+
+                        </ul>
+                    </div>
+                </div>  
+                <div class="textfile">
+                    <span class="t"><eq name="isActiveSubmit" value="1"><i>*</i></eq>手机号码</span>
+                    <input type="text" name="mobile" id="mycall">
+                </div>
+                <eq name="ischeckMobile" value="1">
+                <div class="textfile yzm" >
+                    <span class="t">验证码</span>
+                    <input type="text" id="mcode" name="yzm"/>
+                    <a id='verify_mes'>获取短信验证码</a>
+                </div>
+                </eq>
+                <div class="textfile lxman">
+                    <span class="t">联系人</span>
+                    <input type="text" name="truename" id="name">
+                    <div class="appellation">
+                        <input type="radio" name="sex" checked="checked" value="先生"><span>先生</span>
+                        <input type="radio" name="sex" value="女士"><span>女士</span>
+                    </div>
+                </div>
+                <neq name="isActiveSubmit" value="1">
+                <div class="textfile">
+                    <span class="t">邮箱地址</span>
+                    <input type="text" name="email" id="email"/>
+                </div>
+                </neq>
+                <div class="textfile align-center">
+                    <a href="javascript:void(0);" class="submit zixunsubmit">提交</a>
+                </div>  
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        //$('#email').mailAutoComplete({width:'404px'});
+        $('.emailist li').on('mouseover', function(){
+            $(this).addClass('on').siblings().removeClass('on');
+        });
+        $('#gp').cityselect({
+            cityNode: $('#gt'),
+            districtNode: $('#gd')
+        });
+
+        var isLock = false;
+        
+    });
+</script>
+
+
 </div>
 <!-- script quote start -->
-    <!-- build:js ../../scripts/jquery.min.js -->
+    <!-- build:js /scripts/jquery.min.js -->
     <script src="/bower_components/jquery/jquery.min.js" charset="utf-8"></script>
     <!-- endbuild -->
 
-    <!-- build:js ../../scripts/common.min.js -->
+    <script src="/scripts/public.js"></script>
+
+    <!-- build:js /scripts/common.min.js -->
     <script src="/scripts/plugin.js" charset="utf-8"></script>
     <script src="/scripts/main.js" charset="utf-8"></script>
     <!-- endbuild -->
 
-    <!-- build:js ../../scripts/protal.js -->
+    <!-- build:js /scripts/protal.js -->
     <script src="/scripts/protal.js" charset="utf-8"></script>
     <!-- endbuild -->
 

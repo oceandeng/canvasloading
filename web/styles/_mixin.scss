@@ -36,6 +36,34 @@
     padding: 0 30px;
     border-radius: $h / 2;
     cursor: pointer;
+    color: $light-blue;
+
+    a{
+        color: $light-blue;
+    }
+
+    &:hover{
+        background: $light-blue;
+        border: 1px solid $light-blue;
+        color: $white;
+        transition: all .5s linear .1s;
+
+        a{
+            color: $white
+        }
+    }
+}
+@mixin white-all-btn($h: 42px){
+    height: $h;
+    line-height: $h;
+    text-align: center;
+    background: $white;
+    display: inline-block;
+    padding: 0 30px;
+    border-radius: $h / 2;
+    cursor: pointer;
+    color: $light-blue;
+
     a{
         color: $light-blue;
 
@@ -46,10 +74,9 @@
 
     &:hover{
         background: $light-blue;
-        border: 1px solid $light-blue;
         color: $white;
-        transition: all 1s linear .1s;
-    }
+        transition: all .5s linear .1s;
+    } 
 }
 @mixin green-btn($h: 32px){
     height: $h;

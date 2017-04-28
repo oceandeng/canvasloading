@@ -19,8 +19,11 @@
             }
         }
     }
+    .content-group-img{
+        text-align: center;
+    }
     .protal-part-top{
-        background: url(../../images/protal/protal-top-bg.jpg) repeat-x;
+        background: url(../images/protal/protal-top-bg.jpg) repeat-x;
     }
     .protal-detail{
         padding: 60px 0 60px 50px;
@@ -39,6 +42,7 @@
 
             p{
                 display: inline-block;
+                margin: 0 0 5px 0;
             }
             .b-btn{
                 display: inline-block;
@@ -48,6 +52,7 @@
                 text-align: center;
                 color: $g999;
                 border-radius: 10px;
+                font-size: 12px;
             }
         }
     }
@@ -202,7 +207,7 @@
 
 .version-icon{
     display: inline-block;
-    background: url(../../images/protal/version/version-icon.png) no-repeat;
+    background: url(../images/protal/version/version-icon.png) no-repeat;
 }
 
 .v-icon-1{background-position: 0 0}
@@ -289,7 +294,14 @@
         background: $white;
         float: left;
 
+        .img-con{
+            height: 210px;
+            overflow: hidden;
+            text-align: center;
+            line-height: 210px;
+        }
         img{
+            display: inline-block;
             width: 100%;
         }
         p{
