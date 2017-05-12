@@ -407,40 +407,66 @@
     height: 13px;
     line-height: 13px;
     top: 5px;
-    left: 5px;
+    left: 32px;
     border-radius: 50%;
-    background: #ff6800;
-    color: #fff;
+    background: #ffff00;
+    color: #ff1e00;
     font-size: 12px;
     text-align: center;
     z-index: 10;
 }
 .side-tool-bar .tool-bar{
-    width: 44px;
+    width: 56px;
     margin: 0;
+
+    .active{
+        .t-tit{
+            color: #3db1ea !important;
+        }
+        .t-i-i{
+            background: #d5f1ff !important;
+
+            .icon-cart{background-position: 0 -43px}
+            .icon-connect{background-position: -44px -43px}
+            .icon-phone{background-position: -90px -43px}
+            .icon-hot-active{background-position: -136px -43px}
+            .icon-free-call{background-position: -182px -43px}
+        }
+    }
 }
 .side-tool-bar .tool-item{
     cursor: pointer;
     position: relative;
 
-    i{
-        margin: 0 !important;
-    }
     .yellow{
         color: #ffa800;
     }
     .t-i{
         border-bottom: 1px solid #7acef8;
-        width: 44px;
-        height: 43px;
+        width: 56px;
+        height: 53px;
 
+        .t-tit{
+            margin: -10px 0 0 0;
+            color: #fff;
+        }
+        .ts-tit{
+            margin: -10px 0 3px 0;
+            color: #3db1ea;
+            padding: 0 5px;
+        }
         .t-i-i{
-            background: #3db1ea;
+            width: 56px;
+            height: 53px;
             position: relative;
+            background: #3db1ea;
             z-index: 9;
 
             &:hover{
                 background: #d5f1ff;
+                .t-tit{
+                    color: #3db1ea !important;
+                }
 
                 .icon-cart{background-position: 0 -43px}
                 .icon-connect{background-position: -44px -43px}
@@ -449,16 +475,24 @@
                 .icon-free-call{background-position: -182px -43px}
             }
         }
+        .s-p-con{
+            overflow: hidden;
 
+            .phone-line{
+                margin: 5px 10px 0px 20px;
+                border-bottom: 1px solid #b2e5ff;
+                padding: 0 0 5px 0;
+            }
+        }
         .t-con{
             position: absolute;
             z-index: 8;
             left: 0;
             top: 0;
-            width: 147px;
-            height: 43px;
+            width: 161px;
+            height: 53px;
             background: #d5f1ff;
-            border-radius: 22px 0 0 22px;
+            border-radius: 26px 0 0 26px;
             padding: 0 5px 0 0;
 
             .p-tit{
@@ -467,33 +501,38 @@
                 color: #3db1ea;
                 line-height: 16px;
                 margin: 4px 0 0 0;
-                padding: 0 0 0 20px;
             }
             .p-num{
                 text-align: left;
                 font-size: 16px;
                 color: #3db1ea;
                 margin: 0;
-                padding: 0 0 0 20px;
                 font-weight: bold;
             }
             .hot-link{
-                line-height: 43px;
+                line-height: 53px;
 
                 a{
                     color: #3db1ea;
                 }
             }
             .mobile-line{
-                padding: 10px 0;
-
+                padding: 0;
+                
+                .m-tit{
+                    color: #3db1ea;
+                    padding: 0 0 0 20px;
+                    margin: 5px 0;
+                    text-align: left;
+                }
                 input{
                     height: 25px;
                     line-height: 25px;
                     border: none;
-                    width: 95px;
+                    width: 103px;
                     padding: 0 5px;
                     background: $white;
+                    border-radius: 2px 0 0 2px;
                 }
             }
             .t-i-si:hover{
@@ -503,7 +542,7 @@
     }
 
     .cart-detail{
-        line-height: 43px;
+        line-height: 53px;
         color: #3db1ea;
     }
 }
@@ -519,6 +558,7 @@
     display: block;
     width: 46px;
     height: 43px;
+    margin: 0 auto !important;
     background-image: url(../images/common/newsidetoolbar.png);
     background-repeat: no-repeat;
 }
@@ -547,8 +587,8 @@
 .icon-free-call{background-position: -182px 0}
 
 .icon-to-top{background-position: -200px 0}
-.icon-qq{background-position: -90px -110px}
-.icon-online{background-position: -150px -110px}
+.icon-qq{background-position: -90px -113px}
+.icon-online{background-position: -150px -113px}
 .right-icon{
     background-image: url(../images/common/newsidetoolbar.png);
     background-repeat: no-repeat;
@@ -557,6 +597,8 @@
     width: 23px;
     height: 25px;
     cursor: pointer;
+    margin: 0 !important;
+    border-radius: 0 2px 2px 0;
 }
 
 .none{

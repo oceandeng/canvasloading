@@ -40,17 +40,17 @@
 
     a{
         color: $light-blue;
-
-        &:hover{
-            color: $white;
-        }
     }
 
     &:hover{
         background: $light-blue;
         border: 1px solid $light-blue;
         color: $white;
-        transition: all 1s linear .1s;
+        transition: all .5s linear .1s;
+
+        a{
+            color: $white
+        }
     }
 }
 @mixin white-all-btn($h: 42px){
@@ -75,7 +75,7 @@
     &:hover{
         background: $light-blue;
         color: $white;
-        transition: all 1s linear .1s;
+        transition: all .5s linear .1s;
     } 
 }
 @mixin green-btn($h: 32px){

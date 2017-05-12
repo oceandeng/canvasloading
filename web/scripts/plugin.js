@@ -340,6 +340,7 @@
         cart: '#cart',
         item: '.tool-item',
         con: '.t-con',
+        scon: '.s-p-con',
         onlineConnect: '#onlineConnect',
         sPhone: '#sPhone',
         hotActive: '#hotActive',
@@ -352,12 +353,14 @@
             $onlineConnect = $ele.find(opt.onlineConnect),
             $sPhone = $ele.find(opt.sPhone),
             $hotActive = $ele.find(opt.hotActive),
-            $freeCall = $ele.find(opt.freeCall);
+            $freeCall = $ele.find(opt.freeCall),
+            speed = 200;
 
         publicToogleFn({
             $ele: $ele,
             item: opt.item,
-            con: opt.con
+            con: opt.con,
+            scon: opt.scon
         })
 
         /**
@@ -365,17 +368,45 @@
          * @param obj {object}
          */
         function publicToogleFn(obj){
-            obj.$ele.find(obj.item).on('mouseenter', function(){
+            obj.$ele.find(obj.item).on('click', function(){
                 var $this = $(this),
                     $con = $this.find(obj.con),
+                    $scon = $this.find(obj.scon),
                     _w = $con.outerWidth();
-                $con.stop().animate({
-                    left: - _w + 3
-                })
+                
+                $this.addClass('active');
+                if($scon.size() > 0){
+                    $scon.stop().animate({
+                        left: - _w + 30
+                    }, speed, function(){
+                        $scon.stop().animate({
+                            height: 106
+                        }, speed)
+                    })
+                }else{
+                    $con.stop().animate({
+                        left: - _w + 30
+                    })
+                }
             }).on('mouseleave', function(){
-                $(this).find(obj.con).stop().animate({
-                    left: 0
-                })
+                var $this = $(this),
+                    $con = $this.find(obj.con),
+                    $scon = $this.find(obj.scon);
+
+                $this.removeClass('active');
+                if($scon.size() > 0){
+                    $scon.stop().animate({
+                        height: 54
+                    }, speed, function(){
+                        $scon.stop().animate({
+                            left: 0
+                        })
+                    })
+                }else{
+                    $con.stop().animate({
+                        left: 0
+                    }, speed)
+                }
             })
         }
     }

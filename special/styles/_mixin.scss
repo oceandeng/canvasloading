@@ -1,0 +1,25 @@
+@import "variable";
+
+@mixin line-height($height: 50px){
+  height: $height;
+  line-height: $height;
+  text-align: center;
+}
+@mixin main-btn($h: 34px){
+    height: $h;
+    line-height: $h;
+    text-align: center;
+    background: #f09d01;
+    display: inline-block;
+    padding: 0 30px;
+    border-radius: $h / 2;
+    color: $white;
+    cursor: pointer;
+    a{
+        color: $white;
+    }
+
+    &:hover{
+        background: #0099df;
+    }
+}

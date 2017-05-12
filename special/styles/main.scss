@@ -1,0 +1,96 @@
+@import "normalize", "mixin", "variable";
+
+body{
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+    background: #fff;
+}
+a{text-decoration: none}
+.clearfix{
+    *zoom: 1;
+}
+.clearfix:before, .clearfix:after{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.clearfix:after{
+    clear: both;
+}
+.f-left{float: left}
+.f-right{float: right}
+.block{display: block !important}
+.logo{
+
+}
+.main-wrap{
+    width: $main-width;
+    margin: 0 auto;
+    position: relative;
+}
+.gray-line{
+	background: #efefef;
+}
+.align-center{
+	text-align: center;
+}
+
+.top{
+	width: 100%;
+	height: 85px;
+	background: url(../images/special/top-bg.jpg) #ebebeb no-repeat center center;
+}
+.slider-box{
+	width: 100%;
+	height: 485px;
+
+	.banner-body{
+		width: 100%;
+		height: 485px;
+		background: url(../images/special/banner.jpg) center center;
+	}
+}
+
+.content-group{
+	text-align: center;
+}
+.content-tit{
+	margin: 0 0 60px 0;
+	padding: 0 0 30px 0;
+	border-bottom: 1px solid #dbdbdb;
+	position: relative;
+
+	.blue-border{
+		width: 23px;
+		height: 3px;
+		background: #019fe8;
+		position: absolute;
+		left: 50%;
+		bottom: -2px;
+	}
+}
+.btn-line{
+	padding: 60px 0;
+}
+.main-btn{
+	@include main-btn()
+}
+.bottom-tip{
+	width: 100%;
+	height: 117px;
+	text-align: center;
+	background: #e4e4e4;
+}
+.footer{
+	width: 100%;
+	background: #444;
+}
+.tool-bar{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+
+	.tool-bar-close{
+		display: none;
+	}
+}
