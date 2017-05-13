@@ -20,6 +20,5 @@
 	    })
 	}
 
-	$('#toolBar').imzixun()
 
 })(window, jQuery)

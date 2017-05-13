@@ -1,0 +1,41 @@
+.icon{
+    display: inline-block;
+    background: url(../images/special/special-icon.png) no-repeat;
+}
+
+.icon50x50{width: 50px; height:50px}
+.icon100x50{width: 100px; height: 50px}
+.icon100x60{width: 100px; height: 60px}
+.icon100x100{width: 100px; height: 100px}
+
+.icon-part-one-1{background-position: 0 0}
+.icon-part-one-2{background-position: -100px 0}
+.icon-part-one-3{background-position: -200px 0}
+.icon-part-one-4{background-position: -300px 0}
+
+.icon-part-two-1{background-position: 0 -50px}
+.icon-part-two-2{background-position: -100px -50px}
+.icon-part-two-3{background-position: -200px -50px}
+
+.icon-part-thr-1{background-position: 0 -150px}
+.icon-part-thr-2{background-position: -100px -150px}
+.icon-part-thr-3{background-position: -200px -150px}
+.icon-part-thr-4{background-position: -300px -150px}
+.icon-part-thr-5{background-position: 0px -250px}
+.icon-part-thr-6{background-position: -100px -250px}
+.icon-part-thr-7{background-position: -200px -250px}
+
+.icon-prat-fou-1{background-position: 0 -400px}
+.icon-prat-fou-2{background-position: 0 -500px}
+.icon-prat-fou-3{background-position: -100px -400px}
+.icon-prat-fou-4{background-position: -100px -500px}
+.icon-prat-fou-5{background-position: -200px -400px}
+.icon-prat-fou-6{background-position: -200px -500px}
+.icon-prat-fou-7{background-position: -300px -400px}
+.icon-prat-fou-8{background-position: -300px -500px}
+
+.b-t-icon-1{background-position: -450px 0}
+.b-t-icon-2{background-position: -450px -50px}
+.b-t-icon-3{background-position: -450px -100px}
+.b-t-icon-4{background-position: -450px -150px}
+.b-t-icon-5{background-position: -450px -200px}
