@@ -7,6 +7,7 @@
 .icon100x50{width: 100px; height: 50px}
 .icon100x60{width: 100px; height: 60px}
 .icon100x100{width: 100px; height: 100px}
+.icon37x37{width: 37px; height: 37px}
 
 .icon-part-one-1{background-position: 0 0}
 .icon-part-one-2{background-position: -100px 0}
@@ -39,3 +40,12 @@
 .b-t-icon-3{background-position: -450px -100px}
 .b-t-icon-4{background-position: -450px -150px}
 .b-t-icon-5{background-position: -450px -200px}
+
+.icon-p-close{
+	background-position: -447px -497px;
+	border-radius: 3px;
+	background-color: #808080;
+}
+
+.icon-online{background-position: -450px -300px}
+.icon-phone{background-position: -450px -350px}

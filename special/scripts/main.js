@@ -1,24 +1,56 @@
 (function(G, $){
-	$.fn.imzixun = function(opt){
+	$.fn.toolBar = function(opt){
 	    var $w = $(G),
 	        $ele = this,
-	        $open = $ele.find('.tool-bar-open'),
-	        $close = $ele.find('.tool-bar-close');
+	        $item = $ele.find('.tool-item'),
+	        body = '.fold-body',
+	        close = '.fold-close',
+	        offset = 5;
 
-	    $w.scroll(function(e){
-	        var sc = $w.scrollTop() + $w.outerHeight(),
-	            fT = $('.footer').offset().top,
-	            dH = $(document).outerHeight();
+	    return this.each(function(){
+	    	$item.on('mouseenter', function(){
+	    		var $_this = $(this),
+	    			$body = $_this.find(body),
+	    			_l = $body.outerWidth();
 
-	        if(sc > fT){
-	            $open.hide()
-	            $close.show()
-	        }else{
-	            $open.show()
-	            $close.hide()
-	        }
+	    		$body.animate({
+	    			left: - _l + 5
+	    		})
+	    	}).on('mouseleave', function(){
+	    		var $_this = $(this),
+	    			$body = $_this.find(body);
+
+	    		$body.animate({
+	    			left: 0
+	    		})
+	    	})
+
+
 	    })
 	}
 
+	$.fn.goDetail = function(){
+		var $ele = this,
+			detail = '.go-detail';
 
+		return this.each(function(){
+			$ele.on('mouseenter', function(){
+				var $_this = $(this);
+
+				$_this.find(detail).stop().animate({
+					top: 0
+				})
+			}).on('mouseleave', function(){
+				var $_this = $(this),
+					_t = $_this.outerHeight();
+
+				$_this.find(detail).stop().animate({
+					top: _t
+				})
+			})
+		})
+	}
+
+	$('#toolBar').toolBar()
+	$('.case-img').goDetail()
 })(window, jQuery)
