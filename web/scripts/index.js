@@ -21,7 +21,7 @@ $(function(){
         var bgCentralityY  = $_this.height() / 2; //  背景图的中心点
 
         var imgOffsetX      = (bgCentralityX - x) / offsetNum;
-        var imgOffsetY      = (bgCentralityY - y) / offsetNum;
+        var imgOffsetY      = - (bgCentralityY - y) / offsetNum;
 
         $_this.css({
             'transform': 'rotateX(' + imgOffsetY + "deg)"+' rotateY('+  imgOffsetX + "deg)"

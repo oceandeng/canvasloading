@@ -62,18 +62,18 @@
             })
         }
         LeftToolBar.prototype.eventsFn = function(){
-            this.$tit.on('mouseenter', function(){
+            this.$tit.on('click', function(){
                 var $_this = $(this)
 
                 // $_this.addClass('active').parent().siblings().find(options.tit).removeClass('active')
-                $_this.next().show()
-                $_this.parent().siblings().find(options.con).hide()
+                $_this.next().slideDown()
+                $_this.parent().siblings().find(options.con).slideUp()
             })
 
-            this.$con.on('mouseenter', function(){
+            this.$con.on('click', function(){
                 var $_this = $(this)
 
-                $_this.show().parent().siblings().find(options.con).hide()
+                $_this.slideDown().parent().siblings().find(options.con).slideUp()
             })
         }
 

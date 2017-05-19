@@ -79,12 +79,13 @@
                     $subCon.css({'width': _cw}).show()
 
                     var _ccw = $subCon.outerWidth()
+                    $subCon.css('left', 0)
 
-                    if(_ccw < pw){
-                        $subCon.css('left', _l)
-                    }else{
-                        $subCon.css('right', 0)
-                    }
+                    // if(_ccw < pw){
+                    //     $subCon.css('left', _l)
+                    // }else{
+                    //     $subCon.css('right', 0)
+                    // }
                 }
 
             }).on('mouseleave', function(e){
@@ -113,7 +114,8 @@
         mainWrap: '.slide-wrap',
         itemClass: '.slide-group',
         lClass: '.y-row',
-        bClass: '.banner-row'
+        bClass: '.banner-row',
+        wrapClass: '.index-top-banner'
     }
     $.fn.mainSlider = function(options){
         var options = $.extend({}, mainSliderDefault, options)
@@ -125,7 +127,8 @@
             this.index = 0
             this.picTimer = null
             this.speed = 5000
-            this.$dotWrap = this.$dom.find(options.slideWrap).find(options.mainWrap)
+            this.$dotWrap = this.$dom.find(options.slideWrap).find(options.mainWrap),
+            this.$wrap = this.$dom.find(options.wrapClass)
         }
 
         MainSlider.prototype.init = function(){
@@ -170,6 +173,18 @@
         MainSlider.prototype.go = function(index){
             this.$item.hide()
             this.$item.eq(index).fadeIn()
+
+
+            console.log(this.$item.eq(index).attr('data-bg'))
+            if(this.$item.eq(index).attr('data-bg') != undefined){
+                this.$wrap.css({
+                    background: this.$item.eq(index).attr('data-bg')
+                })
+            }else{
+                this.$wrap.css({
+                    background: '#001526'
+                })
+            }
             this.autoPlay()
         }
         MainSlider.prototype.autoPlay = function(){
@@ -333,6 +348,30 @@
     }
 
     /**
+     * bottom-phone
+     */
+    $.fn.imzixun = function(opt){
+        var $w = $(G),
+            $ele = this;
+
+        $w.scroll(function(e){
+            var sc = $w.scrollTop() + $w.outerHeight(),
+                fT = $('.footer').offset().top,
+                dH = $(document).outerHeight();
+
+            if(sc > fT){
+                $ele.css({
+                    right: -136
+                })
+            }else{
+                $ele.css({
+                    right: 0
+                })
+            }
+        })
+    }
+
+    /**
      * tool-bar 移入展开
      * @params dom元素 id
      */
@@ -377,7 +416,7 @@
                 $this.addClass('active');
                 if($scon.size() > 0){
                     $scon.stop().animate({
-                        left: - _w + 30
+                        left: - _w
                     }, speed, function(){
                         $scon.stop().animate({
                             height: 106
@@ -385,7 +424,7 @@
                     })
                 }else{
                     $con.stop().animate({
-                        left: - _w + 30
+                        left: - _w + 3
                     })
                 }
             }).on('mouseleave', function(){
@@ -396,7 +435,7 @@
                 $this.removeClass('active');
                 if($scon.size() > 0){
                     $scon.stop().animate({
-                        height: 54
+                        height: 53
                     }, speed, function(){
                         $scon.stop().animate({
                             left: 0
