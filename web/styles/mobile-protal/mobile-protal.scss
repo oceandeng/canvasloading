@@ -1,0 +1,124 @@
+@import "../variable", "../mixin";
+
+.mobile-protal-icon{
+	display: inline-block;
+	background: url(../../images/mobile-protal/mobile-protal-icon.png) no-repeat;
+}
+.icon100x100{
+	width: 100px;
+	height: 100px;
+}
+.icon150x150{
+	width: 150px;
+	height: 150px;
+}
+
+.part-one-icon-1{background-position: 0 0}
+.part-one-icon-2{background-position: -100px 0}
+.part-one-icon-3{background-position: -200px 0}
+
+.part-thr-icon-1{background-position: 0 -100px}
+.part-thr-icon-2{background-position: -150px -100px}
+.part-thr-icon-3{background-position: -300px -100px}
+.part-thr-icon-4{background-position: -450px -100px}
+.part-thr-icon-5{background-position: -600px -100px}
+
+.part-one-con{
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.info-body{
+	text-align: center;
+}
+.solution-manage-item{
+	h3{
+		font-size: 18px;
+		color: #232933;
+	}
+	p{
+		color: #666;
+		font-size: 12px;
+		line-height: 20px;
+	}
+}
+.part-thr-line-1{
+	width: 1280px;
+	margin: 0 auto;
+}
+.part-thr-line-2{
+	width: 800px;
+	margin: 0 auto;
+}
+
+.part-thr-item{
+	position: relative;
+	padding: 10px 40px;
+	text-align: left;
+	margin: 0 40px;
+
+	h3{
+		font-size: 18px;
+	}
+	p{
+		font-size: 12px;
+		color: $g666;
+	}
+	.mobile-protal-icon{
+		position: absolute;
+		top: -40px;
+		right: -40px;
+	}
+}
+
+.border-color-1{border: 1px solid #ea8840}
+.border-color-2{border: 1px solid #48c12c}
+.border-color-3{border: 1px solid #ff4f4f}
+.border-color-4{border: 1px solid #3db1ea}
+.border-color-5{border: 1px solid #7e8bf6}
+
+.part-fou-body{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.sm-icon-1{background-position: 0 -250px}
+.sm-icon-2{background-position: -100px -250px}
+.sm-icon-3{background-position: -200px -250px}
+
+.part-fou-body, .part-six-body{
+
+	.solution-manage-item{
+		text-align: center;
+	}
+}
+
+.pf-icon-1{background-position: 0 -350px}
+.pf-icon-2{background-position: -100px -350px}
+
+.part-fiv-item{
+	i{
+		float: left;
+		margin: 10px 0 0 0;
+	}
+
+	h3{
+		font-size: 18px;
+	}
+	p{
+		font-size: 12px;
+		color: $g666;
+	}
+	h3, p{
+		padding: 0 0 0 120px;
+	}
+}
+
+.part-six-body{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.psix-icon-1{background-position: 0 -450px}
+.psix-icon-2{background-position: -100px -450px}
+.psix-icon-3{background-position: -200px -450px}
