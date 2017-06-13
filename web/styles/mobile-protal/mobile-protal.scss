@@ -122,3 +122,14 @@
 .psix-icon-1{background-position: 0 -450px}
 .psix-icon-2{background-position: -100px -450px}
 .psix-icon-3{background-position: -200px -450px}
+
+.part-fiv-body{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.part-fou, .part-fiv, .part-six{
+	.oc-desc{
+		line-height: 24px !important;
+	}
+}

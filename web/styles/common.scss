@@ -691,6 +691,8 @@
     height: 100%;
     background: #000;
     opacity: .8;
+    position: relative;
+    z-index: 3;
 }
 .dzsw-pop, .active_pop_body,.zero_pop{
     width:710px; 

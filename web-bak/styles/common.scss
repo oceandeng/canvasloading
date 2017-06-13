@@ -50,7 +50,7 @@
                     display: block;
                     height: 20px;
                     line-height: 20px;
-                    padding: 20px;
+                    padding: 20px 23px;
                     color: $white;
                 }
             }
@@ -96,6 +96,15 @@
                     }
                 }
             }
+        }
+    }
+    .top-phone{
+        padding: 17px 0 0 0;
+
+        p{
+            margin: 0;
+            color: #fff;
+            line-height: 20px;
         }
     }
     .center-body{
@@ -246,12 +255,15 @@
                 text-align: left;
                 cursor: pointer;
                 border-left: 5px solid $white;
+                &:hover{
+                    color: $light-blue;
+                }
 
                 .l-first-link{
                     color: $black;
 
                     &:hover{
-                        color: $drak-blue;
+                        color: $light-blue;
                     }
                 }
 
@@ -427,9 +439,9 @@
             background: #d5f1ff !important;
 
             .icon-cart{background-position: 0 -43px}
-            .icon-connect{background-position: -44px -43px}
-            .icon-phone{background-position: -90px -43px}
-            .icon-hot-active{background-position: -136px -43px}
+            .icon-connect{background-position: -44px -46px}
+            .icon-phone{background-position: -90px -44px}
+            .icon-hot-active{background-position: -136px -46px}
             .icon-free-call{background-position: -182px -43px}
         }
     }
@@ -469,9 +481,9 @@
                 }
 
                 .icon-cart{background-position: 0 -43px}
-                .icon-connect{background-position: -44px -43px}
-                .icon-phone{background-position: -90px -43px}
-                .icon-hot-active{background-position: -136px -43px}
+                .icon-connect{background-position: -44px -46px}
+                .icon-phone{background-position: -90px -44px}
+                .icon-hot-active{background-position: -136px -46px}
                 .icon-free-call{background-position: -182px -43px}
             }
         }
@@ -514,6 +526,10 @@
 
                 a{
                     color: #3db1ea;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
             .mobile-line{
@@ -544,6 +560,14 @@
     .cart-detail{
         line-height: 53px;
         color: #3db1ea;
+
+        a{
+            color: #3db1ea;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -567,7 +591,7 @@
     height: 38px;
     position: fixed;
     float: left;
-    bottom: 70px;
+    bottom: 112px;
     right: 0;
     z-index: 999;
     background-color: #3db1ea;
@@ -580,10 +604,20 @@
 .go-top:hover{
     background-color: $drak-blue;
 }
+.imzixun-body{
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+
+    img{
+        float: left;
+    }
+}
 .icon-cart{background-position: 0 0}
-.icon-connect{background-position: -44px 0}
-.icon-phone{background-position: -90px 0}
-.icon-hot-active{background-position: -136px 0}
+.icon-connect{background-position: -44px -3px}
+.icon-phone{background-position: -90px -1px}
+.icon-hot-active{background-position: -136px -3px}
 .icon-free-call{background-position: -182px 0}
 
 .icon-to-top{background-position: -200px 0}
@@ -645,14 +679,27 @@
         }
     }
 }
-.dzsw-pop, .zx_pop,.zero_pop{
+.zx_pop{
+    width: 100%;
+    height: 100%;
+    position: fixed !important; 
+    top: 0;
+    left: 0;
+}
+.zx_pop .mask-body{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+}
+.dzsw-pop, .active_pop_body,.zero_pop{
     width:710px; 
-    height: 625px; 
+    height: 480px; 
     position: fixed !important; 
     left: 50%; 
     top: 50%; 
-    margin-left: -395px; 
-    margin-top: -305px; 
+    margin-left: -355px; 
+    margin-top: -245px; 
     z-index: 999; 
     box-shadow:0 0 10px 5px rgba(0,0,0,.2); 
     _border:1px solid #ddd; 
@@ -694,7 +741,7 @@
 .apply-con .textfile .emailist li.on{background-color:#b2b2b2; padding: 0 10px;}
 .apply-con .wherecity input{width:105px; border: none; background: none;}
 
-.apply-con .lxman input{width:245px;}
+.apply-con .lxman input{width:384px;}
 .apply-con .lxman .appellation{width:132px; height: 40px; position: absolute; left:400px; top: 0;}
 .apply-con .lxman .appellation input{width:16px; float: left; border:none; padding: 0; margin-right:5px;}
 .apply-con .lxman .appellation span{float:left;width: 40px; height: 40px; line-height: 40px; display: block;}

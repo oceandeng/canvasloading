@@ -1,0 +1,89 @@
+/*
+* @Author: denghaiyang
+* @Date:   2017-05-18 13:46:58
+* @Last Modified by:   denghaiyang
+* @Last Modified time: 2017-05-18 15:24:30
+*/
+.bookingroom-icon{
+	display: inline-block;
+	background: url(../../images/bookingroom/bookingroom-icon.png) no-repeat;
+}
+
+.icon50x50{
+	width: 50px;
+	height: 50px;
+}
+.icon150x150{
+	width: 150px;
+	height: 150px;
+}
+
+.po-icon-1{background-position: 0 0}
+.po-icon-2{background-position: -150px 0}
+.po-icon-3{background-position: -300px 0}
+.po-icon-4{background-position: -450px 0}
+
+.ptr-icon1{background-position: 0 -150px}
+.ptr-icon2{background-position: -50px -150px}
+.ptr-icon3{background-position: -100px -150px}
+.ptr-icon4{background-position: -150px -150px}
+.ptr-icon5{background-position: -200px -150px}
+.ptr-icon6{background-position: -250px -150px}
+.ptr-icon7{background-position: -300px -150px}
+
+.info-body{
+	text-align: center;
+}
+
+.solution-manage-item{
+	h3{
+		font-size: 18px;
+		color: #4d91e4;
+	}
+	p{
+		color: #666;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.part-one-l2-item{
+	text-align: center;
+	
+	h3{
+		font-size: 24px;
+		margin: 50px 0 20px 0;
+	}
+	p{
+		color: #999;
+	}
+}
+
+.part-two{
+	.part-two-item{
+		text-align: center;
+
+		p{
+			color: #666;
+			margin: 40px 0;
+		}
+	}
+}
+
+.part-thr-item{
+	text-align: center;
+
+	h3{
+		color: #666;
+		font-size: 14px;
+	}
+	p{
+		color: #999;
+		font-size: 12px;
+		margin: 5px 0;
+	}
+	
+
+
+
+}

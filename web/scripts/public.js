@@ -145,7 +145,7 @@ ZQDL.util.qqwpa = function(){
 	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
     var cnzz = document.createElement("script");
     cnzz.src = cnzz_protocol + "wpa.b.qq.com/cgi/wpa.php?key=" + ZQDL.util.path['analytics']['qq'];
-    obj.append(cnzz);
+    //obj.append(cnzz);
 };
 //qq后加载
 ZQDL.util.baiduhm = function(){
@@ -158,7 +158,7 @@ ZQDL.util.baiduhm = function(){
 };
 ZQDL.util.BizQQWPA = function(obj){
 	try{
-    	BizQQWPA.addCustom({aty: '0', a: '1002', nameAccount: 800144700, selector: obj});
+    	//BizQQWPA.addCustom({aty: '0', a: '1002', nameAccount: 800144700, selector: obj});
     }catch(e){
     	ZQDL.LOG('无法加载QQ插件');
     }
@@ -355,27 +355,13 @@ ZQDL.apps.sso = {
 
 
 /**************************************** 页面公用部分 ********************************/
-/**
- * 回到顶部
- */
-$(window).scroll(function () {
-    if($(document).scrollTop()>300){
-        $(".scrolltop a.t").show();
-    }else{
-        $(".scrolltop a.t").fadeOut(200);
-    }
-});
-$(".scrolltop a.t").bind("click",function(){
-    var winTop = $(window).scrollTop();
-    $('body,html').animate({scrollTop:0}, winTop/6);
 
-});
 
 
 $(function(){
     $('.pop_zixun a').on('click',function(){
         var val = $(this).attr('value');
-        $('#admin_add_value').val(val);
+        if(val)$('#admin_add_value').val(val);
         $(".zx_pop").show();return false;
     });
     $('body').on('click','.zixun_pop',function(){
@@ -391,8 +377,192 @@ $(function(){
     }catch(e){
     	ZQDL.LOG('单点登录异常');
     }
-    setTimeout('ZQDL.util.cnzz()',3000);
- // 在线咨询弹窗显示与隐藏
+    setTimeout('ZQDL.util.cnzz()',4000);
+});
+
+
+$(function(){    
+	$('.zaixianzixun').attr({href:ZQDL.util.zixun.baidu_url,target:'_blank'});
+	//购物车数量
+    $.ajax({
+        type: "get",
+        url: ZQDL.util.path.console+"/api-appstore/carts/countcarts",
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp",
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        dataType : "jsonp",
+        success:function(result){
+            var num = 0;
+            if(result.status == 999){
+                var toLocation=result.location.split("?")[0];
+                var requestArr=geturlRequest(result.location);
+                if(requestArr.service){
+                    var service = decodeURIComponent(requestArr.service);
+                    service += ('&backurl=' + encodeURIComponent(window.location.href));
+                    requestArr.service = encodeURIComponent(service);
+                }
+                var j=0;
+                for(var i in requestArr){
+                    toLocation += j==0 ? "?" : "&"
+                    toLocation += i + "=" + requestArr[i];
+                    j++
+                }
+                //console.log(toLocation);
+                window.location.href = toLocation;
+            }else if(result.status == 101){
+                num = result.data.num;
+            }else if(result.status == 501){
+                var localCart = $.cookie("localCart") || "[]";
+                if(localCart && localCart != "null"){
+                    localCart = JSON.parse(localCart);
+                    num = localCart.length;
+                }
+            }            
+            $('.cartNum').html(num);
+            //console.log(num)
+        }
+    });
+    //tab切换
+    (function($) {
+        $.fn.TabSwitch = function(options) {
+            var opts = $.extend({},$.fn.TabSwitch.defaults,options);
+            return this.each(function(){
+                var tab = $(this);
+                var menu = tab.find(opts.menu);
+                var content = tab.find(opts.content);
+                menu[opts.type](function(){
+                    $(this).addClass(opts.classname).siblings().removeClass(opts.classname);
+                    content.eq($(this).index()).show().siblings().hide();
+                });
+            });
+        };
+
+        $.fn.TabSwitch.defaults = {
+            classname: 'active',    //菜单选中样式
+            type: 'click',          //菜单切换事件，click/mouseover
+            menu: '.btn span',      //菜单单个btn
+            content: '.content li'  //内容单个con
+        };
+
+        $(".yumingsousuo-b22 input").focus(function(){
+            if(this.value=="输入域名，如：300"){
+                this.value="";
+                this.style.color="#333";
+            }
+        }).blur(function(){
+            if(this.value==""){
+                this.style.color="#ccc";
+                this.value="输入域名，如：300";
+            }
+        });
+
+        $(".yumingsousuo-b22-ymxl li").hover(function(){
+            this.style.backgroundColor="#f6f6f6";
+        },function(){
+            this.style.backgroundColor="";
+        });
+
+        $("#ymss").click(function(e){
+            $(".yumingsousuo-b22-ymxl").css("display","");
+
+            e.stopPropagation();
+        });
+
+        $("#ymss").click(function(){
+            $(".yumingsousuo-b22-ymxl").css("display","none");
+        });
+
+        $(".yumingsousuo-b22-ymxl li").click(function(){
+            $(".yumingsousuo-b22-ym").html($(this).html());
+        })
+
+    })(jQuery);
+    
+
+    //工作机会列表页展开按钮
+    $(".job-add .zhankai a").bind("click",function(){
+        var c=$(this).attr("class");
+        if(c=="close"){
+            $(".job-add").css("height","auto");
+            $(this).addClass("open").removeClass("close").html("收起");
+        }
+        if(c=="open"){
+            $(".job-add").css("height","32px");
+            $(this).addClass("close").removeClass("open").html("展开");
+        }
+    });
+
+    //联系我们页面，分公司显示、隐藏
+    $(".branch-info a.close").bind("click",function(){
+        $(".branch-info").hide();
+    });
+    $(".branch-map a").bind("click",function(){
+        $(".branch-info").show();
+    });
+    //企业荣誉页面，点击图片显示大图
+    $(".pop").css("height",document.body.clientHeight);
+    $(".pop a").bind("click",function(){
+        $(".pop").hide();
+    });
+    $(".pop .pop-bg").bind("click",function(){
+        $(".pop").hide();
+    });
+    $(".img").each(function(){
+        var a=$(this);
+        a.find("a").bind("click",function(){
+            var src=$(this).find("img").attr("src");
+            $(".pop .content img").attr("src",src);
+            var img = new Image();
+            img.src =src;
+            var imgh=0;
+            var imgw=0;
+            if(img.height>600){
+                imgh=600;
+                imgw=600/img.height*img.width;
+                if(imgw>1100){
+                    imgh=1100/imgw*600;
+                    imgw=1100;
+                }
+            }else{
+                if(img.width>1100){
+                    imgw=1100;
+                    imgh=1100/img.width*img.height;
+                }else{
+                     imgw=img.width;
+                     imgh=img.height;
+                }
+            }
+            var cw = (imgw+40)/2*-1;
+            var ch = (imgh+40)/2*-1;
+            $(".pop .content").css({ "margin-left": cw+"px", "margin-top": ch+"px" });
+            $(".pop").show();
+        });
+    });
+
+    function sendYzm(flag){
+        if(flag == 1){
+            var mycall = $('#mycall_bottom').val();
+        }else{
+            var mycall = $('#mycall').val();
+        }
+        if(mycall == ''){
+            alert('手机号码不能为空');
+        }
+        $.get('/e/enews/send.php',{mobile:mycall, action:'send'},function(data){
+            if (data.match("^{(.+:.+,*){1,}}$")){
+               var reg = eval("("+data+")");
+                if(reg.code){
+                    alert(reg.msg);
+                    return;
+                }
+            }
+            alert('发送成功');
+       });
+    }
+
+    // 在线咨询弹窗显示与隐藏
     $('.onlineserver ul li').on('mouseover', function() {
         $(this).stop().animate({'width': 194},300).addClass('on').siblings('').removeClass('on');
     });
@@ -412,117 +582,44 @@ $(function(){
         $('.activityrecommend .zhankai').hide();
         $('.activityrecommend .shouqi').fadeIn();
     });
+
+    /*左侧浮窗-建站服务*/
+    $('.jz-service-close').click(function(event) {
+        $(this).parent('.jz-service-open').hide().siblings('.jz-service-packup').show();
+    });
+    $('.jz-service-packup').mouseenter(function() {
+        $(this).hide().siblings('.jz-service-open').show();
+    });
+    // 延迟咨询弹窗
+      function yuyuePop(){
+        $('.pop-yuyue').fadeIn();
+      }
+      var timer=window.setTimeout(yuyuePop,3000);
+      window.clearTimeout(timer);
+      window.setTimeout(yuyuePop,3000);
+      $('.refuse-btn').bind('click',function(){$('.pop-yuyue').fadeOut();return false;});
+      $('.pop-yuyue-close').bind('click',function(){$('.pop-yuyue').fadeOut();return false;});
+
+    // 行业选择
+    $('.hy_belong').find('.gp').click(function(ev){
+        $(this).siblings().show();
+        ev.stopPropagation();
+    });
+    $('.hy_belong').find('li').hover(function(ev){
+        $(this).addClass('on').siblings().removeClass('on');
+        ev.stopPropagation();
+    });
+    $('.hy_belong').find('li').click(function(ev){
+        var val = $(this).text();
+        $(this).parent().siblings('input').val(val);
+        $(this).parent().hide();
+        ev.stopPropagation();
+    });
+
+    $(document).click(function(){
+        $('[name="nice-select"] ul').hide();
+    });
 });
 
-(function(G, $){
-    /**
-     * 返回顶部
-     * @speed {number} 动画速度
-     */
-    var goTopDefault = {
-        speed: 500
-    };
-    $.fn.goTop = function(opt){
-        var $w = $(G),
-            opt = $.extend({}, goTopDefault, opt),
-            $ele = this;
 
-        $w.scroll(function(e){
-            var sc = $w.scrollTop();
 
-            if(sc > 100) {
-                $ele.removeClass('go-top-none');
-            } else {
-                $ele.addClass('go-top-none');
-            }
-        });
-        $ele.click(function(event) {
-            $('body, html').animate({
-                scrollTop: 0
-            }, opt.speed);
-        });
-    };
-
-    /**
-     * tool-bar 移入展开
-     * @params dom元素 id
-     */
-    var toolBarToogleDefault = {
-        onlineConnect: '#onlineConnect',
-        sPhone: '#sPhone',
-        hotActive: '#hotActive',
-        freeCall: '#freeCall'
-    };
-    $.fn.toolBarToogle = function(opt){
-        var opt = $.extend({}, toolBarToogleDefault, opt),
-            $ele = this,
-            $onlineConnect = $ele.find(opt.onlineConnect),
-            $sPhone = $ele.find(opt.sPhone),
-            $hotActive = $ele.find(opt.hotActive),
-            $freeCall = $ele.find(opt.freeCall);
-
-        // 线上沟通
-        publicToogleFn({
-            $ele: $onlineConnect,
-            sonClass: '.t-i',
-            toogleClass: '.f-s'
-        });
-
-        // 售前电话
-        publicToogleFn({
-            $ele: $sPhone,
-            sonClass: '.p-t-i',
-            toogleClass: '.p-t-i-i'
-        });
-
-        // 热门活动
-        publicToogleFn({
-            $ele: $hotActive,
-            hideNew: true,
-            sonClass: '.h-a-i',
-            toogleClass: '.h-a-i-i'
-        });
-
-        // 免费回呼
-        publicToogleFn({
-            $ele: $freeCall,
-            sonClass: '.f-t-i',
-            toogleClass: '.f-t-i-i',
-            needhide: false
-        });
-
-        /**
-         * 公共伸缩函数
-         * @param obj {object}
-         * @param obj.$ele {object} 最外层jquey对象
-         * @param obj.hideNew {boolean} 隐藏提示图标
-         * @param obj.sonClass {string} 子元素
-         * @param obj.toogleClass {string} 显示隐藏元素
-         * $param obj.needhide {boolean} 是否用隐藏
-         */
-        function publicToogleFn(obj){
-            var $sonClass = obj.$ele.find(obj.sonClass),
-                $toogleClass = $sonClass.find(obj.toogleClass),
-                left = $toogleClass.outerWidth();
-
-            $sonClass.on('mouseenter', function(){
-                obj.hideNew && $sonClass.find('.new-icon').hide();
-                $toogleClass.show();
-                $sonClass.stop().animate({
-                    left: -left
-                }).addClass('active');
-            }).on('mouseleave', function(){
-                $sonClass.stop().animate({
-                    left: 0
-                }, function(){
-                    $sonClass.removeClass('active');
-                    if(obj.needhide !== false){
-                        $toogleClass.hide();
-                    }
-                    obj.hideNew && $sonClass.find('.new-icon').show();
-                })
-            })
-        }
-    }
-
-})(window, jQuery);
