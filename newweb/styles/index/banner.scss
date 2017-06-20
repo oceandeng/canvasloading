@@ -1,0 +1,19 @@
+@import "../mixin", "../variable";
+
+.banner-body{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, .6);
+
+	.banner-content{
+		
+	}
+	.banner-grounp{
+
+		img{
+			max-width: 100%;
+			display: block;
+		}
+	}
+}

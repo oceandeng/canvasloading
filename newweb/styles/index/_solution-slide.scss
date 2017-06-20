@@ -1,0 +1,97 @@
+@import "../mixin", "../variable";
+
+.solution{
+    background: #06050a;
+    padding: 100px 0;
+
+    .solution-slide{
+        position: relative;
+        width: 100%;
+
+        .solution-slide-menu{
+            width: 330px;
+            background: rgba(255, 255, 255, .2);
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+
+            ul{
+                position: relative;
+                z-index: 2;
+
+                li{
+                    padding: 20px 0;
+                    cursor: pointer;
+
+                    p{
+                        margin: 10px 0 0 0;
+                        font-size: 16px;
+                        color: $white;
+                    }
+                }
+
+                .active{
+                    .solution-icon1{background-position: 0px -260px}
+                    .solution-icon2{background-position: -100px -260px}
+                    .solution-icon3{background-position: -200px -260px}
+                    .solution-icon4{background-position: -300px -260px}
+                    .solution-icon5{background-position: -400px -260px}
+                }
+            }
+
+            .move-bg{
+                width: 330px;
+                height: 135px;
+                position: absolute;
+                top: 0;
+                background: #00a0e9;
+                z-index: 0;
+            }
+        }
+    }
+    .solution-slide-body{
+        margin: 0 0 0 330px;
+        position: relative;
+
+        .solution-slide-item{
+            padding: 1px 0 0 180px;
+            color: $white;
+
+            h4{
+                font-size: 26px;
+                margin: 20px 0;
+            }
+            p{
+                color: $g999;
+                margin: 5px 0;
+            }
+
+            .s-item-info-item{
+                text-align: center;
+
+                p{
+                    color: $white;
+                }
+            }
+        }
+    }
+    
+    .s-button{
+        position: absolute;
+        left: 180px;
+        bottom: 10px;
+
+        a{
+            display: block;
+            width: 142px;
+            @include line-height(42px);
+            border: 1px solid $white;
+            color: $white;
+            border-radius: 10px;
+        }
+    }
+
+}
+
+
