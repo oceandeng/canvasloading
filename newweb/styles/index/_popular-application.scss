@@ -17,8 +17,9 @@
         }
 
         &:hover{
-            background: url(../images/new300-sprite-icon.png) $dot-color no-repeat -480px -875px;
+            background: url(../images/newindex/new300-sprite-icon.png) $dot-color no-repeat -480px -875px;
             box-shadow: 3px 3px 10px #ccc;
+            transition: background-color .5s ease-out;
 
             .popular-app-icon1{background-position: 0 -550px}
             .popular-app-icon2{background-position: -100px -550px}

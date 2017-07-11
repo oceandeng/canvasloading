@@ -83,6 +83,7 @@
                 &:hover{
                     background: $btn-h-color;
                     border-color: $btn-h-color;
+                    transition: all .5s ease-out;
 
                     a{
                         color: $white;
@@ -137,7 +138,7 @@
 }
 
 .choice-zhongqi-bg{
-    background: url(../images/choice-zhongiq-bg.jpg) no-repeat 0 center;
+    background: url(../images/newindex/choice-zhongiq-bg.jpg) no-repeat 0 center;
 }
 .content-group{
     .zq-index-head{

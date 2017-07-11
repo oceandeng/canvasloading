@@ -174,8 +174,6 @@
             this.$item.hide()
             this.$item.eq(index).fadeIn()
 
-
-            console.log(this.$item.eq(index).attr('data-bg'))
             if(this.$item.eq(index).attr('data-bg') != undefined){
                 this.$wrap.css({
                     background: this.$item.eq(index).attr('data-bg')
@@ -255,8 +253,8 @@
                 var $_this = $(i);
 
                 if(n === index){
-                    $_this.css('display', 'block')
-                    $_this.siblings().css('display', 'none')
+                    $_this.stop().fadeIn()
+                    $_this.siblings().hide()
                 }
             })
         }
@@ -337,7 +335,7 @@
 
         }
         SolutionSlide.prototype.showCon = function(index){
-            this.$conItem.eq(index).fadeIn().siblings().hide()
+            this.$conItem.eq(index).stop().fadeIn().siblings().hide()
         }
         SolutionSlide.prototype.switchBg = function(bgImg){
             this.$wrap.css({
@@ -350,6 +348,54 @@
             instance.init()
         })
      }
+
+     /**
+      * 选择中企 fadeInUp
+      */
+    var fadeInUpDefault = {
+        item: '.choice-zhongqi-item'
+    }
+    $.fn.fadeInUp = function(options){
+        var options = $.extend({}, fadeInUpDefault, options),
+            _this = this;
+
+        function FadeInUp(ele){
+            this.$this = $(ele)
+            this.$item = this.$this.find(options.item)
+        }
+
+        FadeInUp.prototype.init = function(){
+            this.eventFn()
+            this.initStyle()
+        }
+        FadeInUp.prototype.initStyle = function(){
+            this.$item.hide()
+        }
+        FadeInUp.prototype.eventFn = function(){
+            var _this = this,
+                $w = $(window),
+                wH = ~~this.$this.innerHeight(),
+                pT = ~~this.$this.position().top;
+
+            $w.on('scroll', function(){
+                var sT = ~~$w.scrollTop()
+
+                if(sT > (pT - wH)){
+                    if(!_this.$item.hasClass('animated')){
+                        _this.$item.show().addClass('animated').addClass('fadeInUpSlow')
+                    }
+                }else{
+                    _this.$item.hide().removeClass('animated').removeClass('fadeInUpSlow')
+                }
+            })
+        }
+
+        return this.each(function(){
+            var instance = new FadeInUp(_this)
+            instance.init()
+        })
+
+    }
 
      /**
       * tab 选项卡
@@ -392,6 +438,24 @@
             })
          })
      }
+
+    /**
+     * 底部二维码显示与隐藏
+     */
+    $.fn.footerQR = function(){
+        return this.each(function(){
+            var $this = $(this),
+                $btn = $this.find('i'),
+                $con = $btn.next();
+
+            $btn.on('mouseenter', function(){
+                $con.show()
+            }).on('mouseleave', function(){
+                $con.hide()
+            })
+        })
+    }
+
    /**
      * 返回顶部
      * @speed {number} 动画速度

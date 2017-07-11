@@ -17,6 +17,8 @@ $(function(){
     // imzixunBody
     $('#imzixunBody').imzixun({speed: 500})
 
+    // 底部二维码调用
+    $('.footer-icon').footerQR()
 
 });
 

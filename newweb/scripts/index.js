@@ -8,6 +8,9 @@ $(function(){
     // 解决方案切换调用
     $('#solutionSlide').solutionSlide()
 
+    // choice zhongqi invoke
+    $('#choice').fadeInUp()
+
     $(".banner-con").on("mousemove",function(event){
         var $_this = $(this),
             _l = $_this.offset().left,

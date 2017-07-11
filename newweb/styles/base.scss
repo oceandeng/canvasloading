@@ -144,6 +144,10 @@ ul,li,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
 .animated.bounceOut {
     animation-duration: .75s;
 }
+.animated.fadeInUpSlow {
+    animation-duration: 1.5s;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -155,8 +159,24 @@ ul,li,dt,dd,dl{list-style-type: none; margin:0; padding: 0}
     transform: none;
   }
 }
+
+@keyframes fadeInUpSlow {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .fadeInUp {
   animation-name: fadeInUp;
+}
+.fadeInUpSlow{
+  animation-name: fadeInUpSlow;
 }
 .blue-btn{
     @include blue-btn();

@@ -19,7 +19,7 @@
                 }
             }
             .active{
-                background: url(../images/cloud-tab-arrow.png) no-repeat center bottom;
+                background: url(../images/newindex/cloud-tab-arrow.png) no-repeat center bottom;
 
                 .cloud-icon-1{background-position: 0 -100px}
                 .cloud-icon-2{background-position: -100px -100px}
@@ -32,9 +32,9 @@
             }
         }
         .tab-con{
+            background: url(../images/newindex/cloud-tab-bg.jpg) #f2f2f2 no-repeat center 0;
 
             .tab-con-item{
-                background: url(../images/cloud-tab-bg.jpg) #f2f2f2 no-repeat center 0;
                 text-align: center;
 
                 ul{
@@ -67,10 +67,11 @@
                         }
 
                         &:hover{
+                            transition: background-color .5s ease-out;
                             
-                            background: url(../images/new300-sprite-icon.png) #00a0e9 no-repeat -502px 65px;
+                            background: url(../images/newindex/new300-sprite-icon.png) #00a0e9 no-repeat -502px 65px;
                             @media screen and(min-width: 1500px){
-                                background: url(../images/new300-sprite-icon.png) #00a0e9 no-repeat -482px 65px;
+                                background: url(../images/newindex/new300-sprite-icon.png) #00a0e9 no-repeat -482px 65px;
                             }
 
                             h3{

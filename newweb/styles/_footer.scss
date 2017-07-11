@@ -417,7 +417,7 @@
 
   }
   span{
-    margin: 0 10px;
+    margin: 0;
   }
 }
 
@@ -430,4 +430,11 @@
   right: 50px;
   bottom: 0;
   cursor: pointer;
+
+  .QR-code{
+    position: absolute;
+    top: -105px;
+    left: -35px;
+    display: none;
+  }
 }
