@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="portal">
+      <div class="top"><img src="/images/logo.png" class="logo"> <span class="top-name">业务运营系统</span>
+
+  		  <div id="topMenu"></div>
+
+        <ul class="top-user clearfix">
+          <li class="user-more"><a href="javascript:;"></a>
+            <ul>
+              <li><a href="http://ucenterdev.ceboss.cn:8080/usercenter/emp/security/modifyPwdIndex.do">个人设置</a></li>
+              <li><a href="http://ssopre.ceboss.cn/CAS/logout?service=http://pre-portal.ceboss.cn">退出系统</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="left">
+          <div class="toHidden">
+            <label for="toHidden" class="toHidden-btn">
+              <svg aria-hidden="true" id="toggleArrow" class="icon" width="10" height="10" style="padding: 5px; fill: rgb(153, 153, 153);">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-moreunfold"></use>
+              </svg>
+            </label>
+            <input id="toHidden" type="checkbox" style="display: none;">
+          </div>
+
+          <div id="leftSecondMenu" class="left-second-menu clearfix"></div>
+
+        </div>
+        <div id="mainContent" class="content"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 顶部一级菜单 -->
+  <script id="topMenuTpl" type="text/html">
+    <% _.each(obj.functions, function(item){ %>
+      <div class="top-menu" data-id="<%= item.id %>"><a href="javascript:void(0)"><%= item.name %></a></div>
+    <% }) %>
+  </script>
+
+  <!-- 左侧二级菜单模板 -->
+  <script id="secondMenuTpl" type="text/html">
+    <% _.each(obj.secondMenu, function(item){ %>
+      <h3 class="first-menu" data-id="<%= item.id %>"><a class="second-tit" href="javascript:void(0)"><%= item.name %></a></h3>
+      <ul>
+        <% _.each(item.childrens, function(sitem){ %>
+          <li><a class="second-link" href="javascript:void(0)" data-link="<%= sitem.content %>"><%= sitem.name %></a></li>
+        <% }) %>
+      </ul>
+    <% }) %>
+  </script>
+
+<!-- build:js /scripts/jquery.min.js -->
+<script src="/bower_components/jquery/jquery.min.js"></script>
+<!-- endbuild -->
+
+<!-- build:js /scripts/underscore.min.js -->
+<script src="/bower_components/underscore/underscore.js"></script>
+<!-- endbuild -->
+
+<!-- build:js /scripts/vender.min.js -->
+<script src="/scripts/public.js"></script>
+<script src="/scripts/api.js"></script>
+<script src="/scripts/service.js"></script>
+<!-- endbuild -->
+
+<!-- build:js /scripts/main.min.js -->
+<script src="/scripts/main.js"></script>
+<!-- endbuild -->
+
+<script src="http://at.alicdn.com/t/font_fzxjrhfve6f7p66r.js"></script>
+
+</body>
+</html>
+
+
+
+
+<script>
+  /**
+  * 调试代码
+  */
+
+  // 单点调试成功接口
+  // CEBOSS.api.$get({}, API.getTopMenu).done(function(result){})
+
+  // var xhr = new XMLHttpRequest();
+  // //接收 - 第三步
+  // xhr.onreadystatechange = function () {
+  //  if (xhr.readyState == 4) {
+  //      var status = xhr.status;
+  //      if (status >= 200 && status < 300) {
+  //        console.log(xhr)
+  //          // options.success && options.success(xhr.responseText, xhr.responseXML);
+  //      } else {
+  //          // options.fail && options.fail(status);
+  //      }
+  //  }
+  // }
+
+  // xhr.open("GET", API.getTopMenu, true);
+
+  // //设置表单提交时的内容类型
+  // xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  // xhr.send();
+
+</script>

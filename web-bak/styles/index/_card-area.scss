@@ -85,7 +85,7 @@
     width: 100%
 }
 
-.cloud-service .card-area .card-item .card .card-title h1 {
+.cloud-service .card-area .card-item .card .card-title h3 {
     font-size: 22px;
     font-weight: 700;
     color: #d9efff;
@@ -126,7 +126,7 @@
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(0))
 }
 
-.cloud-service .card-area .card-item .card .card-title .zq-product-img img, .cloud-service .card-area .card-item .card .card-title .short-info, .cloud-service .card-area .card-item .card .card-title h1 {
+.cloud-service .card-area .card-item .card .card-title .zq-product-img img, .cloud-service .card-area .card-item .card .card-title .short-info, .cloud-service .card-area .card-item .card .card-title h3 {
     -webkit-transition: all .15s cubic-bezier(.4, 0, .2, 1) 0s;
     transition: all .15s cubic-bezier(.4, 0, .2, 1) 0s
 }
@@ -268,6 +268,7 @@
     font-weight: 400;
     color: #000;
     margin-bottom: 0;
+    margin-top: 10px;
 }
 
 .cloud-service .card-area .card-item .card .card-content .other-info .other-desc{
@@ -292,7 +293,7 @@
 .cloud-service .card-area .card-item.active .card .card-title .short-info,  {
     color: #9ed8f5
 }
-.cloud-service .card-area .card-item.active .card .card-title h1{
+.cloud-service .card-area .card-item.active .card .card-title h3{
     color: #fff
 }
 .cloud-service .card-area .card-item.active .card .card-content.content-first {

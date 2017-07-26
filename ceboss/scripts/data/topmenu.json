@@ -1,0 +1,281 @@
+{
+    "data": {
+        "functions": [
+            {
+                "children": [
+                    "ftree_saleMgr_saler_first",
+                    "ftree_saler_common_first",
+                    "ftree_saler_custSearch_first",
+                    "ftree_saler_addCust_first",
+                    "ftree_saler_mycollection_first",
+                    "ftree_saler_protect_first",
+                    "ftree_saler_contract_first",
+                    "ftree_saleMgr_saler_query"
+                ],
+                "childrens": [],
+                "code": "saleMgr_saler",
+                "content": "loadNavMenu",
+                "desc": "销售管理_商务代表",
+                "icon": "/portal/skin/images/portal/sw.png",
+                "id": "ftree_saleMgr_saler",
+                "index": 1,
+                "level": null,
+                "name": "商务代表",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "ftree_bi_sma_report",
+                    "yun300_flow",
+                    "ftree_bi_ama_report",
+                    "ftree_bi_cs_report",
+                    "ftree_bi_dso_report",
+                    "yun300_data"
+                ],
+                "childrens": [],
+                "code": "ftree_bi_sma",
+                "content": "loadNavMenu",
+                "desc": "BI系统",
+                "icon": "/portal/skin/images/portal/bi.png",
+                "id": "ftree_bi_sma",
+                "index": 1,
+                "level": null,
+                "name": "BI系统",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "ftree_ordermanager",
+                    "ftree_eorder_account"
+                ],
+                "childrens": [],
+                "code": "orderMgr",
+                "content": "loadNavMenu",
+                "desc": null,
+                "icon": "/portal/skin/images/portal/bma_order.png",
+                "id": "ftree_orderMgr",
+                "index": 2,
+                "level": null,
+                "name": "订单管理",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "ftree_icpInfomgr",
+                    "ftree_icpbeianapplymgr",
+                    "ftree_icpbeiangpbackmgr",
+                    "ftree_ipbeian",
+                    "ftree_blacklistmgr",
+                    "ftree_notbeianmgr",
+                    "ftree_icpcheckresult",
+                    "ftree_icpinfoquery"
+                ],
+                "childrens": [],
+                "code": "icpSysMgr",
+                "content": "loadNavMenu",
+                "desc": null,
+                "icon": "/portal/skin/images/portal/icp.png",
+                "id": "ftree_icpSysMgr",
+                "index": 3,
+                "level": null,
+                "name": "ICP备案",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "ftree_busproductmgr",
+                    "ftree_busdomain",
+                    "ftree_bus400business",
+                    "ftree_busmessage",
+                    "ftree_bustranslation",
+                    "ftree_mytools"
+                ],
+                "childrens": [],
+                "code": "bushandleMgr",
+                "content": "loadNavMenu",
+                "desc": null,
+                "icon": "/portal/skin/images/portal/bma.png",
+                "id": "ftree_bushandleMgr",
+                "index": 3,
+                "level": null,
+                "name": "业务受理",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "ftree_intent_clue",
+                    "ftree_intent_business"
+                ],
+                "childrens": [],
+                "code": "ftree_intent_manage",
+                "content": "loadNavMenu",
+                "desc": null,
+                "icon": "/portal/skin/images/portal/bma.png",
+                "id": "ftree_intent_manage",
+                "index": 3,
+                "level": null,
+                "name": "意向客户",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "ftree_complaintmanager",
+                    "ftree_complaintmanager_internetcust",
+                    "ftree_complaintmanager_systemtool",
+                    "ftree_complaintmanager_report"
+                ],
+                "childrens": [],
+                "code": "complaint",
+                "content": "loadNavMenu",
+                "desc": null,
+                "icon": "/portal/skin/images/portal/ema.png",
+                "id": "ftree_complaint",
+                "index": 4,
+                "level": null,
+                "name": "事件系统",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "ftree_accountmanager",
+                    "ftree_accountreceipt"
+                ],
+                "childrens": [],
+                "code": "financeMgr",
+                "content": "loadNavMenu",
+                "desc": null,
+                "icon": "/portal/skin/images/portal/ama.png",
+                "id": "ftree_financeMgr",
+                "index": 4,
+                "level": null,
+                "name": "财务到帐",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "free_approve_yeji",
+                    "ftree_approvetepi"
+                ],
+                "childrens": [],
+                "code": "approve",
+                "content": "loadNavMenu",
+                "desc": null,
+                "icon": "/portal/skin/images/portal/tp.png",
+                "id": "free_approve",
+                "index": 5,
+                "level": null,
+                "name": "商务特批",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "ftree_saleT400_t400yewu"
+                ],
+                "childrens": [],
+                "code": "ftree_saleT400",
+                "content": "loadNavMenu",
+                "desc": "400的预占展示",
+                "icon": "/portal/skin/images/portal/400.png",
+                "id": "ftree_saleT400",
+                "index": 6,
+                "level": null,
+                "name": "400预占",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "ftree_csetting_3a",
+                    "ftree_pr_productmanager",
+                    "ftree_bussysconfig",
+                    "ftree_busflowmgr",
+                    "ftree_customsysmaintain",
+                    "ftree_systemtools",
+                    "ftree_salemanager_tool"
+                ],
+                "childrens": [],
+                "code": "commsetting",
+                "content": "loadNavMenu",
+                "desc": "",
+                "icon": "/portal/skin/images/portal/sys.png",
+                "id": "ftree_commsetting",
+                "index": 6,
+                "level": null,
+                "name": "系统设置",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            },
+            {
+                "children": [
+                    "ftree_callcenterroot"
+                ],
+                "childrens": [],
+                "code": "callcenter",
+                "content": "loadNavMenu",
+                "desc": null,
+                "icon": "/portal/skin/images/portal/icp.png",
+                "id": "ftree_callcenter",
+                "index": 7,
+                "level": null,
+                "name": "呼叫中心",
+                "parentId": "-1",
+                "useType": "JS",
+                "viewType": "NavTop2"
+            }
+        ],
+        "flag": true,
+        "emp": {
+            "account": "tanghuiling@300.cn",
+            "dismissDate": null,
+            "enterDate": "2011-07-20T00:00:00",
+            "hrUpdateDate": "2017-06-12T17:00:58",
+            "id": "10801",
+            "jobGrade": "643",
+            "mobile": "13439363371",
+            "name": "唐慧玲",
+            "officePhone": "010-87127583",
+            "oldAccount": "tanghuiling@300.cn",
+            "orgId": "2433",
+            "oriPassword": "1q2w3e4r5t",
+            "password": "97db1846570837fce6ff62a408f1c26a",
+            "position": "java研发工程师",
+            "regularFlag": "Regular",
+            "roles": [
+                "12a27b5740534a27b4c3b8e2544d8b27",
+                "bc509d72bf644e34807f17d4bd6484e6",
+                "ebf5abc64a3e42ca9c64ffad3687b184",
+                "09ebecdd97384c5bbf05fba02674a7a3",
+                "aeec429e1c3d45eeb42d082cfa21cf34",
+                "21dae69275fe402ab053e8f93a187a45"
+            ],
+            "sex": 1,
+            "sort": 1,
+            "source": "HR1",
+            "state": "Enable",
+            "updateDate": "2017-07-24T16:24:37",
+            "workMail": "tanghuiling@300.cn",
+            "workingAge": 6,
+            "workingAgeMonth": 73
+        }
+    }
+}

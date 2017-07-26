@@ -1,0 +1,431 @@
+{
+    "data": {
+        "flag": true,
+        "secondMenu": [
+            {
+                "children": [
+                    "ftree_saleMgr_saler_my"
+                ],
+                "childrens": [
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saleMgr_saler_my",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/saler/salerCount/forwardIndex.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saleMgr_saler_my",
+                        "index": 1,
+                        "level": 2,
+                        "name": "我的首页",
+                        "parentId": "ftree_saleMgr_saler_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    }
+                ],
+                "code": "ftree_saleMgr_saler_first",
+                "content": "",
+                "desc": null,
+                "icon": null,
+                "id": "ftree_saleMgr_saler_first",
+                "index": 1,
+                "level": 1,
+                "name": "我的首页",
+                "parentId": "ftree_saleMgr_saler",
+                "useType": "JS",
+                "viewType": "NavMenu"
+            },
+            {
+                "children": [
+                    "ftree_saler_gonghaikehu",
+                    "ftree_saler_leadRecommend",
+                    "ftree_saler_todayRelease",
+                    "ftree_saler_gongshangZC"
+                ],
+                "childrens": [
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_gonghaikehu",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/customer/custResource/forwardGonghai.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_gonghaikehu",
+                        "index": 1,
+                        "level": 2,
+                        "name": "公海客户",
+                        "parentId": "ftree_saler_common_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    },
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_leadRecommend",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/saler/salerCount/forwardRecommendCust.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_leadRecommend",
+                        "index": 2,
+                        "level": 2,
+                        "name": "领导推荐",
+                        "parentId": "ftree_saler_common_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    },
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_todayRelease",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/saler/salerCount/forwardTodayReleaseCust.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_todayRelease",
+                        "index": 3,
+                        "level": 2,
+                        "name": "今日系统释放客户",
+                        "parentId": "ftree_saler_common_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    },
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_gongshangZC",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/saler/salerCount/forwardGongShangZhuCeCust.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_gongshangZC",
+                        "index": 4,
+                        "level": 2,
+                        "name": "2014年企业数据",
+                        "parentId": "ftree_saler_common_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    }
+                ],
+                "code": "ftree_saler_common_first",
+                "content": null,
+                "desc": null,
+                "icon": null,
+                "id": "ftree_saler_common_first",
+                "index": 2,
+                "level": 1,
+                "name": "公共资源",
+                "parentId": "ftree_saleMgr_saler",
+                "useType": "JS",
+                "viewType": "NavMenu"
+            },
+            {
+                "children": [
+                    "ftree_saler_cust_search"
+                ],
+                "childrens": [
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_cust_search",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/saler/salerCount/forwardCustPosition.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_cust_search",
+                        "index": 1,
+                        "level": 2,
+                        "name": "客户定位",
+                        "parentId": "ftree_saler_custSearch_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    }
+                ],
+                "code": "ftree_saler_custSearch_first",
+                "content": null,
+                "desc": null,
+                "icon": null,
+                "id": "ftree_saler_custSearch_first",
+                "index": 3,
+                "level": 1,
+                "name": "客户定位",
+                "parentId": "ftree_saleMgr_saler",
+                "useType": "JS",
+                "viewType": "NavMenu"
+            },
+            {
+                "children": [
+                    "ftree_saler_addCust"
+                ],
+                "childrens": [
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_addCust",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/saler/web/action/addCust/init.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_addCust",
+                        "index": 1,
+                        "level": 2,
+                        "name": "添加客户",
+                        "parentId": "ftree_saler_addCust_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    }
+                ],
+                "code": "ftree_saler_addCust_first",
+                "content": null,
+                "desc": null,
+                "icon": null,
+                "id": "ftree_saler_addCust_first",
+                "index": 4,
+                "level": 1,
+                "name": "添加客户",
+                "parentId": "ftree_saleMgr_saler",
+                "useType": "JS",
+                "viewType": "NavMenu"
+            },
+            {
+                "children": [
+                    "ftree_saler_nocontact",
+                    "ftree_saler_contact"
+                ],
+                "childrens": [
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_nocontact",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/customer/web/action/noContactAction/noContactView.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_nocontact",
+                        "index": 1,
+                        "level": 2,
+                        "name": "未联系",
+                        "parentId": "ftree_saler_mycollection_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    },
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_contact",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/customer/cmContacted/init.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_contact",
+                        "index": 2,
+                        "level": 2,
+                        "name": "继续联系",
+                        "parentId": "ftree_saler_mycollection_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    }
+                ],
+                "code": "ftree_saler_mycollection_first",
+                "content": null,
+                "desc": null,
+                "icon": null,
+                "id": "ftree_saler_mycollection_first",
+                "index": 5,
+                "level": 1,
+                "name": "我的收藏",
+                "parentId": "ftree_saleMgr_saler",
+                "useType": "JS",
+                "viewType": "NavMenu"
+            },
+            {
+                "children": [
+                    "ftree_saler_protect",
+                    "free_saler_manager_assign",
+                    "ftree_saler_personal_protect"
+                ],
+                "childrens": [
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_protect",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/customer/web/action/protectContactAction/protectListView.action?custTypeFlag=0",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_protect",
+                        "index": 1,
+                        "level": 2,
+                        "name": "保护跟进",
+                        "parentId": "ftree_saler_protect_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    },
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "free_saler_manager_assign",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/customer/web/action/assignedCustAction/init.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "free_saler_manager_assign",
+                        "index": 2,
+                        "level": 2,
+                        "name": "分配的已合作客户",
+                        "parentId": "ftree_saler_protect_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    },
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_personal_protect",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/customer/web/action/protectContactAction/protectListView.action?custTypeFlag=1",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_personal_protect",
+                        "index": 3,
+                        "level": 2,
+                        "name": "个人保护库",
+                        "parentId": "ftree_saler_protect_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    }
+                ],
+                "code": "ftree_saler_protect_first",
+                "content": null,
+                "desc": null,
+                "icon": null,
+                "id": "ftree_saler_protect_first",
+                "index": 6,
+                "level": 1,
+                "name": "保护客户",
+                "parentId": "ftree_saleMgr_saler",
+                "useType": "JS",
+                "viewType": "NavMenu"
+            },
+            {
+                "children": [
+                    "free_saler_second_cust",
+                    "ftree_saler_contract_cust"
+                ],
+                "childrens": [
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "free_saler_second_cust",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/customer/myContractCustomerAction/forwardMyContractCust.action?custType=4",
+                        "desc": null,
+                        "icon": null,
+                        "id": "free_saler_second_cust",
+                        "index": 1,
+                        "level": 2,
+                        "name": "其他客户",
+                        "parentId": "ftree_saler_contract_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    },
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saler_contract_cust",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/customer/myContractCustomerAction/forwardMyContractCust.action?custType=3",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saler_contract_cust",
+                        "index": 1,
+                        "level": 2,
+                        "name": "新开网站客户",
+                        "parentId": "ftree_saler_contract_first",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    }
+                ],
+                "code": "ftree_saler_contract_first",
+                "content": null,
+                "desc": null,
+                "icon": null,
+                "id": "ftree_saler_contract_first",
+                "index": 7,
+                "level": 1,
+                "name": "签约客户",
+                "parentId": "ftree_saleMgr_saler",
+                "useType": "JS",
+                "viewType": "NavMenu"
+            },
+            {
+                "children": [
+                    "ftree_dueProduct_cust",
+                    "ftree_prodecting_cust",
+                    "ftree_saledebitCust",
+                    "ftree_tobeRelease_cust"
+                ],
+                "childrens": [
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_dueProduct_cust",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/saler/salerCount/forwardDueProductCust.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_dueProduct_cust",
+                        "index": 1,
+                        "level": 2,
+                        "name": "90天到期产品",
+                        "parentId": "ftree_saleMgr_saler_query",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    },
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_prodecting_cust",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/saler/salerCount/forwardInProductCust.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_prodecting_cust",
+                        "index": 2,
+                        "level": 2,
+                        "name": "生产中客户",
+                        "parentId": "ftree_saleMgr_saler_query",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    },
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_saledebitCust",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/saler/salerCount/forwardDebitCust.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_saledebitCust",
+                        "index": 3,
+                        "level": 2,
+                        "name": "欠款客户",
+                        "parentId": "ftree_saleMgr_saler_query",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    },
+                    {
+                        "children": [],
+                        "childrens": [],
+                        "code": "ftree_tobeRelease_cust",
+                        "content": "http://smadev.ceboss.cn:8082/CustomerApp/saler/salerCount/forwardGonnaReleaseCust.action",
+                        "desc": null,
+                        "icon": null,
+                        "id": "ftree_tobeRelease_cust",
+                        "index": 4,
+                        "level": 2,
+                        "name": "即将释放客户",
+                        "parentId": "ftree_saleMgr_saler_query",
+                        "useType": "URL",
+                        "viewType": "NavMenu"
+                    }
+                ],
+                "code": "ftree_saleMgr_saler_query",
+                "content": null,
+                "desc": null,
+                "icon": null,
+                "id": "ftree_saleMgr_saler_query",
+                "index": 8,
+                "level": 1,
+                "name": "数据查询",
+                "parentId": "ftree_saleMgr_saler",
+                "useType": "JS",
+                "viewType": "NavMenu"
+            }
+        ]
+    }
+}

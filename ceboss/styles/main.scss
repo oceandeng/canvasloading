@@ -1,0 +1,288 @@
+body {
+    width: 100vw;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.66666
+}
+
+.clearfix:after {
+    display: table;
+    content: "";
+    clear: both
+}
+
+.top {
+    height: 55px;
+    background: #4f94e7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    box-shadow: 0 1px 2px #b2b2b2
+}
+
+.content {
+    position: fixed;
+    top: 55px;
+    left: 200px;
+    bottom: 0;
+    right: 0
+}
+
+.mini+.content {
+    left: 40px
+}
+
+a:active,a:hover,a:link,a:visited {
+    text-decoration: none
+}
+
+.logo, .top-menu,.top-name {
+    float: left;
+}
+
+.top-menu {
+    height: 55px;
+    overflow: hidden
+}
+
+.top-menu a {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px 12px 0;
+    text-align: center;
+    color: #fff;
+    overflow: hidden
+}
+
+.top-menu a:first-child {
+    margin-left: 5px
+}
+
+.top-menu a img {
+    height: 22px
+}
+
+.top-user{
+    list-style-type: none;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.top-user>li {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.top-user {
+    padding-right: 21px
+}
+
+.top-user>li:hover {
+    background: #4b8ad8
+}
+
+.top-user .user-more {
+    width: 100px
+}
+
+.top-user .user-more ul {
+    list-style-type: none;
+    background: #fff;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-user .user-more:hover ul {
+    display: block;
+    border: 1px solid #e6e6e6;
+    margin: 0;
+    padding: 0;
+}
+
+.top-user .user-more ul li a {
+    cursor: pointer;
+    color: #000
+}
+
+.top-user .user-more ul li:hover {
+    background: #e6e6e6
+}
+
+.logo {
+    padding: 12px 0 0 18px
+}
+
+.top-name {
+    font-size: 18px;
+    font-family: \\9ED1\4F53;
+    display: block;
+    color: #fff;
+    line-height: 50px;
+    padding: 0 18px
+}
+
+.top-menu .router-link-active,.top-menu li:hover {
+    background: #4b8ad8;
+    box-shadow: 3px 0 3px #426996,-3px 0 3px #426996
+}
+
+.top-menu li a,.top-user li>a {
+    height: 100%;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 11px;
+    color: #fff
+}
+
+.left {
+    width: 200px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 55px;
+    bottom: 0;
+    overflow-y: auto
+}
+
+.mini {
+    width: 40px
+}
+
+.mini svg {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.left .toHidden {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000
+}
+
+.mini .toHidden {
+    width: 40px
+}
+
+.left .toHidden .toHidden-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background: #666;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.level-1 {
+    padding-top: 42px
+}
+
+@media only screen and (max-width: 1500px) {
+    .top-menu a {
+        padding:5px 3px 0
+    }
+}
+
+.top-menu-icon svg {
+    fill: #fff
+}
+
+li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    padding-left: 40px;
+    color: #999
+}
+
+.level-1>li>div>a {
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    margin-top: -1px
+}
+
+.icon-folder {
+    margin-top: 13px;
+    margin-left: -29px;
+    margin-right: 13px;
+    float: left;
+    fill: #fff
+}
+
+.icon-moreunfold {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    fill: #fff
+}
+
+.icon-moreunfold.fold {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg)
+}
+
+.router-link-exact-active {
+    background: #515151;
+    color: #fff
+}
+
+.title {
+    width: 120px
+}
+
+.mini .title {
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    position: absolute;
+    display: none;
+    text-align: center
+}
+
+.iframe-content {
+    overflow: hidden
+}
+
+.iframe-content,.iframe-content iframe {
+    height: 100%;
+    width: 100%
+}
+
+.left-second-menu{
+    margin: 42px 0 0 0;
+
+    h3{
+        margin: 0px;
+
+        a{
+            color: #fff;
+            display: block;
+            padding: 10px 0 10px 30px;
+        }
+    }
+    ul{
+        margin: 0;
+        display: none;
+    }
+}

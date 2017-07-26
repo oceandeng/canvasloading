@@ -357,9 +357,12 @@
      .zq-main-head{
         text-align: center;
 
-         h1{
+         h1, h2{
              color: $main-head-h1-color;
              text-align: center;
+         }
+         h2{
+            font-size: 28px;
          }
          p{
              color: $main-head-p-color;
