@@ -203,7 +203,7 @@
             display: inline-block;
         }
         .f-top-img{
-            margin: 20px 15px 0 0;
+            margin: 40px 15px 0 0;
         }
         .f-top-content{
           text-align: left;
@@ -230,16 +230,16 @@
   margin: 10px 0;
 }
 .footer .footer-topbar .footer-topbar-content .footer-topbar-item .f-top-img {
-  margin: 20px 15px 0 0;
+  margin: 40px 15px 0 0;
 }
 .footer .footer-topbar .footer-topbar-content .footer-topbar-item .f-top-content h4 {
-  font-size: 18px;
-  color: #73777a;
-  margin: 20px 0 0 0;
+  font-size: 22px;
+  color: #fff;
+  margin: 60px 0 10px 0;
 }
 .footer .footer-topbar .footer-topbar-content .footer-topbar-item .f-top-content p {
-  font-size: 12px;
-  color: #858d97;
+  font-size: 14px;
+  color: #737373;
   margin: 5px 0 0 0;
 }
 .footer .footer-body {
@@ -285,9 +285,11 @@
   padding-left: 0;
 }
 .footer .copyright {
-  color: #73777a;
+  color: #6a6a6a;
   font-size: 12px;
   line-height: 20px;
+  margin: 50px 0 0 0;
+  line-height: 26px;
 }
 .footer .gzwm {
   position: absolute;
@@ -319,8 +321,9 @@
   padding-left: 15px;
   color: #1297d9;
 }
-.footer .hotLine p{
-    margin: 0 0 10px 0;
+.footer .hot-line{
+    margin: 0 50px 0 0;
+    border-right: 1px solid #313131;
 }
 .footer .hotLine a {
     color: #899097
@@ -358,13 +361,12 @@
   text-align: left;
   margin: 10px 0 0 0;
 }
-.footer .gzwm div.kxwz span {
+.footer div.kxwz span {
   top: 0px;
   right: 0px;
 }
-.footer .gzwm div.kxwz img {
-  width: 89px;
-  height: 32px;
+.footer div.kxwz img {
+  width: 90px;
 }
 .footer .hotLine {
   width: 336px;
@@ -407,17 +409,32 @@
   color: #0f1e2b;
 }
 .footer .list{
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
+
+  a{
+    font-size: 16px;
+    color: $white;
+
+  }
+  span{
+    margin: 0;
+  }
 }
-.drak-footer .copyright{
-  font-size: 12px;
-  line-height: 26px;
-}
-.footer .gzwm .hotLine .official {
-  position: absolute;
-  right: 36px;
-  top: 0;
-}
+
 .footer .gzwm p {
     color: #899097;
+}
+
+.footer .footer-icon{
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  cursor: pointer;
+
+  .QR-code{
+    position: absolute;
+    top: -105px;
+    left: -35px;
+    display: none;
+  }
 }

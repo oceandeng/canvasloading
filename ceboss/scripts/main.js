@@ -9,6 +9,7 @@
 		this._h = $(window).height() - $('.top').outerHeight();
 	}
 
+	// 初始化
 	Index.prototype.init = function(){
 		this.getTopMenuSub()
 		this.getSecondMenuSub()

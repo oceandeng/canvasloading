@@ -1,13 +1,12 @@
 .zq-icon{
     display: inline-block;
-    background: url(../images/newindex/new300-sprite-icon.png) no-repeat;
+    background: url(../images/new300-sprite-icon.png) no-repeat;
 }
 
 .icon40x40{width: 40px; height: 40px}
 .icon7x13{width: 7px; height: 13px}
 .icon17x17{width: 17px; height: 17px}
 .icon18x18{width: 18px; height: 18px}
-.icon22x22{width: 22px; height: 22px}
 .icon29x29{width: 29px; height: 29px}
 .icon36x36{width: 36px; height: 36px}
 .icon35x35{width: 35px; height: 35px}
@@ -22,44 +21,19 @@
 .icon47x47{width: 47px; height: 47px}
 .icon57x57{width: 57px; height: 57px}
 .icon85x85{width: 85px; height: 85px}
-.icon100x100{width: 100px; height: 100px}
-.icon100x60{width: 100px; height: 60px}
 .icon150x150{width: 150px; height:150px}
 .icon250x200{width: 250px; height: 200px}
 
-.cloud-icon-1{background-position: 0 0}
-.cloud-icon-2{background-position: -100px 0}
-.cloud-icon-3{background-position: -200px 0}
-.cloud-icon-4{background-position: -300px 0}
+.crad-area-icon1{background-position: 0 0}
+.crad-area-icon2{background-position: -40px 0}
+.crad-area-icon3{background-position: -80px 0}
+.crad-area-icon4{background-position: -120px 0}
 
-.solution-icon1{background-position: 0px -200px}
-.solution-icon2{background-position: -100px -200px}
-.solution-icon3{background-position: -200px -200px}
-.solution-icon4{background-position: -300px -200px}
-.solution-icon5{background-position: -400px -200px}
-
-.solution-1-item-1{background-position: 0 -350px}
-.solution-1-item-2{background-position: -100px -350px}
-.solution-1-item-3{background-position: -200px -350px}
-.solution-1-item-4{background-position: -300px -350px}
-
-.solution-2-item-1{background-position: 0 -1050px}
-.solution-2-item-2{background-position: -100px -1050px}
-.solution-2-item-3{background-position: -200px -1050px}
-
-.solution-3-item-1{background-position: 0 -1150px}
-.solution-3-item-2{background-position: -100px -1150px}
-.solution-3-item-3{background-position: -200px -1150px}
-
-.solution-4-item-1{background-position: 0 -1250px}
-.solution-4-item-2{background-position: -100px -1250px}
-.solution-4-item-3{background-position: -200px -1250px}
-.solution-4-item-4{background-position: -300px -1250px}
-.solution-4-item-5{background-position: -400px -1250px}
-
-.solution-5-item-1{background-position: 0 -1350px}
-.solution-5-item-2{background-position: -100px -1350px}
-.solution-5-item-3{background-position: -200px -1350px}
+.solution-icon1{background-position: 3px -50px}
+.solution-icon2{background-position: -60px -50px}
+.solution-icon3{background-position: -120px -50px}
+.solution-icon4{background-position: -180px -50px}
+.solution-icon5{background-position: -240px -50px}
 
 .t-phone-icon{background-position: -100px -350px}
 
@@ -74,39 +48,35 @@
 .left-arrow{background-position: -250px 0}
 .rig-arrow{background-position: -264px 0}
 
-.popular-app-icon1{background-position: 0 -450px}
-.popular-app-icon2{background-position: -100px -450px}
-.popular-app-icon3{background-position: -200px -450px}
-.popular-app-icon4{background-position: -300px -450px}
-.popular-app-icon5{background-position: -400px -450px}
-.popular-app-icon6{background-position: -500px -450px}
-.popular-app-icon7{background-position: -600px -450px}
-.popular-app-icon8{background-position: 0 -950px; margin: 70px 0 0 0}
-.popular-app-icon9{background-position: -700px -450px}
+.popular-app-icon1{background-position: 0 -110px}
+.popular-app-icon2{background-position: -64px -110px}
+.popular-app-icon3{background-position: -128px -110px}
+.popular-app-icon4{background-position: -192px -110px}
+.popular-app-icon5{background-position: -256px -110px}
 
 .cz-icon1{
-    width: 350px;
-    height: 100px;
-    background-position: 0 -650px;
+    width: 90px;
+    height: 55px;
+    background-position: 0 -200px;
     margin: 0 20px 0 0;
 }
 .cz-icon2{
-    width: 350px;
-    height: 100px;
-    background-position: -400px -650px;
+    width: 100px;
+    height: 55px;
+    background-position: -120px -200px;
     margin: 0 20px 0 0;
 }
 .cz-icon3{
-    width: 400px;
-    height: 100px;
-    background-position: -750px -650px;
+    width: 220px;
+    height: 67px;
+    background-position: -240px -188px;
     margin: -10px 20px 0 0;
 }
 
-.f-t-icon1{background-position: 0 -750px}
-.f-t-icon2{background-position: -100px -750px}
-.f-t-icon3{background-position: -200px -750px}
-.f-t-icon4{background-position: -300px -750px}
+.f-t-icon1{background-position: 0 -260px}
+.f-t-icon2{background-position: -47px -260px}
+.f-t-icon3{background-position: -94px -260px}
+.f-t-icon4{background-position: -141px -260px}
 
 .icon-hot{
     width: 48px;
@@ -206,20 +176,3 @@
 
 .icon-prev{background-position: 0 -300px; margin-top: 8px;}
 .icon-next{background-position: -10px -300px; margin-top: 8px;}
-
-.hot-line-icon{
-    width: 450px;
-    height: 100px;
-    background-position: -700px -350px;
-}
-.footer-weixin-icon{
-    background-position: 0 -850px;
-    
-}
-
-.banner-icon-1{background-position: -600px -1250px}
-.banner-icon-2{background-position: -700px -1250px}
-.banner-icon-3{background-position: -800px -1247px}
-.banner-icon-4{background-position: -900px -1247px}
-
-.icon-notice{background-position: 0 -150px}

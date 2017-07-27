@@ -407,6 +407,24 @@
     .border-none{
         border: none !important;
     }
+    .noticebar{
+        width: 56px;
+        height: 53px;
+        border-radius: 3px 0 0 3px;
+        background: #3db1ea;
+        margin: 0 0 1px 0;
+
+        .t-tit{
+            margin: -10px 0 0 0;
+            color: $white;
+        }
+
+        &:hover{
+            background: #d5f1ff;
+            .icon-notice{background-position: -46px -150px}
+            .t-tit{color: #3db1ea}
+        }
+    }
 }
 .side-tool-bar .cart-num{
     position: absolute;
