@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
+<meta name="full-screen" content="yes">
+<title>首页</title>
+<!-- build:css /styles/common.min.css -->
+<link rel="stylesheet" href="/styles/common.css">
+<!-- endbuild -->
+<!-- build:css /styles/font.css -->
+<link rel="stylesheet" href="/styles/font.css">
+<!-- endbuild -->
+<!-- build:css /styles/subject.min.css -->
+<link rel="stylesheet" href="/styles/subject.css">
+<!-- endbuild -->
+
+</head>
+<body class="main-container">
+<!-- hearder S -->
+<header class="row">
+    <div class="col-6">
+        <div class="logo"><img src="/images/logo.png" alt=""></div>
+    </div>
+    <div class="col-6">
+        <div class="menu-btn">
+            <span id="navBox" class="navbox">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </span>
+        </div>
+    </div>
+
+    <!-- NavCon S -->
+    <div class="dialog-wrap" style="display: none">
+        <div id="mainNav">
+            <div id="wrapper">
+                <div id="scroller">
+                    <div class="nav-body">
+                        <div class="nav-group first-nav">
+                            <div class="nav-l blue-bg">
+                                <div class="n-l-icon s100x100">
+                                    <img src="/images/icon/shouye.png" alt="">
+                                </div>
+                            </div>
+                            <div class="nav-r black-bg p-r">
+                                <div class="n-logo">
+                                    <img src="/images/logo.png" alt="">
+                                </div>
+                                <div id="navClose" class="n-close">
+                                    <img src="/images/icon/guanbi.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nav-group">
+                            <div class="nav-l l-blue-bg">
+                                <div class="n-l-icon  mt60">
+                                    <img src="/images/icon/chanpin.png" alt="">
+                                </div>
+                                <div class="n-l-tit">产品</div>
+                            </div>
+                            <div class="nav-r g1f-bg">
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>整合营销</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">全网门户</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">产品介绍</a></li>
+                                                <li><a href="">功能</a></li>
+                                                <li><a href="">客户案例</a></li>
+                                                <li><a href="">产品版本</a></li>
+                                                <li><a href="">形象订制</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">商　　城</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">ZshopS</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">企业邮箱</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">Z云邮</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>整合推广</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">营销宝</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">产品介绍</a></li>
+                                                <li><a href="">企业秀</a></li>
+                                                <li><a href="">企业二维码</a></li>
+                                                <li><a href="">会销宝</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">大把推</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">产品介绍</a></li>
+                                                <li><a href="">客户案例</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">易米通</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">产品介绍</a></li>
+                                                <li><a href="">产品优势</a></li>
+                                                <li><a href="">专业服务</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-6">
+                                            <h5 class="n-r-stit">Google Adwords</h5>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">产品介绍</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>业务应用</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">基础应用</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">企业域名</a></li>
+                                                <li><a href="">企业邮箱</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">扩展应用</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">扫码购</a></li>
+                                                <li><a href="">微订房</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <div class="nav-l blue-bg">
+                                <div class="n-l-icon  mt60">
+                                    <img src="/images/icon/jiejuefangan.png" alt="">
+                                </div>
+                                <div class="n-l-tit">解决<br>方案</div>
+                            </div>
+                            <div class="nav-r black-bg">
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>行业解决方案</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/tuoyuan-1-kaobei-2.png" alt="">
+                                                <p>外贸</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t1.png" alt="">
+                                                <p>家装门户</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t2.png" alt="">
+                                                <p>工业品内贸</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t4.png" alt="">
+                                                <p>农业门户</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>专项解决方案</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t5.png" alt="">
+                                                <p>全网电商</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t6.png" alt="">
+                                                <p>域名保护</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t7.png" alt="">
+                                                <p>企业邮局</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t8.png" alt="">
+                                                <p>企业营销</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <div class="nav-l l-blue-bg">
+                                <div class="n-l-icon  mt60">
+                                    <img src="/images/icon/fuwu.png" alt="">
+                                </div>
+                                <div class="n-l-tit">服务<br>支持</div>
+                            </div>
+                            <div class="nav-r g1f-bg">
+                                <div class="nav-r-con">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="n-r-tit">
+                                                <h4>全网门户</h4>
+                                            </div>
+                                            <div class="n-r-tit">
+                                                <h4>营销推广</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="n-r-tit">
+                                                <h4>企业应用</h4>
+                                            </div>
+                                            <div class="n-r-tit">
+                                                <h4>移动营销</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <div class="nav-l blue-bg">
+                                <div class="n-l-icon  mt60">
+                                    <img src="/images/icon/guanyuwomen.png" alt="">
+                                </div>
+                                <div class="n-l-tit">关于<br>中企</div>
+                            </div>
+                            <div class="nav-r black-bg">
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>企业简介</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-12">
+                                            <ul class="n-r-scon ml16">
+                                                <li><a href="">企业概况</a></li>
+                                                <li><a href="">企业文化</a></li>
+                                                <li><a href="">发展历程</a></li>
+                                                <li><a href="">企业资质</a></li>
+                                                <li><a href="">所获荣誉</a></li>
+                                                <li><a href="">数码庄园</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>企业资讯</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-12">
+                                            <ul class="n-r-scon ml16">
+                                                <li><a href="">新闻公告</a></li>
+                                                <li><a href="">媒体报道</a></li>
+                                                <li><a href="">专题活动</a></li>
+                                                <li><a href="">社会公益</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-r-con mt60">
+                                    <span class="hot-line bule-c">客服热线：400-660-5555转1</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NavCon E -->
+
+</header>
+<!-- hearder E -->
+
+
+<article>
+    <header>
+        <div class="top-con" style="top: 60px">
+            <h2 class="f40 white-c">企业域名</h2>
+            <div class="sub-tit f20 mtb20 gd3-c">五星级注册机构　18年专业服务</div>
+            <div class="sub-tit f20 mtb20 gd3-c">为您提供完善的域名服务及品牌保护方案</div>
+        </div>
+        <img src="/images/product/domain/57e2277e72164.jpg" alt="">
+    </header>
+    <section class="con-group">
+        <h3 class="con-tit">企业域名注册</h3>
+        <p class="con-tips">用域名保护您的品牌</p>
+        <div class="blue-center-line" style="width: 20%"></div>
+        <div class="row mt80">
+            <div class="col-6">
+                <div class="grid-type-fiv border-right">
+                    <img class="mt60" style="width: 36%" src="/images/product/domain/guwen.png" alt="">
+                    <h4 class="f26 black-c mtb20">专属顾问</h4>
+                    <p class="f20 mt20 mb0 g70">80家分公司</p>
+                    <p class="f20 mt5 mb0 g70">5000名本地化</p>
+                    <p class="f20 mt5 g70">服务顾问</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="grid-type-fiv">
+                    <img class="mt60" style="width: 36%" src="/images/product/domain/zuanshi.png" alt="">
+                    <h4 class="f26 black-c mtb20">域名优选</h4>
+                    <p class="f20 mt20 mb0 g70">企业商标</p>
+                    <p class="f20 mt5 mb0 g70">单位 (产品)名称</p>
+                    <p class="f20 mt5 g70">简单易记，例如：300.cn</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt40 mb40">
+            <div class="col-6">
+                <div style="width:60%; height: 1px; background: #d7d7d7; margin: 0 auto"></div>
+            </div>
+            <div class="col-6">
+                <div style="width:60%; height: 1px; background: #d7d7d7; margin: 0 auto"></div>
+            </div>
+        </div>
+        <div class="row mt80">
+            <div class="col-6">
+                <div class="grid-type-fiv border-right">
+                    <img class="mt60" style="width: 36%" src="/images/product/domain/piliangyingxiao.png" alt="">
+                    <h4 class="f26 black-c mtb20">批量注册</h4>
+                    <p class="f20 mt20 mb0 g70">企业品牌保护</p>
+                    <p class="f20 mt5 mb0 g70">更多输入方式访问</p>
+                    <p class="f20 mt5 g70">增加网站推广的效果</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="grid-type-fiv">
+                    <img class="mt60" style="width: 36%" src="/images/product/domain/nian.png" alt="">
+                    <h4 class="f26 black-c mtb20">一次多年</h4>
+                    <p class="f20 mt20 mb0 g70">可以降低因为到期忘记续费</p>
+                    <p class="f20 mt5 mb0 g70">而失去了至关重要的</p>
+                    <p class="f20 mt5 g70">域名的风险</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="con-group gray-line">
+        <h3 class="con-tit">域名便捷管理</h3>
+        <p class="con-tips">在线、自主、快捷</p>
+        <div class="blue-center-line" style="width: 20%"></div>
+        <div class="row mt80">
+            <div class="col-6">
+                <div class="grid-type-fiv border-right">
+                    <img class="mt60" style="width: 36%" src="/images/product/domain/duihao.png" alt="">
+                    <p class="f20 mt20 mb0 g70">域名状态</p>
+                    <p class="f20 mt5 mb0 g70">“一目了然”</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="grid-type-fiv">
+                    <img class="mt60" style="width: 36%" src="/images/product/domain/kuaijie.png" alt="">
+                    <p class="f20 mt20 mb0 g70">一键解析</p>
+                    <p class="f20 mt5 mb0 g70">“快捷方便”</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt40 mb40">
+            <div class="col-6">
+                <div style="width:60%; height: 1px; background: #d7d7d7; margin: 0 auto"></div>
+            </div>
+            <div class="col-6">
+                <div style="width:60%; height: 1px; background: #d7d7d7; margin: 0 auto"></div>
+            </div>
+        </div>
+        <div class="row mt80">
+            <div class="col-6">
+                <div class="grid-type-fiv border-right">
+                    <img class="mt60" style="width: 36%" src="/images/product/domain/piliangyingxiao.png" alt="">
+                    <p class="f20 mt20 mb0 g70">解析记录 </p>
+                    <p class="f20 mt5 mb0 g70">“及时生效”</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="grid-type-fiv">
+                    <img class="mt60" style="width: 36%" src="/images/product/domain/anquan.png" alt="">
+                    <p class="f20 mt20 mb0 g70">操作管理</p>
+                    <p class="f20 mt5 mb0 g70">“安全验证”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="con-group">
+        <h3 class="con-tit">域名信息保护，安全无忧</h3>
+        <div class="blue-center-line mt20" style="width: 20%"></div>
+        <div class="list-type-two">
+            <div class="ltt-group">
+                <h3>防泄漏</h3>
+                <p>保护注册信息在whois查询时不被公开，让您远离垃圾邮件和电话的骚扰。</p>
+            </div>
+            <div class="ltt-group">
+                <h3>防篡改</h3>
+                <p>给域名注册信息和域名DNS“加锁”，保护域名解析不被恶意篡改。</p>
+            </div>
+            <div class="ltt-group">
+                <h3>防盗窃</h3>
+                <p>为域名转移操作“上锁”，防止域名恶意转移他人。</p>
+            </div>
+        </div>
+    </section>
+
+
+</article>
+
+<footer class="bottom-tool">
+    <div class="row">
+        <div class="col-4">
+            <div class="bt-item">
+                <i class="iconfont">&#xe676;</i>
+                <span class="p_toolname  ">邮件</span>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="bt-item">
+                <i class="iconfont">&#xe67f;</i>
+                <span class="p_toolname  ">分享</span>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="bt-item border-none">
+                <i class="iconfont">&#xe628;</i>
+                <span class="p_toolname  ">电话</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- build:js /scripts/zepto.min.js -->
+<script src="/scripts/src/zepto.js"></script>
+<script src="/scripts/src/ajax.js"></script>
+<script src="/scripts/src/event.js"></script>
+<script src="/scripts/src/touch.js"></script>
+<script src="/scripts/src/fx.js"></script>
+<script src="/scripts/src/fx_methods.js"></script>
+<script src="/scripts/src/deferred.js"></script>
+<!-- endbuild -->
+<!-- build:js /scripts/vendor.min.js-->
+<script src="/scripts/customtools.js" charset="utf-8"></script>
+<script src="/scripts/plugin/iscroll-probe.js" charset="utf-8"></script>
+<script src="/scripts/plugin/dialog.js" charset="utf-8"></script>
+<script src="/scripts/common.js" charset="utf-8"></script>
+<!-- endbuild -->
+</body>
+</html>

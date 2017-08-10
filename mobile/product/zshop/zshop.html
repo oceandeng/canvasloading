@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
+<meta name="full-screen" content="yes">
+<title>首页</title>
+<!-- build:css /styles/common.min.css -->
+<link rel="stylesheet" href="/styles/common.css">
+<!-- endbuild -->
+<!-- build:css /styles/font.css -->
+<link rel="stylesheet" href="/styles/font.css">
+<!-- endbuild -->
+<!-- build:css /styles/subject.min.css -->
+<link rel="stylesheet" href="/styles/subject.css">
+<!-- endbuild -->
+
+</head>
+<body class="main-container">
+<!-- hearder S -->
+<header class="row">
+    <div class="col-6">
+        <div class="logo"><img src="/images/logo.png" alt=""></div>
+    </div>
+    <div class="col-6">
+        <div class="menu-btn">
+            <span id="navBox" class="navbox">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </span>
+        </div>
+    </div>
+
+    <!-- NavCon S -->
+    <div class="dialog-wrap" style="display: none">
+        <div id="mainNav">
+            <div id="wrapper">
+                <div id="scroller">
+                    <div class="nav-body">
+                        <div class="nav-group first-nav">
+                            <div class="nav-l blue-bg">
+                                <div class="n-l-icon s100x100">
+                                    <img src="/images/icon/shouye.png" alt="">
+                                </div>
+                            </div>
+                            <div class="nav-r black-bg p-r">
+                                <div class="n-logo">
+                                    <img src="/images/logo.png" alt="">
+                                </div>
+                                <div id="navClose" class="n-close">
+                                    <img src="/images/icon/guanbi.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nav-group">
+                            <div class="nav-l l-blue-bg">
+                                <div class="n-l-icon  mt60">
+                                    <img src="/images/icon/chanpin.png" alt="">
+                                </div>
+                                <div class="n-l-tit">产品</div>
+                            </div>
+                            <div class="nav-r g1f-bg">
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>整合营销</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">全网门户</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">产品介绍</a></li>
+                                                <li><a href="">功能</a></li>
+                                                <li><a href="">客户案例</a></li>
+                                                <li><a href="">产品版本</a></li>
+                                                <li><a href="">形象订制</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">商　　城</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">ZshopS</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">企业邮箱</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">Z云邮</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>整合推广</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">营销宝</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">产品介绍</a></li>
+                                                <li><a href="">企业秀</a></li>
+                                                <li><a href="">企业二维码</a></li>
+                                                <li><a href="">会销宝</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">大把推</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">产品介绍</a></li>
+                                                <li><a href="">客户案例</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">易米通</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">产品介绍</a></li>
+                                                <li><a href="">产品优势</a></li>
+                                                <li><a href="">专业服务</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-6">
+                                            <h5 class="n-r-stit">Google Adwords</h5>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">产品介绍</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>业务应用</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">基础应用</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">企业域名</a></li>
+                                                <li><a href="">企业邮箱</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-4">
+                                            <h5 class="n-r-stit">扩展应用</h5>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="n-r-scon">
+                                                <li><a href="">扫码购</a></li>
+                                                <li><a href="">微订房</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <div class="nav-l blue-bg">
+                                <div class="n-l-icon  mt60">
+                                    <img src="/images/icon/jiejuefangan.png" alt="">
+                                </div>
+                                <div class="n-l-tit">解决<br>方案</div>
+                            </div>
+                            <div class="nav-r black-bg">
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>行业解决方案</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/tuoyuan-1-kaobei-2.png" alt="">
+                                                <p>外贸</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t1.png" alt="">
+                                                <p>家装门户</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t2.png" alt="">
+                                                <p>工业品内贸</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t4.png" alt="">
+                                                <p>农业门户</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>专项解决方案</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t5.png" alt="">
+                                                <p>全网电商</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t6.png" alt="">
+                                                <p>域名保护</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t7.png" alt="">
+                                                <p>企业邮局</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="s-item">
+                                                <img src="/images/icon/t8.png" alt="">
+                                                <p>企业营销</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <div class="nav-l l-blue-bg">
+                                <div class="n-l-icon  mt60">
+                                    <img src="/images/icon/fuwu.png" alt="">
+                                </div>
+                                <div class="n-l-tit">服务<br>支持</div>
+                            </div>
+                            <div class="nav-r g1f-bg">
+                                <div class="nav-r-con">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="n-r-tit">
+                                                <h4>全网门户</h4>
+                                            </div>
+                                            <div class="n-r-tit">
+                                                <h4>营销推广</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="n-r-tit">
+                                                <h4>企业应用</h4>
+                                            </div>
+                                            <div class="n-r-tit">
+                                                <h4>移动营销</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <div class="nav-l blue-bg">
+                                <div class="n-l-icon  mt60">
+                                    <img src="/images/icon/guanyuwomen.png" alt="">
+                                </div>
+                                <div class="n-l-tit">关于<br>中企</div>
+                            </div>
+                            <div class="nav-r black-bg">
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>企业简介</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-12">
+                                            <ul class="n-r-scon ml16">
+                                                <li><a href="">企业概况</a></li>
+                                                <li><a href="">企业文化</a></li>
+                                                <li><a href="">发展历程</a></li>
+                                                <li><a href="">企业资质</a></li>
+                                                <li><a href="">所获荣誉</a></li>
+                                                <li><a href="">数码庄园</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-r-con">
+                                    <div class="n-r-tit">
+                                        <h4>企业资讯</h4>
+                                    </div>
+                                    <div class="row n-r-con">
+                                        <div class="col-12">
+                                            <ul class="n-r-scon ml16">
+                                                <li><a href="">新闻公告</a></li>
+                                                <li><a href="">媒体报道</a></li>
+                                                <li><a href="">专题活动</a></li>
+                                                <li><a href="">社会公益</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-r-con mt60">
+                                    <span class="hot-line bule-c">客服热线：400-660-5555转1</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NavCon E -->
+
+</header>
+<!-- hearder E -->
+
+
+<article>
+    <header>
+        <img src="/images/product/zshop/zshops20170704143604.jpg" alt="">
+    </header>
+    <section class="con-group gf0-bg">
+        <h3 class="con-tit">为中小企业搭建独立电商平台</h3>
+        <h3 class="con-tit">提供行业电商解决方案</h3>
+        <p class="con-desc mt40">商城提供安全稳定、易用高效的在线零售管理系统，后台简单易用，购物体验流畅，促销方式灵活，数据统计分析嵌入业务各个环节，根据访问记录深入分析，随时随地呈现统计结果指导决策。帮助传统企业顺利开展线上零售业务，强化数字分析与营销推广，降低业务成本，树立企业品牌，扩大企业收益渠道。</p>
+    </section>
+
+    <section class="con-group pb-0">
+        <h3 class="con-tit">ZshopS线上线下协同 全网营销</h3>
+        <p class="con-tips">打通线上线下渠道，无缝实现O2O</p>
+        <p class="con-tips mt-10">多平台、多渠道全网覆盖</p>
+        <div class="row mt60">
+            <div class="col-6 gf0-bg">
+                <div class="grid-type-one">
+                    <img src="/images/product/zshop/61.png" alt="">
+                    <h4>多平台营销</h4>
+                    <p>支持PC 商城、安卓App、苹果App 和微信商城</p>
+                </div>
+            </div>
+            <div class="col-6 gray-line">
+                <div class="grid-type-one">
+                    <img src="/images/product/zshop/62.png" alt="">
+                    <h4>支持一淘及多个搜索引擎</h4>
+                    <p>优化SEO，提升搜索营销的效果</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 gray-line">
+                <div class="grid-type-one">
+                    <img src="/images/product/zshop/63.png" alt="">
+                    <h4>支持兑换券和礼品</h4>
+                    <p>方便商家在第三方团购平台开展营销业务</p>
+                </div>
+            </div>
+            <div class="col-6 gf0-bg">
+                <div class="grid-type-one">
+                    <img src="/images/product/zshop/64.png" alt="">
+                    <h4>社会化分享</h4>
+                    <p>会员分享商品到社交渠道，提升商城购买率</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="con-group pb-0">
+        <h3 class="con-tit">打通线上线下渠道</h3>
+
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/65.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4>线上网站宣传，到店购买</h4>
+                        <p>移动端促销网站宣传产生购买意向，通过手机地图引导到附近门店，线下体验后，完成购买。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/66.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4>线上网站宣传，到店购买</h4>
+                        <p>商家可以在线下门店、地铁站、 户外广告栏用二维码网站宣传，顾客用手机扫描二维码完成购买。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/67.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4>线下缺货，线上购买</h4>
+                        <p>线下门店缺货断码，会员可以扫描门店商品二维码，线上下单订购，配送到家。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/68.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4>线上组织，线下活动</h4>
+                        <p>线上发起和管理线下活动，会员可以通过线上报名，参加线下活动，为线下引流。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="con-group gray-line pb-0">
+        <h3 class="con-tit" style="padding: 0 0 60px 0; border-bottom: 1px solid #eeeeee">线上线下协同</h3>
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/69.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4 style="margin-bottom: 0">导购管理</h4>
+                        <h4 style="margin-top: 0">线上线下利益一致</h4>
+                        <p>业务员利用各种渠道发展会员， 会员不管是在线上消费还是在线下消费，都可以计入业务员个人业绩。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/610.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4>开放接口，对接线下ERP</h4>
+                        <p>与第三方ERP 实施服务商合作， 对接线下ERP 系统，实现线上线下业务整合。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <section class="con-group pb-0">
+        <h3 class="con-tit">ZshopS会员精细化经营</h3>
+        <p class="con-tips" style="padding: 0 0 60px 0; border-bottom: 1px solid #eeeeee">提供丰富的会员互动营销管理工具</p>
+
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/611.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4>线下会员导入</h4>
+                        <p>线下老会员，可以通过短信群发网站宣传线上商城；可以通过店内二维码快速扫描注册，网站宣传线上商城。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/612.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4>丰富的会员政策</h4>
+                        <p>政策有会员价格、会员折扣、会员预存款、会员自动升降级和会员促销。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/613.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4>会员推荐返利</h4>
+                        <p>商城的老会员推荐新会员注册购买后，老会员可以获得推荐返利。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/614.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4>精准营销</h4>
+                        <p>提供访问统计、销售分析、商品分析和会员分析四个维度分析报表，辅助经营决策。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="con-group gray-line pb-0">
+        <h3 class="con-tit" style="padding: 0 0 60px 0; border-bottom: 1px solid #eeeeee">统计分析</h3>
+        <div class="grid-type-two">
+            <div class="row">
+                <div class="col-5">
+                    <img src="/images/product/zshop/615.png" alt="">
+                </div>
+                <div class="col-7">
+                    <div class="gtt-con">
+                        <h4 style="margin-bottom: 0">智能化决策分析</h4>
+                        <p>提供访问统计、销售分析、商品分析和会员分析四个维度分析报表，辅助经营决策。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
+
+<footer class="bottom-tool">
+    <div class="row">
+        <div class="col-4">
+            <div class="bt-item">
+                <i class="iconfont">&#xe676;</i>
+                <span class="p_toolname  ">邮件</span>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="bt-item">
+                <i class="iconfont">&#xe67f;</i>
+                <span class="p_toolname  ">分享</span>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="bt-item">
+                <i class="iconfont">&#xe628;</i>
+                <span class="p_toolname  ">电话</span>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+<!-- build:js /scripts/zepto.min.js -->
+<script src="/scripts/src/zepto.js"></script>
+<script src="/scripts/src/ajax.js"></script>
+<script src="/scripts/src/event.js"></script>
+<script src="/scripts/src/touch.js"></script>
+<script src="/scripts/src/fx.js"></script>
+<script src="/scripts/src/fx_methods.js"></script>
+<script src="/scripts/src/deferred.js"></script>
+<!-- endbuild -->
+<!-- build:js /scripts/vendor.min.js-->
+<script src="/scripts/customtools.js" charset="utf-8"></script>
+<script src="/scripts/plugin/iscroll-probe.js" charset="utf-8"></script>
+<script src="/scripts/plugin/dialog.js" charset="utf-8"></script>
+<script src="/scripts/common.js" charset="utf-8"></script>
+<!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,223 @@
+@import "mixin", "variable";
+
+.main-title-body{
+    padding: 60px 0;
+    background: $gf2;
+    text-align: center;
+
+    h2{
+        font-size: 40px;
+        color: $g00;
+        margin: 0 0 20px 0;
+    }
+    .mt-desc{
+        font-size: 20px;
+        color: $g99;
+        margin: 10px 0;
+    }
+}
+
+.blue-tit{
+    background: $blue !important;
+
+    h2, .mt-desc{
+        color: $white !important;
+    }
+}
+
+.product-body{
+
+    .product-group{
+        display: flex;
+    }
+    .pro-tit{
+        width: 70px;
+        padding: 60px 0;
+
+        p{
+            margin: 0;
+            line-height: 36px;
+        }
+    }
+    .pro-con{
+        flex: 1;
+
+        .pro-con-group{
+            padding: 50px 0;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        .pro-icon{
+            margin: 20px 0 0 0;
+            img{
+                width: 60px;
+            }
+        }
+        .pro-desc{
+            h3{
+                font-size: 30px;
+                font-weight: normal;
+                margin: 5px 0 0 0;
+            }
+            p{
+                font-size: 18px;
+                color: $g70;
+                margin: 10px 0 0 0;
+            }
+        }
+        .pro-arrow{
+            margin: 26px 0 0 0;
+            img{
+                width: 40px;
+            }
+        }
+    }
+}
+
+.industry-solution{
+    background: #232323;
+
+}
+.solution, .service{
+    @include clearfix();
+
+    .is-group{
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        border-bottom: 1px solid #393939;
+        text-align: center;
+        height: 300px;
+        padding: 80px 0;
+
+        &:nth-child(odd){
+            border-right: 1px solid #393939;
+        }
+    }
+    p{
+        font-size: 22px;
+        color: $white;
+    }
+}
+
+.special-solution{
+    background: url(../images/index/xingzhuang-13-kaobei.jpg) no-repeat;
+}
+
+.about-zq{
+
+    .col-4:last-child{
+        .az-item{
+            border: none;
+        }
+    }
+
+    .az-item{
+        border-right: 1px solid $gf2;
+        text-align: center;
+        padding: 100px 0 80px 0;
+
+        .azi-top{
+            display: inline-block;
+            position: relative;
+
+            img{
+                padding: 0 30px 0 0;
+            }
+            .az-add{
+                font-size: 36px;
+                color: $blue;
+                position: absolute;
+                right: 0;
+                top: 0;
+                line-height: 20px;
+            }
+            .az-unit{
+                position: absolute;
+                right: 0;
+                bottom: 5px;
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+        }
+        p{
+            font-size: 22px;
+        }
+        .az-btn{
+            width: 60%;
+            margin: 30px auto 0 auto;
+            font-size: 20px;
+            background: $blue;
+            color: $white;
+            @include line-height(40px);
+        }
+    }
+}
+
+.service{
+    .is-group{
+        h4{
+            font-size: 26px;
+            color: $white;
+            margin: 15px 0 0 0;
+        }
+        p{
+            font-size: 18px;
+            color: $white;
+        }
+    }
+}
+
+.phone-body, .movie-body{
+    @include clearfix();
+
+    img{
+        float: left;
+    }
+}
+
+.main-slider-body{
+    position: relative;
+
+    ul, li{
+        margin: 0;
+        padding: 0;
+        list-style-type: none
+    }
+    .imgbox{
+        width:100%;
+        overflow:hidden;
+        margin:0 auto;
+    }
+    .imgbox ul {
+        float:left;
+    }
+    .imgbox ul li {
+        float:left;
+        text-align:center;
+    }
+    .page{
+        width: 100%;
+        position: absolute;
+        bottom: 30px;
+        @include box-center();
+    }
+    .page ol {}
+    .page ol li {
+        position:relative;
+        display:inline-block;
+        width:16px;
+        height:16px;
+        background-color:#666;
+        margin: 0px 10px;
+        float:left;
+        color:#fff;
+        text-decoration:none;
+        text-align: center;
+        border-radius:50%;
+        cursor: pointer;
+    }
+    .page ol li.active{
+        background:$blue
+    }
+}
