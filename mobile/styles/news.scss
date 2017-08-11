@@ -1,0 +1,22 @@
+@import "mixin", "variable";
+
+.new-list-group{
+    padding: 30px 40px;
+    text-align: left;
+    border-bottom: 1px solid $gf3;
+
+    .new-tit{
+        font-size: 30px;
+        margin: 0;
+    }
+    .new-date{
+        font-size: 18px;
+        color: #515151;
+
+    }
+    .new-con{
+        font-size: 20px;
+        color: #6B6B6B;
+        line-height: 1.8;
+    }
+}
