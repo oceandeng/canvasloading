@@ -366,14 +366,35 @@ article{
     }
 }
 
+.r-group{
+    .r-g-img{
+        height: 316px;
+        @include box-center();
 
-    .r-group{
-        .r-g-img{
-            height: 316px;
-            @include box-center();
-
-            img{
-                display: block;
-            }
+        img{
+            display: block;
         }
     }
+}
+.blut-btn{
+    width: 60%;
+    @include line-height(70px);
+    font-size: 30px;
+    background: $blue;
+    color: $white;
+    margin: 30px auto;
+}
+.b-shadow-border{
+    width: 639px;
+    height: 11px;
+    margin: 0 auto
+}
+.shot-shadow-bg{
+    width: 70%;
+    margin: 0 auto;
+}
+.w-line{
+    margin: 40px;
+    background: $white;
+    height: 1px;
+}

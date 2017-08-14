@@ -1,0 +1,45 @@
+@import "variable", "mixin";
+
+.event-body{
+    padding: 80px 40px;
+
+    .event-group{
+        display: flex;
+        margin-top: -20px;
+    }
+    .event-y{
+        width: 90px;
+    }
+    .event-con{
+        flex: 1;
+        padding: 0 0 0 40px;
+        margin: 20px 0 0 0;
+        border-left: 1px solid $ge5;
+        position: relative;
+
+        .e-dot{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: -7px;
+            top: -6px;
+        }
+        .ec-item{
+            padding: 0 0 20px 0;
+            &:last-child{
+                margin: 0 0 60px 0;
+            }
+
+            .ec-time{
+                font-size: 20px;
+                color: $blue;
+                margin: 10px 0;
+            }
+            .ec-con{
+                font-size: 20px;
+                line-height: 36px;
+                color: $g70;
+            }
+        }
+    }
+}
