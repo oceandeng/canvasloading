@@ -9,7 +9,7 @@ dW = document.body.clientWidth;
  */
 $(function(){
 	var preloadGuanbi = new Image()
-	preloadGuanbi.src = '/images/icon/guanbi.png';
+	preloadGuanbi.src = '../images/icon/guanbi.png';
 
 	$('#navBox').on(oTools.clickEvent, function(){
 		mainNav()
