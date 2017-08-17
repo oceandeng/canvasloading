@@ -61,6 +61,7 @@ $.extend(mggScrollImg.prototype, {
         循环滚动思路：复制首尾节点到尾首
     */
     init_loop : function(){
+        this.box.children().show()
         if(this.box.children().length == this.size && this.loop){//暂时只支持size和子节点数相等情况的循环
             this.now_left = -this.width;//设置初始位置信息
             this.minleft = -this.width*this.size;//最小left值
