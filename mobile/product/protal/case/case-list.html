@@ -33,6 +33,7 @@
 
 </head>
 <body class="main-container">
+<div id="num"></div>
 <!-- hearder S -->
 <header class="row">
     <div class="col-6">
@@ -499,5 +500,29 @@
 <script src="/scripts/plugin/dialog.js" charset="utf-8"></script>
 <script src="/scripts/common.js" charset="utf-8"></script>
 <!-- endbuild -->
+
+<script>
+
+
+$(document).on('scroll', function(){
+    var scrollTop = window.pageYOffset  //用于FF
+    || document.documentElement.scrollTop
+    || document.body.scrollTop
+    || 0;
+
+    console.log(scrollTop)
+    $('#num').css({
+        'position': 'fixed',
+        'top': '100px',
+        'left': 0,
+        'background': '#f00',
+        'color': '#fff',
+        'padding': '20px',
+        'font-size': '30px'
+    }).empty().append(scrollTop)
+})
+
+</script>
+
 </body>
 </html>
