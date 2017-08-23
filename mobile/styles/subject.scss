@@ -55,7 +55,7 @@ article{
                 font-size: 26px;
 
                 .active{
-                    color: $blue;
+                    color: #0d6cc5;
                 }
 
                 .division{
@@ -91,7 +91,7 @@ article{
         .blue-center-line{
             width: 30%;
             height: 3px;
-            background: $blue;
+            background: #0d6cc5;
             margin: 0 auto;
         }
         img{
@@ -132,7 +132,7 @@ article{
         position: fixed;
         bottom: 0;
         width: 100%;
-        background: $blue;
+        background: #0d6cc5;
         height: 88px;
 
         .bnb-item{
@@ -275,7 +275,7 @@ article{
     .lto-group{
         margin: 0 0 80px 0;
         padding: 0 0 0 30px;
-        border-left: 3px solid $blue;
+        border-left: 3px solid #0d6cc5;
         text-align: left;
 
         h3{
@@ -389,7 +389,7 @@ article{
     width: 60%;
     @include line-height(70px);
     font-size: 30px;
-    background: $blue;
+    background: #0d6cc5;
     color: $white;
     margin: 30px auto;
 }
@@ -406,4 +406,51 @@ article{
     margin: 40px;
     background: $white;
     height: 1px;
+}
+.dabatui-page{
+    .d-ss-tit-g{
+        font-size: 30px;
+        width: 80%;
+        background: #f3f3f8;
+        color: #333;
+        @include line-height(60px);
+        border-radius: 30px;
+        margin: 0 auto;
+    }
+    .d-ss-tit-b{
+        font-size: 30px;
+        width: 80%;
+        background: #0d6cc5;
+        color: #fff;
+        @include line-height(60px);
+        border-radius: 30px;
+        margin: 0 auto;
+    }
+
+    .d-sub-tit{
+        font-size: 30px;
+        font-weight: bold;
+        color: #0d6cc5;
+    }
+    .dabatui-con{
+        font-size: 24px;
+        color: $g33;
+        line-height: 1.8;
+        text-align: left;
+        padding: 0 40px;
+    }
+    .blue-line{
+        height: 9px;
+        background: #0d6cc5;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .blue-btn{
+        display: inline-block;
+        @include line-height(80px);
+        padding: 0 60px;
+        background: #0d6cc5;
+        color: $white;
+        font-size: 24px;
+    }
 }
