@@ -425,9 +425,9 @@
 <footer class="bottom-tool">
     <div class="row">
         <div class="col-4">
-            <div class="bt-item">
-                <i class="iconfont">&#xe676;</i>
-                <span class="p_toolname  ">邮件</span>
+            <div class="bt-item consult-btn">
+                <img class="mt20" style="width: 26px; margin-bottom: 5px" src="/images/icon/consult-icon.png" alt="">
+                <span class="p_toolname  ">表单</span>
             </div>
         </div>
         <div class="col-4">
@@ -446,6 +446,54 @@
 </footer>
 
 
+<!-- consult S -->
+<div class="dialog-wrap" style="display: none">
+    <div id="consult">
+        <div class="consult-body">
+            <div id="consultClose" class="n-close">
+                <img src="/images/icon/consult-close.png" alt="">
+            </div>
+            <div class="consult-tit">
+                <h4>免费咨询</h4>
+            </div>
+            <div class="consult-img">
+                <img src="/images/index/consult-bg.jpg" alt="">
+            </div>
+            <div class="consult-con">
+                <div class="row consult-group">
+                    <div class="col-4"><div class="align-right f26 con-label">公司名称：</div></div>
+                    <div class="col-8">
+                        <div class="con-input">
+                            <input type="text" name="" placeholder="请输入" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row consult-group">
+                    <div class="col-4"><div class="align-right f26 con-label">手机号码：</div></div>
+                    <div class="col-8">
+                        <div class="con-input">
+                            <input type="text" name="" placeholder="请输入" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row consult-group">
+                    <div class="col-4"><div class="align-right f26 con-label">联系人：</div></div>
+                    <div class="col-8">
+                        <div class="con-input">
+                            <input type="text" name="" placeholder="请输入" />
+                        </div>
+                    </div>
+                </div>
+                <div class="align-center mt40 mb80">
+                    <div id="consultSubmit" class="consult-submit">提交</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- consult E -->
+
+
 <!-- build:js /scripts/zepto.min.js -->
 <script src="/scripts/src/zepto.js"></script>
 <script src="/scripts/src/ajax.js"></script>
@@ -453,7 +501,6 @@
 <script src="/scripts/src/touch.js"></script>
 <script src="/scripts/src/fx.js"></script>
 <script src="/scripts/src/fx_methods.js"></script>
-<script src="/scripts/src/deferred.js"></script>
 <!-- endbuild -->
 <!-- build:js /scripts/vendor.min.js-->
 <script src="/scripts/customtools.js" charset="utf-8"></script>

@@ -177,11 +177,75 @@ header{
 			}
 		}
 	}
-
-
-
 }
 
+.consult-style{
+	font-size: 22px;
+	color: $blue;
+	display: inline-block;
+	@include line-height(60px);
+	border: 1px solid $blue;
+	padding: 0 40px;
+}
+.consult-body{
+	position: relative;
+
+	.n-close{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 9
+	}
+	.consult-tit{
+		position: absolute;
+		width: 100%;
+		h4{
+			text-align: center;
+			font-size: 60px;
+			color: $white;
+			margin: 50px 0 0 0;
+		}
+	}
+	.consult-img{
+		img{
+			border-radius: 5px 5px 0 0;
+		}
+	}
+	.consult-con{
+		margin: 40px 0;
+	}
+	.consult-group{
+		padding: 20px 0;
+
+		.con-label{
+			line-height: 65px;
+			padding: 0 10px 0 0;
+			color: #333;
+		}
+		.con-input{
+			input{
+				height: 65px;
+				line-height: 65px;
+				padding: 0 10px;
+				width: 90%;
+				box-sizing: border-box;
+				border: 1px solid #b2b2b2;
+				border-radius: 5px;
+				font-size: 22px;
+			}
+		}
+	}
+	.consult-submit{
+		font-size: 30px;
+		color: $white;
+		height: 70px;
+		line-height: 70px;
+		background: #47b3ff;
+		border-radius: 5px;
+		display: inline-block;
+		padding: 0 80px;
+	}
+}
 
 #wrapper {
   position: absolute;

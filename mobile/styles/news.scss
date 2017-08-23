@@ -43,3 +43,75 @@
     }
 
 }
+.service-tit{
+    background: $gf5;
+    padding: 50px 40px;
+
+    .new-tit{
+        font-size: 30px;
+        margin: 0;
+        text-align: center;
+    }
+    .news-info{
+        background: #f0f0f0;
+        padding: 30px;
+        border-left: 3px solid $blue;
+        font-size: 22px;
+        color: #6B6B6B;
+    }
+    .new-con{
+        color: #6B6B6B;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+}
+.adress-body{
+    padding: 0 20px;
+    @include clearfix();
+
+    .adress-item{
+        width: 33.33333333%;
+        float: left;
+
+        .ai-box{
+            margin: 0 10px 20px 10px;
+            border: 1px solid $gdd;
+            @include line-height(70px);
+
+            &:hover{
+                border-color: $blue;
+                color: $blue;
+                background: #f1f9ff;
+                font-size: 30px;
+            }
+        }
+    }
+}
+.net-con{
+    padding: 0 40px;
+
+    .net-con-item{
+        h4{
+            font-size: 32px;
+            text-align: left;
+            font-weight: bold;
+            margin: 0;
+        }
+        .nc-con{
+            text-align: left;
+            font-size: 24px;
+            margin: 20px 0 0 0;
+        }
+        .phone-box{
+            @include line-height(70px);
+            text-align: left;
+            padding: 0 40px 0 80px;
+            background: url('../images/icon/phone-icon.png') $blue no-repeat 20px center;
+            color: $white;
+            display: inline-block;
+            border-radius: 10px;
+            margin: 0 0 20px 0;
+            font-size: 32px;
+        }
+    }
+}

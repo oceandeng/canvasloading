@@ -14,7 +14,9 @@ $(function(){
 	$('#navBox').on(oTools.clickEvent, function(){
 		mainNav()
 	})
-
+	$('.consult-btn').on(oTools.clickEvent, function(){
+		consultDialog()
+	})
 
 })
 
@@ -26,7 +28,7 @@ $(function(){
     });
 });
 
-// 发送信息成功弹层
+// 导航菜单
 function mainNav(){
     var mainNav = new Dialog({
         'id': 'mainNav',
@@ -89,5 +91,31 @@ function mainNav(){
 
 	$('#navClose').on(oTools.clickEvent, function(){
 		mainNav.close()
+	})
+}
+
+// 咨询弹窗
+function consultDialog(){
+    var consult = new Dialog({
+        'id': 'consult',
+        'type': 'popup',
+        'lock': true,
+        'width':'90%',
+        'closeButton': false,
+        'animation':'animated bounceInDown',
+        'contentStyle': {
+            'background': '#fff',
+			'border-radius': '5px'
+        },
+        'onReady': function(){
+
+		},
+		'addFlashFn': function(_this){
+		}
+
+    });
+
+	$('#consultClose').on(oTools.clickEvent, function(){
+		consult.close()
 	})
 }
