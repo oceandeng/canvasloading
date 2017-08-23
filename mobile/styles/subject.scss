@@ -53,8 +53,12 @@ article{
             .tc-s-nav{
                 color: $ga9;
                 font-size: 26px;
-                
-                span{
+
+                .active{
+                    color: $blue;
+                }
+
+                .division{
                     margin: 0 10px;
                 }
             }
