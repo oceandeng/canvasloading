@@ -8,8 +8,6 @@ dW = document.body.clientWidth;
  * 页面初始化事件绑定
  */
 $(function(){
-	var preloadGuanbi = new Image()
-	preloadGuanbi.src = '../images/icon/guanbi.png';
 
 	$('#navBox').on(oTools.clickEvent, function(){
 		mainNav()
@@ -27,6 +25,30 @@ $(function(){
         location.href = $_this.attr('data-href');
     });
 });
+
+// 底部导航滚动效果
+$(function(){
+	var dH = $(document).height() - $(window).height(),
+		$bnb = $('.bottom-nav-blue');
+
+	if(!!$bnb.size()){
+		$(window).on('scroll', function(){
+			var scrollTop = window.pageYOffset  //用于FF
+			|| document.documentElement.scrollTop
+			|| document.body.scrollTop
+			|| 0;
+			if(scrollTop >= dH){
+				$bnb.animate({
+					bottom: $('.bottom-tool').height()
+				})
+			}else{
+				$bnb.animate({
+					bottom: 0
+				})
+			}
+		})
+	}
+})
 
 // 导航菜单
 function mainNav(){
