@@ -379,7 +379,6 @@ article{
         bottom: 100px;
         text-align: center;
         width: 100%;
-        z-index: 99999;
 
         .bdsharebuttonbox{
             display: inline-block !important;
@@ -389,7 +388,13 @@ article{
         }
     }
 }
-
+.mask{
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999
+}
 .r-group{
     .r-g-img{
         height: 316px;

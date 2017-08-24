@@ -58,14 +58,10 @@ $(function(){
 
 		$('body').append($(mask))
 		$('.bdshare-body').show()
+		$('.bdshare-body').css({zIndex: 9999})
 		$('.mask').css({
 			width: _w,
-			height: _h,
-			background: 'rgba(0, 0, 0, .6)',
-			position: 'fixed',
-			top: 0,
-			left: 0,
-			zIndex: 9999
+			height: _h
 		})
 
 	})
