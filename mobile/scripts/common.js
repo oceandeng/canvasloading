@@ -50,6 +50,31 @@ $(function(){
 	}
 })
 
+$(function(){
+	$('#shareBtn').on(oTools.clickEvent, function(){
+		var _w = $(window).width(),
+			_h = $(window).height(),
+			mask = '<div class="mask"></div>';
+
+		$('body').append($(mask))
+		$('.bdshare-body').show()
+		$('.mask').css({
+			width: _w,
+			height: _h,
+			background: 'rgba(0, 0, 0, .6)',
+			position: 'fixed',
+			top: 0,
+			left: 0,
+			zIndex: 9999
+		})
+
+	})
+	$(document).on(oTools.clickEvent, '.mask', function(){
+		$('.mask').remove()
+		$('.bdshare-body').hide()
+	})
+})
+
 // 导航菜单
 function mainNav(){
     var mainNav = new Dialog({

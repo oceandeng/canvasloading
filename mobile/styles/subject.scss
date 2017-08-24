@@ -358,6 +358,7 @@ article{
     height: 100px;
     background: $g33;
     text-align: center;
+    position: relative;
 
     .bt-item{
         border-right: 1px solid #4f4f4f;
@@ -372,6 +373,20 @@ article{
         display: block;
         font-size: 20px;
         color: $white;
+    }
+    .bdshare-body{
+        position: absolute;
+        bottom: 100px;
+        text-align: center;
+        width: 100%;
+        z-index: 99999;
+
+        .bdsharebuttonbox{
+            display: inline-block !important;
+            padding: 10px 20px;
+            background: $white;
+            border-radius: 5px;
+        }
     }
 }
 
