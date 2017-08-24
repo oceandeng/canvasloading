@@ -17,7 +17,7 @@ add  2014-05-14 by  js明哥哥
 function mggScrollImg(box,config){
     this.box = $(box);
     this.config = $.extend({},config||{});
-    this.width = this.config.width||this.box.children().eq(0).width();//一次滚动的宽度
+    this.width = this.config.width||this.box.children().eq(0).get(0).offsetWidth;//一次滚动的宽度
     this.size = this.config.size||this.box.children().length;
     this.loop = this.config.loop||true;//默认能循环滚动
     this.auto = this.config.auto||true;//默认自动滚动
