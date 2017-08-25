@@ -4,6 +4,7 @@ sW = $(window).width() >= 640 ? 640 : $(window).width();
 sH = $(window).height();
 dW = document.body.clientWidth;
 
+var pConsultDialog = null
 /**
  * 页面初始化事件绑定
  */
@@ -13,7 +14,7 @@ $(function(){
 		mainNav()
 	})
 	$('.consult-btn').on(oTools.clickEvent, function(){
-		consultDialog()
+		pConsultDialog = consultDialog()
 	})
 
 })
@@ -161,4 +162,6 @@ function consultDialog(){
 	$('#consultClose').on(oTools.clickEvent, function(){
 		consult.close()
 	})
+
+	return consult
 }
