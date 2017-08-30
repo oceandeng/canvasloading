@@ -7,16 +7,12 @@
  */
 .top-menu{
     background: $topbar-color;
-    border-bottom: 1px solid $topbar-b-color;
 
-    &:hover{
-        background: $topbar-h-color;
-        border-color: $topbar-bh-color;
-    }
+    &:hover{}
 
     .topbar-box{
         width: $main-width;
-        height: 60px;
+        height: 80px;
         margin: 0 auto;
 
         @media screen and (min-width: 1500px){
@@ -36,12 +32,11 @@
         .menu-content{
             list-style-type: none;
             margin: 0;
-            height: 60px;
             position: relative;
 
             .menu-item{
                 float: left;
-                height: 60px;
+                height: 80px;
 
                 &:hover{
 
@@ -50,7 +45,7 @@
                     display: block;
                     height: 20px;
                     line-height: 20px;
-                    padding: 20px 23px;
+                    padding: 30px 23px;
                     color: $white;
                 }
             }
@@ -59,7 +54,7 @@
             padding: 30px;
             position: absolute;
             z-index: 9999;
-            top: 61px;
+            top: 80px;
             display: none;
             color: $white;
             z-index: 9;
@@ -126,7 +121,8 @@
         a{
             color: $white;
         }
-        .login-btn, .center-btn, .reg-btn{
+        .login-btn a, .center-btn a, .reg-btn a{
+            display: block;
             height: 30px;
             line-height: 30px;
             text-align: center;
@@ -136,11 +132,11 @@
                 background: $tool-btn-h-color;
             }
         }
-        .login-btn{
+        .login-btn a{
             border-radius: 15px 0 0 15px;
             padding:0 10px 0 20px;
         }
-        .reg-btn{
+        .reg-btn a{
             border-radius: 0 15px 15px 0;
             padding: 0 20px 0 10px;
         }
@@ -160,8 +156,8 @@
  */
 .footer{
     .footer-topbar{
-        height: 90px;
-        background: $g333;
+        height: 178px;
+        background: #1d1d1d;
     }
 }
 /**
@@ -201,7 +197,7 @@
         padding-top: 1px;
         position: relative;
 
-        h1{
+        h1, h2{
             font-size: 26px;
             color: $white;
             margin: 60px 0 0 20px;
@@ -360,9 +356,7 @@
          h1, h2{
              color: $main-head-h1-color;
              text-align: center;
-         }
-         h2{
-            font-size: 28px;
+             font-size: 28px;
          }
          p{
              color: $main-head-p-color;
@@ -414,6 +408,24 @@
     }
     .border-none{
         border: none !important;
+    }
+    .noticebar{
+        width: 56px;
+        height: 53px;
+        border-radius: 3px 0 0 3px;
+        background: #3db1ea;
+        margin: 0 0 1px 0;
+
+        .t-tit{
+            margin: -10px 0 0 0;
+            color: $white;
+        }
+
+        &:hover{
+            background: #d5f1ff;
+            .icon-notice{background-position: -46px -150px}
+            .t-tit{color: #3db1ea}
+        }
     }
 }
 .side-tool-bar .cart-num{
@@ -688,7 +700,7 @@
     position: fixed !important; 
     top: 0;
     left: 0;
-    z-index: 9
+    z-index: 99;
 }
 .zx_pop .mask-body{
     width: 100%;
@@ -826,9 +838,6 @@
     height: 379px;
     background: url(../images/bigpush/bottom-bg.jpg) repeat-x;
     border-top: 3px solid #1a87bd;
-}
-.white-all-btn{
-    @include white-all-btn();
 }
 .public-bottom-content{
     padding: 50px 0 0 0;
