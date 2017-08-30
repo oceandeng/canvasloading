@@ -1,0 +1,55 @@
+.scancode-icon{
+	display: inline-block;
+	background: url(../../images/scancode/scancode-icon.png) no-repeat;
+}
+.icon100x100{
+	width: 100px;
+	height: 100px;
+}
+.icon150x100{
+	width: 150px;
+	height: 100px;
+}
+.icon100x120{
+	width: 100px;
+	height: 120px;
+}
+
+.sm-icon-1{background-position: 0 0}
+.sm-icon-2{background-position: -100px 0}
+.sm-icon-3{background-position: -200px 0}
+.sm-icon-4{background-position: -300px 0}
+
+
+.info-body{
+	text-align: center;
+}
+
+.solution-manage-item{
+	h3{
+		font-size: 18px;
+		color: #232933;
+	}
+	p{
+		color: #666;
+		font-size: 12px;
+		line-height: 20px;
+	}
+}
+
+.part-thr-item{
+	text-align: center;
+	font-size: 18px;
+	color: #232933;
+	p{
+		margin: 0
+	}
+}
+
+.pt-icon-1{background-position: 0 -100px}
+.pt-icon-2{background-position: -100px -100px}
+.pt-icon-3{background-position: -200px -100px}
+.pt-icon-4{background-position: -300px -100px}
+.pt-icon-5{background-position: 0 -200px}
+.pt-icon-6{background-position: -100px -200px}
+.pt-icon-7{background-position: -200px -200px}
