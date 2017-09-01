@@ -362,7 +362,7 @@
                 background: this.config_lockColor,
                 opacity: this.config_lockOpacity / 100,
                 filter: "alpha(opacity=" + this.config_lockOpacity + ")",
-                zIndex: 9
+                zIndex: 9999
             });
         }
         if (this.config_move && this.head && !this.config_position) {
@@ -417,7 +417,7 @@
                 'position': 'absolute',
                 'top': this.config_close_top,
                 'right': this.config_close_right,
-                'z-index': 9
+                'z-index': 9999
             })
         }
     };

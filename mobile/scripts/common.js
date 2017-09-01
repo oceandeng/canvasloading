@@ -51,24 +51,36 @@ $(function(){
 	}
 })
 
+// $(function(){
+// 	$('#shareBtn').on(oTools.clickEvent, function(){
+// 		var _w = $(window).width(),
+// 			_h = $(window).height(),
+// 			mask = '<div class="mask"></div>';
+//
+// 		$('body').append($(mask))
+// 		$('.bdshare-body').show()
+// 		$('.bdshare-body').css({zIndex: 9999})
+// 		$('.mask').css({
+// 			width: _w,
+// 			height: _h
+// 		})
+//
+// 	})
+// 	$(document).on(oTools.clickEvent, '.mask', function(){
+// 		$('.mask').remove()
+// 		$('.bdshare-body').hide()
+// 	})
+// })
+
+
+// 分享
 $(function(){
 	$('#shareBtn').on(oTools.clickEvent, function(){
-		var _w = $(window).width(),
-			_h = $(window).height(),
-			mask = '<div class="mask"></div>';
-
-		$('body').append($(mask))
-		$('.bdshare-body').show()
-		$('.bdshare-body').css({zIndex: 9999})
-		$('.mask').css({
-			width: _w,
-			height: _h
-		})
-
-	})
-	$(document).on(oTools.clickEvent, '.mask', function(){
-		$('.mask').remove()
-		$('.bdshare-body').hide()
+		if(oTools.isWechat){
+			wshareDialog()
+		}else{
+			shareDialog()
+		}
 	})
 })
 
@@ -164,4 +176,47 @@ function consultDialog(){
 	})
 
 	return consult
+}
+
+// 分享弹窗
+function shareDialog(){
+    var share = new Dialog({
+        'id': 'share',
+        'type': 'popup',
+        'lock': true,
+        'width':'80%',
+        'closeButton': false,
+        'contentStyle': {
+            'background': 'none',
+        },
+        'onReady': function(){
+
+		},
+		'addFlashFn': function(_this){
+		}
+
+    });
+
+	$('#shareClose').on(oTools.clickEvent, function(){
+		share.close()
+	})
+}
+function wshareDialog(){
+    var share = new Dialog({
+        'id': 'wshare',
+        'type': 'popup',
+        'lock': true,
+        'width':'100%',
+		'top': '0px',
+        'closeButton': false,
+        'contentStyle': {
+            'background': 'none',
+        },
+        'onReady': function(){
+
+		},
+		'addFlashFn': function(_this){
+		}
+
+    });
 }

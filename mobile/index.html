@@ -325,8 +325,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="nav-r-con mt60">
-                                    <span class="hot-line bule-c">客服热线：400-660-5555转1</span>
+                                <div class="nav-r-con mt60 ">
+                                    <span class="hot-line bule-c tel">客服热线：400-660-5555转1</span>
                                 </div>
                             </div>
                         </div>
@@ -800,5 +800,21 @@
 <script src="/scripts/plugin/slider.zepto.js" charset="utf-8"></script>
 <script src="/scripts/index.js" charset="utf-8"></script>
 <!-- endbuild -->
+
+
+
+<script>
+
+    $(document).on(oTools.clickEvent, '.tel', function(){
+        location.href="tel:"+'4006605555'
+        e.stopPropagation()
+    })
+
+    $(document).on('keydown', function(e){
+        if(e.keyCode == 13){
+            alert('a')
+        }
+    })
+</script>
 </body>
 </html>

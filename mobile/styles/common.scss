@@ -246,6 +246,38 @@ header{
 		padding: 0 80px;
 	}
 }
+.share-body{
+	position: relative;
+
+	.share-img{
+		@include clearfix();
+		img{
+			float: left;
+		}
+	}
+
+	.n-close{
+		position: absolute;
+		right: 20px;
+		top: 50px;
+		z-index: 9
+	}
+	.share-con{
+		background: $white;
+		text-align: center;
+		padding: 50px 0;
+		border-radius: 0 0 20px 20px;
+	}
+	.wshare-img{
+		@include clearfix();
+		img{
+			float: right;
+			margin: 80px 50px 0 0;
+		}
+	}
+
+
+}
 
 #wrapper {
   position: absolute;
