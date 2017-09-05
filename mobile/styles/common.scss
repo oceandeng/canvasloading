@@ -346,3 +346,24 @@ footer{
 		margin: 0 20px 20px 0 !important;
 	}
 }
+.domain-search{
+	background: $gee;
+	padding: 20px;
+
+	input{
+		background: $white;
+		width: 100%;
+		@include line-height(60px);
+		border: none;
+		padding: 0 20px;
+		box-sizing: border-box;
+		text-align: left;
+		font-size: 20px;
+	}
+	.domain-search-btn{
+		background: $blue;
+		@include line-height(60px);
+		color: $white;
+		font-size: 26px;
+	}
+}

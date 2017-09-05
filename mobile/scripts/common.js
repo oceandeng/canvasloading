@@ -14,6 +14,7 @@ $(function(){
 		mainNav()
 	})
 	$('.consult-btn').on(oTools.clickEvent, function(){
+		$('.verify_image').attr('src', '/verify/verify?date='+new Date());
 		pConsultDialog = consultDialog()
 	})
 
