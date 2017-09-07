@@ -219,5 +219,5 @@ function wshareDialog(){
 		'addFlashFn': function(_this){
 		}
 
-    });
+    });	
 }
