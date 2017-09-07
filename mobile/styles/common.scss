@@ -360,6 +360,19 @@ footer{
 		text-align: left;
 		font-size: 20px;
 	}
+	.search-body{
+		background: $white;
+	}
+	.search-select{
+		-webkit-appearance:none;
+		appearance:none;
+		background: $white;
+		width: 100%;
+		@include line-height(60px);
+		border: none;
+		text-align: center;
+		font-size: 22px;
+	}
 	.domain-search-btn{
 		background: $blue;
 		@include line-height(60px);
