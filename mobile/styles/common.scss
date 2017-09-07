@@ -365,8 +365,8 @@ footer{
 	}
 	.search-select{
 		-webkit-appearance:none;
+		background: url('../images/product/domain/arrow-down.png') #fff no-repeat 85% center;
 		appearance:none;
-		background: $white;
 		width: 100%;
 		@include line-height(60px);
 		border: none;
