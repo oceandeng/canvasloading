@@ -34,6 +34,9 @@ $(function(){
 			$('.top-left-img').show().addClass('animated fadeInLeft')
 			$('.bottom-right-img').show().addClass('animated fadeInRight')
 		},500)
+		setTimeout(function(){
+			$('.enter-btn').show().addClass('animated bounceInUp')
+		}, 600)
 	})
 	$(window).resize(function(){
 		_fullImgScreen('*[data-full-screen]')

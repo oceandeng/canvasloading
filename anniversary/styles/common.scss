@@ -59,8 +59,17 @@ a {
 			.index-img-1{
 				display: none;
 			}
-
         }
+		.enter-btn{
+			position: absolute;
+			top: 80%;
+			text-align: center;
+			display: none;
+
+			img{
+				width: 90%;
+			}
+		}
 
     }
 }
