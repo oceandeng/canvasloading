@@ -20,10 +20,9 @@ $(function(){
     });
 });
 
-
 (function(){
 
-	$(window).load(function(){
+	$(function(){
 
 		_fullImgScreen('*[data-full-screen]')
 
