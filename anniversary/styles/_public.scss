@@ -1,8 +1,15 @@
 @import "variable", "mixin";
 
-.p-relative{
-    position: relative;
-}
-.d-none{
-    display: none;
-}
+.p-relative{position: relative}
+.d-none{display: none}
+.align-center{text-align: center}
+.align-right{text-align: right}
+.mt-10{margin-top: -10px !important;}
+.mt0{margin-top: 0 !important;}
+.mt10{margin-top: 10px !important}
+.mt14{margin-top: 14px !important}
+.mt20{margin-top: 20px !important}
+.mt30{margin-top: 30px !important}
+.mt40{margin-top: 40px !important}
+
+.ml5{margin-left: 5px !important}
