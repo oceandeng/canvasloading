@@ -1,0 +1,83 @@
+@import "normalize", "animate", "mixin", "variable", "response", "public";
+
+html,body{
+	background: #ef8515;
+	font-family: 'Microsoft yahei' Helvetica;
+}
+body{
+	font-size: 14px;
+	font-size: 18px;
+}
+
+img{
+	max-width: 100%;
+}
+
+h1,h2,h3,h4,h5{font-weight: normal}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}
+
+a {
+    -webkit-tap-highlight-color: transparent
+}
+
+.index-body{
+    position: relative;
+    height: 100%;
+
+    .bg-box{
+        position: relative;
+        top: 0;
+        left: 0;
+		@include clearfix();
+
+		img{
+			float: left;
+		}
+    }
+    .main-img-body{
+        position: absolute;
+        top: 0;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+
+        .main-img-grounp{
+            position: absolute;
+            top: 15%;
+            width: 100%;
+
+            img{
+                position: absolute;
+            }
+			.index-img-1{
+				display: none;
+			}
+
+        }
+
+    }
+}
+.absolute-img{
+    position: absolute;
+    z-index: 2;
+	@include clearfix();
+	img{
+		float: left;
+	}
+}
+.top-left-img{
+    top: 0;
+    left: 0;
+    width: 17%;
+}
+.bottom-right-img{
+    bottom: 0;
+    right: 0;
+    width: 25%;
+}
