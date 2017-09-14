@@ -57,11 +57,13 @@
         }
     }
     .blue-btn{
+        display: inline-block;
         a{
             @include blue-btn(32px);
         }
     }
     .white-btn{
+        display: inline-block;
         a{
             @include white-btn(32px);
         }

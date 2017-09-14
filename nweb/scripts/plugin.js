@@ -449,8 +449,10 @@
                 $con = $btn.next();
 
             $btn.on('mouseenter', function(){
+                var $con = $(this).next()
                 $con.show()
             }).on('mouseleave', function(){
+                var $con = $(this).next()
                 $con.hide()
             })
         })

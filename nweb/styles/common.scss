@@ -711,7 +711,6 @@
 }
 .dzsw-pop, .active_pop_body,.zero_pop{
     width:710px; 
-    height: 480px; 
     position: fixed !important; 
     left: 50%; 
     top: 50%; 
@@ -840,6 +839,11 @@
 }
 .white-all-btn{
     @include white-all-btn();
+}
+.white-all-btn1{
+    a{
+        @include white-all-btn();
+    }
 }
 .public-bottom-content{
     padding: 50px 0 0 0;

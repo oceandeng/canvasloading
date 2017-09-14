@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中企动力</title>
+    <base target="_blank">
+
+    <!-- build:css /styles/common.css -->
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/common.css">
+    <!-- endbuild -->
+
+    <!-- build:css /styles/newindex.css -->
+    <link rel="stylesheet" href="/styles/index.css">
+    <!-- endbuild -->
+
+<!--[if lte IE 8]> 
+    <link rel="stylesheet" href="/styles/index-ie8.css">
+<![endif]--> 
+
+</head>
+<body>
+<!-- body start -->
+<div class="page-layout page-main-content">
+    <!-- topbar start -->
+    <div class="top-menu">
+        <div class="topbar-body">
+            <div class="topbar-box clearfix">
+                <div class="logo-cell mt20 f-left">
+                    <a href="/"><img src="/images/newindex/z-logo.png" alt=""></a>
+                </div>
+                <div class="menu-cell ml70 f-left">
+                    <div id="topMenu" class="menu-body f-left">
+                        <ul class="menu-content clearfix">
+                            <li class="menu-item"><a href="/">首页</a></li>
+                            <!-- <li class="menu-item"><a href="">最新活动</a></li> -->
+                            <li class="menu-item"><a href="">产品</a>
+                                <div class="menu-detail" data-width="100">
+                                    <div class="menu-subcontent clearfix">
+                                        <div class="menu-subitem f-left">
+                                            <h3>网站与门户</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="/product/protal/protal-home.html">全网门户</a>
+                                                    <a href="/product/domain/index.html">企业域名</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-subitem f-left">
+                                            <h3>营销与推广</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="/product/market/market-home.html">营销宝</a>
+                                                    <a href="/product/bigpush.html">大把推</a>
+                                                    <a href="/product/easy-rice/er-home.html">易米通</a>
+                                                    <a href="/product/google.html">Google Adwords</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-subitem f-left">
+                                            <h3>电商与业务</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="/product/zshops.html">ZshopS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-subitem f-left">
+                                            <h3>协同与管理</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="/product/zyou/index.html">Z云邮</a>
+                                                    <a href="/product/youyi.html">有翼云销</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item"><a href="">解决方案</a>
+                                <div class="menu-detail" data-width="180">
+                                    <div class="menu-subcontent clearfix">
+                                        <div class="menu-subitem f-left" style="height: 190px">
+                                            <h3>行业解决方案</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="/product/zshops.html">全网电商解决方案</a>
+                                                    <a href="/solution/industry.html">工业品内贸解决方案</a>
+                                                    <a href="/solution/renovation.html">家装企业信息展示解决方案</a>
+                                                    <a href="/solution/agriculture.html">生态农业信息展示解决方案</a>
+                                                    <a href="/solution/agriculture.html">生态农业信息展示解决方案</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-subitem f-left">
+                                            <h3>通用解决方案</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="/solution/domain.html">域名保护解决方案</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li class="menu-item"><a href="">应用市场</a></li> -->
+                            <!-- <li class="menu-item"><a href="">大客服务</a></li> -->
+                            <!-- <li class="menu-item"><a href="">社区</a></li> -->
+                            <li class="menu-item"><a href="http://www.300.cn/service/">服务支持</a></li>
+                            <li class="menu-item"><a href="">关于中企</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f-right mt10">
+                    <div class="center-body f-left ml50 mr10">
+                        <div class="center-btn">
+                            <a href="{:C('sso.member_uri')}">会员中心</a>
+                        </div>
+                    </div>
+                    <div class="tool-body f-left ml20">
+                        <div class="login-btn f-left">
+                            <a href="#">登录</a>
+                        </div>
+                        <div class="reg-btn f-left">
+                            <a href="#">注册</a>
+                        </div>
+                    </div>
+                   <!--  <div class="top-phone f-left ml30">
+                        <i class="zq-icon icon29x29 t-phone-icon f-left mr10"></i>
+                        <p class="f20 lh26 f-left">400-660-5555</p>
+                    </div> -->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- topbar end -->
+
+    <!-- top-slider start -->
+    <div id="mainSlider" class="main-slider">
+        <div class="index-top-banner">
+            <div class="slide-wrap">
+                <div class="slide-group banner-row clearfix animated fadeInUp">
+                    <div class="img-body">
+                        <img src="/images/newslider/slide-img-1.jpg" alt="">
+                    </div>
+                    <div class="y-wrap">
+                        <div class="main-wrap">
+                            <div class="y-row">
+                                <div class="left-header">
+                                    <h2>全网门户</h2>
+                                    <p>企业建站的终极解决方案</p>
+                                    <p>智能响应&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个性定制&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;覆盖全网终端</p>
+                                    <div class="layer-btn mt80"><a href="/product/protal/protal-home.html">了解详情</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-group banner-row clearfix animated fadeInUp" style="display: none">
+                    <div class="img-body">
+                        <img src="/images/newslider/slide-img-2.jpg" alt="">
+                    </div>
+                    <div class="y-wrap">
+                        <div class="main-wrap">
+                            <div class="y-row">
+                                <div class="left-header">
+                                    <h2>市场占有率第一</h2>
+                                    <p>中企动力领跑企业网站服务市场</p>
+                                    <div class="layer-btn mt80"><a href="/product/protal/protal-home.html">了解详情</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-group banner-row clearfix animated fadeInUp" style="display: none">
+                    <div class="img-body">
+                        <img src="/images/newslider/slide-img-3.jpg" alt="">
+                    </div>
+                    <div class="y-wrap">
+                        <div class="main-wrap">
+                            <div class="y-row">
+                                <div class="left-header">
+                                    <h2>无界沟通 无忧成长</h2>
+                                    <p>全球畅通无阻，跨部门多人协作，内部资源灵活共享，微信收发信件，</p>
+                                    <p>还可免费试用一个月</p>
+                                    <div class="layer-btn mt80"><a href="/product/protal/protal-home.html">了解详情</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-body">
+                <div class="main-wrap">
+                    <div class="banner-content">
+                        <div class="row clearfix">
+                            <div class="col-3">
+                                <div class="banner-grounp banner-1">
+                                    <a href="http://www.300.cn/domain/">
+                                    <!-- <img src="/images/newindex/banner-1.jpg" alt=""> -->
+                                        <div class="banner-item">
+                                            <i class="zq-icon icon100x100 banner-icon-1"></i>
+                                            <div class="banner-item-con">
+                                                <h3>企业域名</h3>
+                                                <p>实时在线查询</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="banner-grounp banner-2">
+                                    <a href="http://www.300.cn/domain/">
+                                        <!-- <img src="/images/newindex/banner-2.jpg" alt=""> -->
+                                        <div class="banner-item">
+                                            <i class="zq-icon icon100x100 banner-icon-2"></i>
+                                            <div class="banner-item-con">
+                                                <h3>免费试用一个月</h3>
+                                                <p>100账号Z云邮，办公协同</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="banner-grounp banner-3">
+                                    <a href="http://www.300.cn/domain/">
+                                        <!-- <img src="/images/newindex/banner-3.jpg" alt=""> -->
+                                        <div class="banner-item">
+                                            <i class="zq-icon icon100x100 banner-icon-3"></i>
+                                            <div class="banner-item-con">
+                                                <h3>营销宝</h3>
+                                                <p>企业H5营销指南</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="banner-grounp banner-4">
+                                    <a href="http://www.300.cn/domain/">
+                                        <!-- <img src="/images/newindex/banner-4.jpg" alt=""> -->
+                                        <div class="banner-item">
+                                            <i class="zq-icon icon100x100 banner-icon-4"></i>
+                                            <div class="banner-item-con">
+                                                <h3>扫码购</h3>
+                                                <p>助力企业实现社会化电商</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top-slider end -->
+
+
+
+    <!-- content start -->
+    <!-- cloud-service start -->
+    <div class="content-group layout layout-grid-0">
+        <div class="col col-main">
+            <div class="cloud-service">
+                <div class="main-wrap">
+                    <div class="zq-index-head">
+                        <h2>一站式企业互联网云服务</h2>
+                        <p>建站、营销、电商、协同、管理，专业产品助您轻松实现智能运营</p>
+                    </div>
+                </div>
+
+                <div id="cloudTab" class="y-row mt80">
+                    <div class="tab-tit">
+                        <div class="row clearfix">
+                            <div class="col-3">
+                                <div class="tab-tit-item active">
+                                    <i class="zq-icon icon100x100 cloud-icon-1"></i>
+                                    <p>网站与门户</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="tab-tit-item">
+                                    <i class="zq-icon icon100x100 cloud-icon-2"></i>
+                                    <p>营销与推广</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="tab-tit-item">
+                                    <i class="zq-icon icon100x100 cloud-icon-3"></i>
+                                    <p>电商与业务</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="tab-tit-item">
+                                    <i class="zq-icon icon100x100 cloud-icon-4"></i>
+                                    <p>协同与管理</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-con clearfix">
+                        <div class="tab-con-item">
+                            <div class="main-wrap">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="/protal/">
+                                            <h3>全网门户</h3>
+                                            <p>企业建站的终极解决方案</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/yidongmenhu.html">
+                                            <h3>移动门户</h3>
+                                            <p>开启移动场景营销</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/domain/">
+                                            <h3>企业域名</h3>
+                                            <p>注域名，享安全服务</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-con-item" style="display: none">
+                            <div class="main-wrap">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="/market/">
+                                            <h3>营销宝</h3>
+                                            <p>多场景营销智能工具集</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/guoneituiguang.html">
+                                            <h3>大把推</h3>
+                                            <p>让更多客户找到你</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/yimitong/">
+                                            <h3>易米通</h3>
+                                            <p>国内创新的数字营销平台</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/haiwaituiguang.html">
+                                            <h3>Google</h3>
+                                            <p>助力您的海外拓金之路</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-con-item" style="display: none">
+                            <div class="main-wrap">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="/saomagou.html">
+                                            <h3>扫码购</h3>
+                                            <p>简单高效的移动销售工具</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/weidingfang.html">
+                                            <h3>微订房</h3>
+                                            <p>5分钟开启在线订房</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/shangcheng.html">
+                                            <h3>ZshopS</h3>
+                                            <p>让客户快速找到你</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-con-item" style="display: none">
+                            <div class="main-wrap">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="/youju/">
+                                            <h3>Z云邮</h3>
+                                            <p>云“游”四海的企业邮箱</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/youyi.html">
+                                            <h3>有翼云销</h3>
+                                            <p>有效提升销售业绩和转化率</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cloud-service end -->
+
+    <!-- solution start -->
+    <div class="content-group layout layout-grid-0">
+        <div class="col">
+            <div class="solution">
+                <div class="main-wrap">
+                    <div class="zq-index-head">
+                        <h2 class="white">行业解决方案</h2>
+                        <p >零售、贸易、家装、农业，酒店，深入行业满足企业互联网转型需求</p>
+                    </div>
+                </div>
+                <div id="solutionSlide" class="solution-slide mt40">
+                    <div class="main-wrap">
+                        <div class="solution-slide-menu">
+                            <ul>
+                                <li class="active" data-bg="/images/newindex/solution-bgimg-1.jpg">
+                                    <i class="zq-icon icon100x60 solution-icon1"></i>
+                                    <p>全网电商解决方案</p>
+                                </li>
+                                <li data-bg="/images/newindex/solution-bgimg-2.jpg">
+                                    <i class="zq-icon icon100x60 solution-icon2"></i>
+                                    <p>工业品内贸解决方案</p>
+                                </li>
+                                <li data-bg="/images/newindex/solution-bgimg-3.jpg">
+                                    <i class="zq-icon icon100x60 solution-icon3"></i>
+                                    <p>装修企业信息展示解决方案</p>
+                                </li>
+                                <li data-bg="/images/newindex/solution-bgimg-4.jpg">
+                                    <i class="zq-icon icon100x60 solution-icon4"></i>
+                                    <p>生态农业信息展示解决方案</p>
+                                </li>
+                                <li data-bg="/images/newindex/solution-bgimg-5.jpg">
+                                    <i class="zq-icon icon100x60 solution-icon5"></i>
+                                    <p>企业域名品牌保护方案</p>
+                                </li>
+                            </ul>
+                            <div class="move-bg"></div>
+
+                        </div>
+
+                        <div class="solution-slide-body" style="height: 680px">
+                            <div class="solution-slide-item">
+                                <h4>全网电商解决方案</h4>
+                                <p>为中小企业搭建独立电商平台，提供行业电商解决方案。<p>
+
+                                <div class="row clearfix mt150">
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-1-item-1"></i>
+                                            <p>ZshopS线上线下协同 全网营销</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-1-item-2"></i>
+                                            <p>打通线上线下渠道</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-1-item-3"></i>
+                                            <p>ZshopS会员精细化经营</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-1-item-4"></i>
+                                            <p>统计分析</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="s-button"><a href="###">了解详情</a></div>
+                            </div>
+                            <div class="solution-slide-item" style="display: none">
+                                <h4>工业品内贸解决方案</h4>
+                                <p>面向工业企业，提供产品推广，商机获取，客户管理的一站式营销管理解决方案。<p>
+
+                                <div class="row clearfix mt150">
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-2-item-1"></i>
+                                            <p>解决产品推广难</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-2-item-2"></i>
+                                            <p>解决内容管理问题</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-2-item-3"></i>
+                                            <p>解决商机与客户管理问题</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="s-button"><a href="###">了解详情</a></div>
+                            </div>
+                            <div class="solution-slide-item" style="display: none">
+                                <h4>装修企业信息展示解决方案</h4>
+                                <p>为装修企业提供全透明的信息展示平台，展示企业在建装修工程，</p>
+                                <p>实现施工进度实时可控，施工质量公开透明，在线报价方便快捷。</p>
+
+                                <div class="row clearfix mt150">
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-3-item-1"></i>
+                                            <p>远程视频监控</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-3-item-2"></i>
+                                            <p>施工进度公开</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-3-item-3"></i>
+                                            <p>智能报价系统</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="s-button"><a href="###">了解详情</a></div>
+                            </div>
+                            <div class="solution-slide-item" style="display: none">
+                                <h4>生态农业门户解决方案</h4>
+                                <p>为生态农业企业提供集展示、预约、产品营销为一体的产品及系统服务。</p>
+                                <p>它能够全方位具象化的展示企业绿色生态的企业理念及经营状态。</p>
+
+                                <div class="row clearfix mt150">
+                                    <div class="col-2-4">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-4-item-1"></i>
+                                            <p>图文快速分享</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2-4">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-4-item-2"></i>
+                                            <p>可追溯信息查询</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2-4">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-4-item-3"></i>
+                                            <p>生态农场实时查看</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2-4">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-4-item-4"></i>
+                                            <p>体验活动的开展</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2-4">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-4-item-5"></i>
+                                            <p>轻松尝试新零售</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="s-button"><a href="###">了解详情</a></div>
+                            </div>
+                            <div class="solution-slide-item" style="display: none">
+                                <h4>企业域名品牌保护方案</h4>
+                                <p>中企动力根据多年积累的互联网专业服务经验，为应对互联网时代所带来的品牌发展冲击，</p>
+                                <p>我们为企业提供全面、个性化的域名注册、信息管理、安全防护的互联网品牌资产保护解决方案。</p>
+
+                                <div class="row clearfix mt150">
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-5-item-1"></i>
+                                            <p>更合理的域名保护推荐</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-5-item-2"></i>
+                                            <p>更安全的域名防护服务</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-5-item-3"></i>
+                                            <p>更专业的域名注册服务</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="s-item-info-item">
+                                            <i class="zq-icon icon100x100 solution-1-item-4"></i>
+                                            <p>更贴心的管家式服务</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="s-button"><a href="###">了解详情</a></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- solution end -->
+
+    <!-- popular-application start -->
+    <div class="content-group layout layout-grid-0">
+        <div class="col col-main">
+            <div class="popular-application">
+                <div class="main-wrap">
+                    <div class="zq-index-head">
+                        <h2>海纳百川，精选全球的高品质应用</h2>
+                        <p>别人都在用什么？更多关联产品、定制化服务，为智能运营锦上添花</p>
+                    </div>
+                    <div class="popular-application-body mt60 mb60">
+                        <div class="main-wrap">
+                            <div class="popular-application-content">
+                                <div class="row clearfix" style="border-bottom: 1px solid #ececec">
+                                    <div class="col-3">
+                                        <div class="popular-app-item">
+                                           <a class="popular-app-i-con" href="###">
+                                                <i class="zq-icon icon100x100 popular-app-icon1"></i>
+                                                <h3>全网门户</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="popular-app-item">
+                                            <a class="popular-app-i-con" href="###">
+                                                <i class="zq-icon icon100x100 popular-app-icon2"></i>
+                                                <h3>营销宝</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="popular-app-item">
+                                            <a class="popular-app-i-con" href="###">
+                                                <i class="zq-icon icon100x100 popular-app-icon3"></i>
+                                                <h3>大把推</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="popular-app-item">
+                                            <a class="popular-app-i-con" href="###" style="border-right: none">
+                                                <i class="zq-icon icon100x100 popular-app-icon4"></i>
+                                                <h3>易米通</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-3">
+                                        <div class="popular-app-item">
+                                            <a class="popular-app-i-con" href="###">
+                                                <i class="zq-icon icon100x100 popular-app-icon5"></i>
+                                                <h3>Z云邮</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="popular-app-item">
+                                            <a class="popular-app-i-con" href="###">
+                                                <i class="zq-icon icon100x100 popular-app-icon6"></i>
+                                                <h3>有翼云销</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="popular-app-item">
+                                            <a class="popular-app-i-con" href="###">
+                                                <i class="zq-icon icon100x100 popular-app-icon7"></i>
+                                                <h3>ZshopS</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="popular-app-item">
+                                            <a class="popular-app-i-con" href="###">
+                                                <i class="zq-icon icon100x100 popular-app-icon9"></i>
+                                                <h3>扫码购</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popular-application end -->
+
+    <!-- choice-zhongqi start -->
+    <div class="content-group layout-grid-0">
+        <div class="col mt50">
+            <div class="choice-zhongqi">
+                <div class="main-wrap">
+                    <div class="zq-index-head">
+                        <h2>为什么选择中企动力</h2>
+                        <p>您的企业电子商务专家</p>
+                    </div>
+                </div>
+
+                <div id="choice" class="choice-zhongqi-body mt20 choice-zhongqi-bg">
+                    <div class="main-wrap">
+                        <ul class="choice-zhongqi-content clearfix">
+                            <li class="choice-zhongqi-item choice-w30 clearfix">
+                                <div class="item-img">
+                                    <i class="zq-icon cz-icon1"></i>
+                                </div>
+                                <div class="item-detail r160">
+                                    <p class="item-btn"><a href="#">了解中企</a></p>
+                                </div>
+                            </li>
+                            <li class="choice-zhongqi-item choice-w30 clearfix">
+                                <div class="item-img">
+                                    <i class="zq-icon cz-icon2"></i>
+                                </div>
+                                <div class="item-detail r130">
+                                    <p class="item-btn"><a href="#">全国网点</a></p>
+                                </div>
+                            </li>
+                            <li class="choice-zhongqi-item choice-w40 clearfix">
+                                <div class="item-img">
+                                    <i class="zq-icon cz-icon3"></i>
+                                </div>
+                                <div class="item-detail r170">
+                                    <p class="item-btn"><a href="#">查询作品</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- choice-zhongqi end -->
+
+    <!-- content end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="footer-topbar">
+            <div class="main-wrap">
+                <ul class="footer-topbar-content clearfix">
+                    <li class="footer-topbar-item">
+                        <div class="footer-topbar-item-con clearfix">
+                            <div class="f-top-img f-left">
+                                <i class="zq-icon icon100x100 f-t-icon1"></i>
+                            </div>
+                            <div class="f-top-content f-left">
+                                <h4 class="f18">7x24小时售后支持</h4>
+                                <p>全国7×24小时客服热线</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="footer-topbar-item">
+                        <div class="footer-topbar-item-con clearfix">
+                            <div class="f-top-img f-left">
+                                <i class="zq-icon icon100x100 f-t-icon2"></i>
+                            </div>
+                            <div class="f-top-content f-left">
+                                <h4 class="f18">5倍故障时长赔偿</h4>
+                                <p>5倍赔付终端服务的时间</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="footer-topbar-item">
+                        <div class="footer-topbar-item-con clearfix">
+                            <div class="f-top-img f-left">
+                                <i class="zq-icon icon100x100 f-t-icon3"></i>
+                            </div>
+                            <div class="f-top-content f-left">
+                                <h4 class="f18">15天无理由退款</h4>
+                                <p>我们支持15天内无理由退全款</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="footer-topbar-item">
+                        <div class="footer-topbar-item-con clearfix">
+                            <div class="f-top-img f-left">
+                                <i class="zq-icon icon100x100 f-t-icon4"></i>
+                            </div>
+                            <div class="f-top-content f-left">
+                                <h4 class="f18">多对一团队服务</h4>
+                                <p>全国80家分公司便捷服务</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-body pb20">
+            <div class="main-wrap footer-content">
+                <div class="row clearfix">
+                    <div class="col-5">
+                        <div class="hot-line">
+                            <i class="zq-icon hot-line-icon"></i>
+                        </div>
+                        <div class="kxwz">
+                            <!-- <script src="http://kxlogo.knet.cn/seallogo.dll?sn=2009111300100000738&amp;size=0"></script> -->
+                            <span style="display:inline-block;position:relative;width:auto;">
+                                <a href="https://ss.knet.cn/verifyseal.dll?sn=2009111300100000738&amp;ct=df&amp;a=1&amp;pa=0.24121173853718436" id="kx_verify" tabindex="-1" target="_blank" kx_type="图标式" style="display:inline-block;">
+                                    <img src="http://rr.knet.cn/static/images/logo/cnnic.png" style="border:none;" oncontextmenu="return false;" alt="可信网站">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="footer-menu">
+                            <p class="list">
+                                <a target="_blank" href="/aboutus/company.html" class="first">关于中企</a><span>|</span>
+                                <a target="_blank" href="/attention.html">法律隐私</a><span>|</span>
+                                <a target="_blank" href="/job/">工作机会</a><span>|</span>
+                                <a target="_blank" href="/contact.html">联系我们</a><span>|</span>
+                                <a href="/feedback.html" target="_blank">意见反馈</a><span>|</span>
+                                <a href="/aboutus/org.html" target="_blank">全国网点</a><span>|</span>
+                                <a href="/place/" target="_blank">地区建站</a><span>|</span>
+                                <a href="/map.html" target="_blank">站点地图</a><span>|</span>
+                                <a href="http://old.300.cn/" target="_blank">返回旧版</a>
+                            </p>
+                        </div>
+                        <div class="copyright">
+                            版权所有 © 1999-2017 北京中企网动力数码科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;Copyright © 1999-2017 300.cn All Rights Reserved<!-- <span style="color:#ffffff">v1.01</span> --><br>
+                            京公网安备110301000300号  <a href="http://www.miitbeian.gov.cn/" target="_blank" style="color:#999">京ICP证010249号</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-icon">
+                    <i class="zq-icon icon50x50 footer-weixin-icon"></i>
+
+                    <div class="QR-code">
+                        <img src="/images/newindex/QR-code.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+</div>
+<!-- body end -->
+
+<!-- side-tool-bar start -->
+<div class="side-tool-bar">
+
+    <a href="">
+        <div class="noticebar">
+            <i class="ricon icon-notice"></i>
+            <p class="t-tit">重要声明</p>
+        </div>
+    </a>
+
+    <div id="toolBar" class="tool-bar clearfix">
+        <div id="cart" class="tool-item cart b-radius-lt3">
+            <div class="cart-num cartNum">0</div>
+            <div class="t-i">
+                <div class="t-i-i b-radius-lt3 f-i">
+                    <i class="ricon icon-cart"></i>
+                    <p class="t-tit">购物车</p>
+                </div>
+                <div class="t-con">
+                    <div class="cart-detail">
+                        <a href="">购物车有 <span class="cartNum yellow">0</span> 件商品</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="onlineConnect" class="tool-item online-connect">
+            <div class="t-i">
+                <div class="t-i-i f-i">
+                    <i class="ricon icon-connect"></i>
+                    <p class="t-tit">线上沟通</p>
+                </div>
+                <div class="t-con clearfix">
+                    <div class="t-i-si ml30 mr10 floatL">
+                        <a id="TQzx01">
+                            <i class="ricon icon-qq"></i>
+                            <p class="ts-tit">QQ咨询</p>
+                        </a>
+                    </div>
+                    <div class="t-i-si floatL">
+                        <a href="http://p.qiao.baidu.com/cps/chatIndex?reqParam=%7B%22from%22%3A0%2C%22sid%22%3A%22-100%22%2C%22tid%22%3A%22-1%22%2C%22ttype%22%3A1%2C%22siteId%22%3A%2210515806%22%2C%22userId%22%3A%2222490479%22%7D" target="_blank">
+                            <i class="ricon icon-online"></i>
+                            <p class="ts-tit">在线咨询</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sPhone" class="tool-item s-phone">
+            <div class="t-i">
+                <div class="t-i-i">
+                    <i class="ricon icon-phone"></i>
+                    <p class="t-tit">电话资讯</p>
+                </div>
+                <div class="t-con s-p-con">
+                    <div class="phone-line">
+                        <h3 class="p-tit">24h免费咨询热线</h3>
+                        <p class="p-num">400-660-5555</p>
+                    </div>
+                    <div class="mobile-line clearfix">
+                        <p class="m-tit">免费回拨</p>
+                        <input class="ml16 f-left" type="text" name="mobile" placeholder="输入手机号" value="" id="bdmobile">
+                        <i id="callbtn" class="right-icon f-left"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hotActive" class="tool-item hot-active">
+            <div class="t-i border-none clearfix">
+                <div class="t-i-i b-radius-lb3">
+                    <i class="ricon icon-hot-active"></i>
+                    <p class="t-tit">热门活动</p>
+                </div>
+                <div class="t-con">
+                    <ul>
+                        <li class="hot-link"><a href="#">点击查看热门活动</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="freeCall" class="tool-item free-call">
+            <div class="t-i border-none">
+                <div class="t-i-i b-radius-lb3">
+                    <a href="javascript:;">
+                        <i class="ricon icon-free-call"></i>
+                    </a>
+                </div>
+                <div class="t-con">
+                    <div class="mobile-line clearfix">
+                        <input class="ml16 f-left" type="text" name="mobile" placeholder="输入手机号" value="" id="bdmobile">
+                        <i id="callbtn" class="right-icon f-left"></i>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<div id="goTop" class="go-top none"></div>
+
+<div id="imzixunBody" class="imzixun-body clearfix">
+    <img src="/images/imzixun.png" alt="">
+</div>
+
+<!-- side-tool-bar end -->
+
+<!-- script quote start -->
+
+    <!-- build:js /scripts/jquery.min.js -->
+    <script src="/bower_components/jquery/jquery.min.js" charset="utf-8"></script>
+    <!-- endbuild -->
+
+    <!-- build:js /scripts/common.min.js -->
+    <script src="/scripts/plugin.js" charset="utf-8"></script>
+    <script src="/scripts/main.js" charset="utf-8"></script>
+    <!-- endbuild -->
+
+    <!-- build:js /scripts/newindex.min.js -->
+    <script src="/scripts/index.js" charset="utf-8"></script>
+    <!-- endbuild -->
+
+<!-- script quote end -->
+
+
+</body>
+</html>

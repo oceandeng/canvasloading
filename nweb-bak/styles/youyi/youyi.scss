@@ -1,0 +1,139 @@
+@import "../mixin", "../variable";
+
+.info-line{
+    .info-item{
+        text-align: center;
+
+        h2{
+            padding: 10px 0 15px 0;
+        }
+        p{
+            margin: 5px 0;
+            color: $g999;
+        }
+    }
+}
+.youyi-tab-body{
+    background: $white;
+
+    .youyi-tab-tit{
+        @include line-height(75px);
+
+        li{
+            height: 66px;
+            border-bottom: 1px solid $g-border-color;
+        }
+        .active{
+            .tab-item{
+                color: $light-blue;
+                background: url(../../images/youyi/youyi-icon-img.png) no-repeat -300px 66px;
+
+                @media screen and (min-width: 1500px){
+                    background-position: -260px 66px;
+                }
+            }
+        }
+        .tab-item{
+            cursor: pointer;
+            font-size: 22px;
+            padding: 0 0 15px 0;
+            height: 75px;
+
+            &:hover{
+                color: $light-blue;
+                background: url(../../images/youyi/youyi-icon-img.png) no-repeat -300px 66px;
+
+                @media screen and (min-width: 1500px){
+                    background-position: -260px 66px;
+                }
+            }
+        }
+    }
+    .youyi-tab-content{
+        .none{
+            display: none;
+        }
+        .con-item-col{
+            .con-item{
+                height: 90px;
+                margin: 0 0 30px 0;
+                padding: 0 20px;
+            }
+
+            .con-item-con{
+                margin: 0 0 0 80px;
+                h3{
+                    margin: 0 0 10px 0;
+                    font-size: 18px;
+                }
+                p{
+                    margin: 0;
+                    color: #999;
+                }
+            }
+        }
+    }
+    .y-t-con{
+        padding: 50px;
+    }
+}
+
+.product-server{
+    padding: 0 0 60px 0;
+
+    .product-item-con{
+        padding: 30px;
+        text-align: center;
+
+        p{
+            color: $g999;
+            text-align: center;
+            margin: 0
+        }
+    }
+}
+
+.public-cloud{
+    .public-cloud-body{
+        .public-cloud-content{
+            text-align: center;
+
+            h3{
+                font-size: 18px;
+            }
+            p{
+                color: $g999;
+                line-height: 24px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.experience-product{
+    .experience-product-content{
+        text-align: center;
+        border-top: 1px solid $g-blue-border;
+
+        h3{
+            font-size: 18px;
+        }
+        .col-radius-body{
+            height: 10px;
+            margin: -5px 0 0 0;
+        }
+        .col-radius{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: $light-blue;
+            border-radius: 50%;
+        }
+        .col-line{
+            display: inline-block;
+            width: 1px;
+            height: 30px;
+            background: $g-blue-border;
+        }
+    }
+}

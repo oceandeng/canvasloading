@@ -1,0 +1,335 @@
+@import "variable", "mixin";
+
+.protal-main-content{
+    .protal-part-body{
+        border-left: 1px solid $g-border-color;
+    }
+    .protal-banner{
+        height: 80px;
+        text-align: center;
+
+        .p-b-item{
+            padding: 20px 0;
+            display: inline-block;
+
+            p{
+                padding: 0 0 0 60px;
+                color: #888;
+                margin: 10px 0
+            }
+        }
+    }
+    .content-group-img{
+        text-align: center;
+    }
+    .protal-part-top{
+        background: url(../images/protal/protal-top-bg.jpg) repeat-x;
+    }
+    .protal-detail{
+        padding: 60px 0 60px 50px;
+
+        .part-top-tit{
+            margin: 0 0 30px 0;
+            font-size: 40px;
+        }
+        .part-top-desc{
+            color: $protal-sen-fcolor;
+            line-height: 30px;
+        }
+        .price-body{
+            text-align: center;
+            width: 80%;
+
+            p{
+                display: inline-block;
+                margin: 0 0 5px 0;
+            }
+            .b-btn{
+                display: inline-block;
+                width: 80%;
+                line-height: 20px;
+                border: 1px solid $g999;
+                text-align: center;
+                color: $g999;
+                border-radius: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+    .blue-btn{
+        a{
+            @include blue-btn(32px);
+        }
+    }
+    .white-btn{
+        a{
+            @include white-btn(32px);
+        }
+    }
+    .protal-img{
+        padding: 120px 0;
+        text-align: center;
+    }
+    .protal-group{
+        .protal-group-content{
+            padding-bottom: 50px;
+        }
+        .protal-group-head{
+            text-align: center;
+            margin: 70px 0 60px 0;
+
+            h1{
+                font-size: 24px;
+            }
+            .g-h-desc{
+                color: $g999;
+            }
+        }
+        .protal-group-detail{
+            .protal-group-wrap{
+                padding: 0 50px;
+
+                .sub-tit{
+                    font-size: 24px;
+                    text-align: center;
+                }
+            }
+            .protal-group-grid-0{
+                text-align: center;
+            }
+
+            .protal-group-tit{
+                margin-top: 100px;
+                font-size: 24px;
+            }
+            .protal-group-desc{
+                line-height: 30px;
+                margin: 30px 0;
+                color: $g999;
+            }
+        }
+        .protal-group-img{
+            text-align: center;
+            padding: 0 20px;
+
+            img{
+                max-width: 100%;
+            }
+        }
+        .p-img-desc{
+            text-align: center;
+            color: $g666;
+            line-height: 24px;
+        }
+    }
+    .get-protal{
+        border-top: 3px solid $light-blue;
+        padding: 50px 0;
+
+        .adviser-photo{
+            text-align: center;
+
+            img{
+                width: 80%
+            }
+        }
+        .adviser-content{
+            h5{
+
+            }
+        }
+        .get-protal-tit-wrap{
+            text-align: center;
+            position: relative;
+            padding: 0 0 80px 0;
+
+            .get-protal-tit{
+                text-align: center;
+                font-size: 26px;
+            }
+        }
+
+        .get-protal-content{
+            margin: 0 50px;
+            padding: 80px 0 50px 0;
+            border-top: 1px solid $gd-border-color;
+
+            .adviser-tit{
+                font-size: 26px;
+                margin: 0 0 20px 0;
+            }
+            .protal-desc{
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+.shock-arrow{
+    position: absolute;
+    left: 50%;
+    width: 26px;
+    height: 40px;
+    display: block;
+    margin: 0 0 0 -13px;
+    background: url(../images/bigpush/all.png) no-repeat 0 -125px;
+}
+
+
+.version-body{
+
+    .version-item{
+        text-align: center;
+        margin: 0 20px 0 0;
+        padding: 40px 15px;
+        background: $white;
+
+        h3{
+            font-size: 18px;
+            padding: 15px 0;
+        }
+        p{
+            color: $g999;
+            margin: 5px 0;
+        }
+
+        &:hover{
+            box-shadow: 5px 5px 10px $gbbb;
+
+            h3, p{color: $light-blue}
+            .v-icon-1{background-position: 0 -83px}
+            .v-icon-2{background-position: -83px -83px}
+            .v-icon-3{background-position: -166px -83px}
+            .v-icon-4{background-position: -249px -83px}
+        }
+
+
+
+    }
+}
+
+
+.version-icon{
+    display: inline-block;
+    background: url(../images/protal/version/version-icon.png) no-repeat;
+}
+
+.v-icon-1{background-position: 0 0}
+.v-icon-2{background-position: -83px 0}
+.v-icon-3{background-position: -166px 0}
+.v-icon-4{background-position: -249px 0}
+
+.protal-detail-tit{
+    padding: 40px;
+}
+.case-fliter-body{
+    padding: 0 40px;
+    position: relative;
+
+    .case-fliter-tit{
+        width: 110px;
+        height: 20px;
+        line-height: 20px;
+        border: 1px solid $light-blue;
+        background: #fff;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 12px;
+        color: $light-blue;
+    }
+    .case-fliter-con{
+        position: absolute;
+        margin: 0 0 0 120px;
+
+    }
+}
+
+
+.alzx-item{overflow: hidden; padding: 0 0 23px;}
+.alzx-dl{overflow: hidden;margin-bottom: 10px;zoom:1; overflow: hidden;}
+.alzx-item .alzx-dl{padding-left:125px; position: relative;}
+.alzx-dl dt{
+    color: $light-blue;
+    width: 103px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid $light-blue;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius:10px;
+    font-size: 12px;
+    float: left;
+    margin-right: 20px;
+}
+.alzx-item .alzx-dl dt{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.alzx-dl dd{
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 10px;
+    margin-right: 12px;
+    _margin-right:15px;
+    *margin-right:15px;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    _display: inline;
+    *display: inline;
+    margin-bottom:10px;
+}
+.alzx-dl dd:hover,.alzx-dl dd.active{
+    background: $light-blue;
+    border-radius:10px;
+    color: #fff;
+}
+
+.case-con-body{
+    padding: 0 0 0 40px;
+
+    .case-item{
+        width: 28.84615384%;
+        margin-right: 3.84615384%;
+        margin-bottom: 40px;
+        background: $white;
+        float: left;
+
+        .img-con{
+            height: 210px;
+            overflow: hidden;
+            text-align: center;
+            line-height: 210px;
+        }
+        img{
+            display: inline-block;
+            width: 100%;
+        }
+        p{
+            line-height: 20px;
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+            color: $g999;
+        }
+
+        a:hover{
+            p{
+                color: $light-blue;
+            }
+        }
+    }
+}
+
+.pagination{
+    padding: 0 40px;
+}
+
+.bg-img{
+    background-image: url(../images/market/top-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}

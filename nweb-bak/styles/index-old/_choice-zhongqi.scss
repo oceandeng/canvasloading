@@ -1,0 +1,42 @@
+@import "../mixin", "../variable";
+
+.choice-zhongqi-body{
+    padding: 160px 0 200px 0;
+}
+.choice-zhongqi-content{
+    .choice-w30{width: 30%}
+    .choice-w40{width: 40%}
+    .choice-zhongqi-item{
+        float: left;
+        position: relative;
+
+        .item-img{
+            text-align: center;
+        }
+
+        .r160{right: 120px}
+        .r130{right: 90px}
+        .r170{right: 130px}
+        @media screen and(min-width: 1500px){
+            .r160{right: 160px}
+            .r130{right: 130px}
+            .r170{right: 170px}    
+        }
+        .item-detail{
+            position: absolute;
+            bottom: 0;
+
+            .item-btn{
+                padding: 0 20px;
+                @include line-height(35px);
+                background: $dot-color;
+            }
+            a{
+                color: $white;
+                &:hover{
+
+                }
+            }
+        }
+    }
+}

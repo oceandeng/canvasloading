@@ -1,0 +1,59 @@
+@import "../mixin", "../variable";
+
+.popular-application-content {
+    
+    .popular-app-item{
+        height: 200px;
+        text-align: center;
+
+        @media screen and(min-width: 1500px){
+           height: 240px;
+        }
+        
+        h3{
+            font-size: 22px;
+            color: #464646;
+            margin: 10px 0;
+        }
+
+        &:hover{
+            background: url(../images/newindex/new300-sprite-icon.png) $dot-color no-repeat -480px -875px;
+            box-shadow: 3px 3px 10px #ccc;
+            transition: background-color .5s ease-out;
+
+            .popular-app-icon1{background-position: 0 -550px}
+            .popular-app-icon2{background-position: -100px -550px}
+            .popular-app-icon3{background-position: -200px -550px}
+            .popular-app-icon4{background-position: -300px -550px}
+            .popular-app-icon5{background-position: -400px -550px}
+            .popular-app-icon6{background-position: -500px -550px}
+            .popular-app-icon7{background-position: -600px -550px}
+            .popular-app-icon8{background-position: -50px -950px}
+            .popular-app-icon9{background-position: -700px -550px}
+
+            h3{
+                color: $white;
+            }
+
+            @media screen and(min-width: 1500px){
+                background-position: -430px -850px;
+            }
+            .popular-app-i-con{
+                border: none;
+            }
+        }
+    
+        .popular-app-i-con{
+            display: block;
+            height: 160px;
+            padding: 20px 0;
+            border-right: 1px solid #ececec;
+
+            @media screen and(min-width: 1500px){
+                padding: 40px 0;
+            }
+        }
+        
+    }
+
+}

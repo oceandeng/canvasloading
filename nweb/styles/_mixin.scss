@@ -57,12 +57,12 @@
     height: $h;
     line-height: $h;
     text-align: center;
-    background: $white;
+    background: $white !important;
     display: inline-block;
     padding: 0 30px;
     border-radius: $h / 2;
     cursor: pointer;
-    color: $light-blue;
+    color: $light-blue !important;
 
     a{
         color: $light-blue;
