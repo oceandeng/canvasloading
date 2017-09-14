@@ -1,7 +1,5 @@
-@import "./mixin", "./variable";
+@import "./mixin", "./variable", "./animate";
 @import "./index/banner";
-
-
 
 @import "./index/card-area";
 @import "./index/solution-slide";
@@ -222,4 +220,58 @@
 .solution-6-item-6{
     display: inline-block;
     background: url(../images/newindex/solution-6-item-6.png) no-repeat center;
+}
+.eighteen-qing{
+    position: relative;
+    width: 100%;
+
+    img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+    }
+}
+
+.eighteen-dialog{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    width: 500px;
+    height: 600px;
+    margin: 0 0 0 -250px;
+    display: none;
+
+    img{
+        width: 100%;
+    }
+    .close{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70px;
+        height: 70px;
+        z-index: 9;
+    }
+    .main-img-grounp{
+        position: absolute;
+        width: 100%;
+
+        img{
+            position: absolute;
+        }
+        .index-img-1{
+            display: none;
+        }
+    }
+    .enter-btn{
+        position: absolute;
+        top: 80%;
+        text-align: center;
+        display: none;
+
+        img{
+            width: 90%;
+        }
+    }
 }
