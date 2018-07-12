@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
+<title>注册账号</title>
+<!-- build:css /styles/common.min.css -->
+<link rel="stylesheet" href="/styles/common.css">
+<!-- endbuild -->
+<!-- build:css /styles/login.min.css -->
+<link rel="stylesheet" href="/styles/login.css">
+<!-- endbuild -->
+</head>
+<body class="main-container">
+<header>
+    <section class="header-bar">
+            <img src="./images/logo.png" alt="">
+    </section>
+</header>
+
+<article class="login-container">
+    <h1>注册账号</h1>
+
+    <div class="log-body">
+        <div class="log-group">
+            <div class="log-label f28">手机号</div>
+            <div class="log-input">
+                <input type="text" placeholder="手机号码作为登录账号" name="custTel" id="custTel">
+            </div>
+            <div class="log-error red f20 mt10"></div>
+        </div>
+        <div class="log-group">
+            <div class="log-label f28">验证码</div>
+            <div class="log-input row">
+                <div class="col-8">
+                    <input type="text" placeholder="请输入验证码" name="randCode" id="randCode">
+                </div>
+                <div class="col-4 align-right">
+                    <div id="imgVerificationCode">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="log-error red f20 mt10"></div>
+        </div>
+        <div class="log-group">
+            <div class="log-label f28">短信验证码</div>
+            <div class="log-input row">
+                <div class="col-8">
+                    <input type="text" placeholder="请输入验证码" name="smsCode" id="smsCode">
+                </div>
+                <div class="col-4 align-right">
+                    <div id="getVerificationCode" class="f28 g6"><span id="getSmsCode">获取验证码</span></div>
+                </div>
+            </div>
+            <div class="log-error red f20 mt10"></div>
+        </div>
+        <div class="log-group">
+            <div class="log-label f28">设置密码</div>
+            <div class="log-input">
+                <input type="password" placeholder="建议使用至少两种字符组合" name="custPassword" id="custPassword">
+            </div>
+            <div class="log-error red f20 mt10"></div>
+        </div>
+        <div class="log-group">
+            <div class="log-label f28">确认密码</div>
+            <div class="log-input">
+                <input type="password" placeholder="请再次输入密码" name="mobile" id="reCustPassword">
+            </div>
+            <div class="log-error red f20 mt10"></div>
+        </div>
+    </div>
+    <div class="log-btn mt80" id="regBtn">立即注册</div>
+    <div class="log-protocol mt80">
+        <input type="checkbox" id="protocol" />
+        <label for="protocol">阅读并接受</label><span class="blue-c" id="serviceAgreementBtn">《中企动力网站服务协议》</span>
+    </div>
+</article>
+
+<div class="dialog-wrap" style="display: none">
+    <div id="serviceAgreement">
+        <div class="service-agreement">
+            <p class="f22 g9">一、总则</p>
+            <p class="f22 g9">1.1本会员服务协议是中企动力网站（网址为www.300.cn，以下称为“本网站”）的经营者中企动力科技股份有限公司（以下简称为 “中企”），与用户（下称为“您”），共同缔结的对双方具有约束力的有效契约。您同意：本会员服务协议之效力如同您亲自签字、盖章的书面条款一样，对您具有法律约束力。</p>
+            <p class="f22 g9">1.2中企向您提供本网站上所展示的包括域名注册、网站建设等在内的企业互联网信息服务（下称“中企服务”）。中企提供各种不同的服务种类（中企所提供的相关产品及服务见产品合同/产品订单），并将不断更新服务内容;最新的中企服务以本网站上的相关产品及服务介绍的页面展示或相应订单以及向您实际提供的为准。您可以在中企动力网站上注册成为会员，并使用会员管理账号，自主选择需要的服务和产品。在中企动力网站上注册成为会员，并使用会员管理账号，自主选择需要的服务和产品。</p>
+        </div>
+        <div class="close-body" id="closeBtn">
+            <img src="images/reg-close-img.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- build:js /scripts/zepto.min.js -->
+<script src="/scripts/src/zepto.js"></script>
+<script src="/scripts/src/ajax.js"></script>
+<script src="/scripts/src/event.js"></script>
+<script src="/scripts/src/touch.js"></script>
+<script src="/scripts/src/fx.js"></script>
+<script src="/scripts/src/fx_methods.js"></script>
+<!-- endbuild -->
+<!-- build:js /scripts/vendor.min.js-->
+<script src="/scripts/customtools.js" charset="utf-8"></script>
+<script src="/scripts/plugin/iscroll-probe.js" charset="utf-8"></script>
+<script src="/scripts/plugin/dialog.js" charset="utf-8"></script>
+<!-- endbuild -->
+<!-- build:js /scripts/login.min.js -->
+<script src="/scripts/login.js" charset="utf-8"></script>
+<!-- endbuild -->
+
+<script>
+(function(){
+    var baseURL = 'http://test-api-console.300.cn',
+        apiURL = {
+            checkByTel: '/api-portal/api/register/checkByTel',    // 是否存在已注册的手机号
+            randImg: '/api-portal/randImg/rand',       // 获取图片验证码
+            register: '/api-portal/api/register/add',       // 注册(POST请求)
+            generatorSMSCode: '/api-portal/api/register/generatorSMSCode',   // 获取短信验证码
+            smsCodeCheck: '/api-portal/api/register/smsCodeCheck'   // 验证短信验证码
+        },
+        $_custTel = $('#custTel'),
+        $_imgVerificationCode = $('#imgVerificationCode'),
+        $_randCode = $('#randCode'),
+        $_getSmsCode = $('#getSmsCode'),
+        $_smsCode = $('#smsCode'),
+        $_custPassword = $('#custPassword'),
+        $_reCustPassword = $('#reCustPassword')
+
+    $_custTel.on('blur', function(){
+        var $_this = $(this),
+            custTel = $_this.val()
+
+        var valiMobileFlag = valiMobile($_this, custTel)
+        if(!valiMobileFlag) return
+
+        $.ajax({
+            type: 'GET',
+            url: baseURL + apiURL.checkByTel,
+            data: {custTel: custTel},
+            success: function(res){
+                var res = JSON.parse(res)
+                if(res.data.flag == 0) showErrorMsg($_this, '手机号已经被注册！')
+                else clearErrorMsg($_this)
+            },
+        })
+    })
+
+    // 图形验证码
+    $(function(){
+        $_imgVerificationCode.find('img').attr('src', baseURL + apiURL.randImg + '?serverName=regist&random=' + new Date().getTime())
+    })
+    $_imgVerificationCode.find('img').on('tap', function(){
+        var $_this = $(this),
+            url = baseURL + apiURL.randImg + '?serverName=regist&random=' + new Date().getTime();
+        $_this.attr('src', url) 
+    })
+    $_randCode.on('blur', function(){
+        var $_this = $(this)
+        valiRandCode($_this, $_this.val())
+    })
+
+    // 获取短信验证码
+    var valiswitch = false,
+		seconds = 60,
+        timer = null;
+
+    $_getSmsCode.on('tap', function(){
+        if(valiswitch) return;
+
+        var $_this = $(this),
+            txt = $_this.text(),
+            valiMobileFlag = valiMobile($_custTel, $_custTel.val()),
+            valiRandCodeFlag = valiRandCode($_randCode, $_randCode.val())
+        if(!valiMobileFlag || !valiRandCodeFlag) return
+
+        timer = setInterval(function(){
+			valiswitch = true;
+			seconds --;
+			$_this.text(seconds + 's');
+			$_this.addClass('disable');
+
+			if(seconds == 0){
+				$_this.text(txt);
+				$_this.removeClass('disable');
+				seconds = 60;
+				valiswitch = false;
+				clearInterval(timer);
+			}
+        }, 1000);
+        
+        let params = {
+            memberMobilePhone: $_custTel.val(),
+            randCode: $_randCode.val(),
+            serverName: 'regist'
+        }
+        $.ajax({
+            type: 'GET',
+            url: baseURL + apiURL.generatorSMSCode,
+            dataType:"jsonp",
+            jsonp:"callback",
+            data: params,
+            success: function(res){
+                oTools.alertmess('短信已发送！')
+            }
+        })
+    })
+    $_smsCode.on('blur', function(){
+        var $_this = $(this),
+            smsCode = $_this.val()
+        var valiSmsCodeFlag = valiSmsCode($_this, smsCode)
+        if(!valiSmsCodeFlag) return
+
+    })
+    
+
+    // 密码
+    $_custPassword.on('blur', function(){
+        var $_this = $(this),
+            password = $_this.val()
+
+        var valiPasswordFlag = valiPassword($_this, password)
+        if(!valiPasswordFlag) return
+    })
+
+    $_reCustPassword.on('blur', function(){
+        var $_this = $(this),
+            password = $_custPassword.val(),
+            rePassword = $_this.val()
+
+        var valiRePasswordFlag = valiRePassword($_this, rePassword, password)
+        if(!valiRePasswordFlag) return
+
+    })
+
+    // 注册
+    $('#regBtn').on('tap', function(){
+        if(!$('#protocol').is(":checked")){
+            oTools.alertmess('请阅读和同意《中企动力网站服务协议》')
+            return
+        }
+        var valiMobileFlag = valiMobile($_custTel, $_custTel.val())
+        var valiRandCodeFlag = valiRandCode($_randCode, $_randCode.val())
+        var valiPasswordFlag = valiPassword($_custPassword, $_custPassword.val())
+        var valiSmsCodeFlag = valiSmsCode($_smsCode, $_smsCode.val())
+        var valiRePasswordFlag = valiRePassword($_reCustPassword, $_reCustPassword.val(), $_custPassword.val())
+        if(!valiMobileFlag || !valiRandCodeFlag || !valiSmsCodeFlag || !valiPasswordFlag || !valiRePasswordFlag) return
+
+        let params = {
+            info: {
+                "custPassword": $_custPassword.val(),
+                "custTel": $_custTel.val(),
+                "smsCode": $_smsCode.val(),
+                "isIntoIntention":"0",
+                "mkt":"mkt_erwewe"
+            }
+        }
+        $.ajax({
+            type: 'GET',
+            url: baseURL + apiURL.register,
+            data: {data: JSON.stringify(params)},
+            success: function(res){
+                oTools.alertmess('注册成功！')
+                window.location.href = '/register-success.html'
+            }
+        })
+    })
+    
+    function showErrorMsg(_this, msg){
+        _this.parents('.log-group').find('.log-error').text(msg)
+    }
+    function clearErrorMsg(_this){
+        _this.parents('.log-group').find('.log-error').text('')
+    }
+    function valiMobile(dom, val){
+        if(isNull(val)){
+            showErrorMsg(dom, '请输入手机号！')
+            return false
+        }else if(!checkMobile(val)){
+            showErrorMsg(dom, '请输入正确手机号！')
+            return false
+        }else{
+            clearErrorMsg(dom)
+            return true
+        }
+    }
+    function valiRandCode(dom, val){
+        if(isNull(val)){
+            showErrorMsg(dom, '请输入验证码！')
+            return false
+        }else{
+            clearErrorMsg(dom)
+            return true
+        }
+    }
+    function valiSmsCode(dom, val){
+        if(isNull(val)){
+            showErrorMsg(dom, '请输入短信验证码！')
+            return false
+        }else{
+            clearErrorMsg(dom)
+            return true
+        }
+    }
+    function valiPassword(dom, val){
+        if(isNull(val)){
+            showErrorMsg(dom, '请输入密码！')
+            return false
+        }else{
+            clearErrorMsg(dom)
+            return true
+        }
+    }
+    function valiRePassword(dom, val, reval){
+        if(isNull(val)){
+            showErrorMsg(dom, '请输入确认密码')
+            return false
+        }else if(val != reval){
+            showErrorMsg(dom, '输入的密码不相同！')
+            return false
+        }else{
+            clearErrorMsg(dom)
+            return true
+        }
+    }
+})()
+
+
+</script>
+
+</body>
+</html>

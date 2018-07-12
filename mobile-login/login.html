@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
+<title>登录</title>
+<!-- build:css /styles/common.min.css -->
+<link rel="stylesheet" href="/styles/common.css">
+<!-- endbuild -->
+<!-- build:css /styles/login.min.css -->
+<link rel="stylesheet" href="/styles/login.css">
+<!-- endbuild -->
+</head>
+<body class="main-container">
+<header>
+    <section class="header-bar">
+            <img src="./images/logo.png" alt="">
+    </section>
+</header>
+
+<article class="login-container">
+    <h1>账户登录</h1>
+    
+    <div class="log-body">
+        <form action="">
+            <div class="log-group">
+                <div class="log-label f28">账号</div>
+                <div class="log-input">
+                    <input type="text" placeholder="请输入会员帐号/手机号/邮箱" name="mobile">
+                </div>
+            </div>
+            <div class="log-group">
+                <div class="log-label f28">密码</div>
+                <div class="log-input">
+                    <input type="password" placeholder="密码长度必须在6-20位之间" name="mobile">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="log-tool mt50 row">
+        <div class="col-6"><a class="g3" href="http://www.300.cn">返回首页</a></div>
+        <div class="col-6 align-right"><span id="forgetPassword"> 忘记密码？</span></div>
+    </div>
+    <div class="log-btn mt80" id="loginBtn">登录</div>
+    <div class="log-reg mt80"><a href="register.html">注册会员</a></div>
+</article>
+
+<div class="dialog-wrap" style="display: none">
+    <div id="forgetPasswordCon">
+        <div class="forget-password-dialog">
+            <p class="f28">您可前往官网进行重置操作</p>
+            <p class="f24"><a class="blue-c" href="http://www.300.cn">官网首页：www.300.cn</a></p>
+            <div id="closeForgetPassword" class="common-btn">返回登录页面</div>
+        </div>
+    </div>
+</div>
+
+<!-- build:js /scripts/zepto.min.js -->
+<script src="/scripts/src/zepto.js"></script>
+<script src="/scripts/src/ajax.js"></script>
+<script src="/scripts/src/event.js"></script>
+<script src="/scripts/src/touch.js"></script>
+<script src="/scripts/src/fx.js"></script>
+<script src="/scripts/src/fx_methods.js"></script>
+<!-- endbuild -->
+<!-- build:js /scripts/vendor.min.js-->
+<script src="/scripts/customtools.js" charset="utf-8"></script>
+<script src="/scripts/plugin/iscroll-probe.js" charset="utf-8"></script>
+<script src="/scripts/plugin/dialog.js" charset="utf-8"></script>
+<!-- endbuild -->
+<!-- build:js /scripts/login.min.js -->
+<script src="/scripts/login.js" charset="utf-8"></script>
+<!-- endbuild -->
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+@import "animate", "normalize", "mixin", "variable", "response", "public";
+
+html,body{
+	font-family: 'Microsoft yahei' Helvetica;
+}
+body{
+	font-size: 14px;
+	background: #fff;
+	font-size: 18px;
+}
+
+img{
+	max-width: 100%;
+}
+
+h1,h2,h3,h4,h5{font-weight: normal}
+
+.main-container{
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+.container{
+	position: relative;
+	// overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}
+
+a {
+	-webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+}
+
+header{
+	height: 60px;
+	padding: 20px 40px;
+	background: #333;
+	.header-bar{
+		margin-top: 10px;
+	}
+}
+.common-btn{
+	height: 80px;
+	line-height: 80px;
+	background: #333;
+	color: #fff;
+	font-size: 28px;
+	text-align: center;
+	border-radius: 5px;
+}
+.top-warning{
+	background: rgba(244, 104, 104, 1);
+	width: 100%;
+	padding: 20px 40px;
+	position: fixed;
+	top: 0;
+	box-sizing: border-box;
+}
+.top-warning img{
+	float: left;
+	margin: 0 30px 0 0;
+}
+.top-warning p{
+	margin: 5px 0;
+	font-size: 26px;
+	color: #fff;
+}
+.errors-info{
+	position: fixed;
+	top: 0;
+	background: rgba(244, 104, 104, 1);
+	width: 100%;
+	left: 0;
+	color: #fff;
+	text-align: center;
+	padding: 20px 40px;
+	box-sizing: border-box;
+
+	img{
+		float: left;
+	}
+	p{
+		font-size: 28px;
+	}
+	.error-close{
+		position: absolute;
+		font-size: 30px;
+		color: #fff;
+		right: 20px;
+		top: 10px;
+	}
+}
